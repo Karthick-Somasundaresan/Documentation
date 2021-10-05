@@ -1,6 +1,7 @@
+[Description](head.description)
 |Tag|Description|StubGen|JsonGen|
 |--|--|--|--|
-|[@stubgen:include](head.stubgen:include)|insert another C++ file FILE|Yes| Yes|
+|[@stubgen:include](stubgen:include)|insert another C++ file FILE|Yes| Yes|
 |@insert|same as @stubgen:include FILE| Yes|Yes|
 |@stubgen:skip|stop processing current file, now deprecated FILE| Yes|Yes|
 |@stop|same as @stubgen:skip, not deprecated, but also never advertised FILE|Yes| Yes|
@@ -30,4 +31,7 @@
 |@text <text>|renames identifier METHOD, PARAM, POD MEMBER, ENUM (JSON-ONLY)| No| Yes|
 
 
-<a name="head.stubgen:include"># @stubgen:include</a>
+<a name="stubgen:include"># @stubgen:include</a>
+  
+<a name="head.description"></a>
+# Description
