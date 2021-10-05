@@ -1,4 +1,10 @@
-[Description](head.description)
+### Table of Contents
+
+- [Introduction](#head.Introduction)
+- [Description](#head.Description)
+- [Configuration](#head.Configuration)
+- [Methods](#head.Methods)
+- [Notifications](#head.Notifications)
 |Tag|Description|StubGen|JsonGen|
 |--|--|--|--|
 |[@stubgen:include](stubgen:include)|insert another C++ file FILE|Yes| Yes|
@@ -32,6 +38,7 @@
 
 
 <a name="stubgen:include"># @stubgen:include</a>
-  
+<a name="head.Introduction"></a>
+# Introduction
 <a name="head.description"></a>
 # Description
