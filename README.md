@@ -8,7 +8,7 @@
 
 |Tag|Description|StubGen|JsonGen|
 |--|--|--|--|
-|[@stubgen:include](stubgen_include)|insert another C++ file FILE|Yes| Yes|
+|[@stubgen:include](#stubgen_include)|insert another C++ file FILE|Yes| Yes|
 |@insert|same as @stubgen:include FILE| Yes|Yes|
 |@stubgen:skip|stop processing current file, now deprecated FILE| Yes|Yes|
 |@stop|same as @stubgen:skip, not deprecated, but also never advertised FILE|Yes| Yes|
