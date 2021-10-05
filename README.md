@@ -1,10 +1,3 @@
-### Table of Contents
-
-- [Introduction](#head.Introduction)
-- [Description](#head.Description)
-- [Configuration](#head.Configuration)
-- [Methods](#head.Methods)
-- [Notifications](#head.Notifications)
 
 |Tag|Description|StubGen|JsonGen|
 |--|--|--|--|
