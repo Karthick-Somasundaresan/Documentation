@@ -31,141 +31,141 @@
 |[@text <text>](#text)|renames identifier METHOD, PARAM, POD MEMBER, ENUM (JSON-ONLY)| No| Yes|
 
 <a name="stubgen_include"></a>
-# stubgen_include
+# @stubgen:include
 
 [top](#table)
 
 <a name="insert"></a>
-# insert
+# @insert
 
 [top](#table)
 
 <a name="stubgen_skip"></a>
-# stubgen_skip
+# @stubgen:skip
 
 [top](#table)
 
 <a name="stop"></a>
-# stop
+# @stop
 
 [top](#table)
 
 <a name="stubgen_omit"></a>
-# stubgen_omit
+# @stubgen:omit
 
 [top](#table)
 
 <a name="omit"></a>
-# omit
+# @omit
 
 [top](#table)
 
 <a name="stubgen_stub"></a>
-# stubgen_stub
+# @stubgen:stub
 
 [top](#table)
 
 <a name="stub"></a>
-# stub
+# @stub
 
 [top](#table)
 
 <a name="in"></a>
-# in
+# @in
 
 [top](#table)
 
 <a name="out"></a>
-# out
+# @out
 
 [top](#table)
 
 <a name="length"></a>
-# length
+# @length
 
 [top](#table)
 
 <a name="maxlength"></a>
-# maxlength
+# @maxlength
 
 [top](#table)
 
 <a name="interface"></a>
-# interface
+# @interface
 
 [top](#table)
 
 <a name="inout"></a>
-# inout
+# @inout
 
 [top](#table)
 
 <a name="json"></a>
-# json
+# @json
 
 [top](#table)
 
 <a name="json_omit"></a>
-# json_omit
+# @json:omit
 
 [top](#table)
 
 <a name="event"></a>
-# event
+# @event
 
 [top](#table)
 
 <a name="extended"></a>
-# extended
+# @extended
 
 [top](#table)
 
 <a name="iterator"></a>
-# iterator
+# @iterator
 
 [top](#table)
 
 <a name="deprecated"></a>
-# deprecated
+# @deprecated
 
 [top](#table)
 
 <a name="obsolete"></a>
-# obsolete
+# @obsolete
 
 [top](#table)
 
 <a name="index"></a>
-# index
+# @index
 
 [top](#table)
 
 <a name="listener"></a>
-# listener
+# @listener
 
 [top](#table)
 
 <a name="brief"></a>
-# brief
+# @brief
 
 [top](#table)
 
 <a name="details"></a>
-# details
+# @details
 
 [top](#table)
 
 <a name="param"></a>
-# param
+# @param
 
 [top](#table)
 
 <a name="retval"></a>
-# retbal
+# @retbal
 
 [top](#table)
 
 <a name="text"></a>
-# text
+# @text
 
 [top](#table)
