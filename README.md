@@ -1,6 +1,6 @@
 <a name="table"> </a>
 | Tag|Short Description|StubGen|JsonGen|
-|--|--|--|--|
+|--|--|:--:|:--:|
 |[@stubgen:include](#stubgen_include)|insert another C++ file FILE|Yes| Yes|
 |[@insert](#insert)|same as @stubgen:include FILE| Yes|Yes|
 |[@stubgen:skip](#stubgen_skip)|stop processing current file, now deprecated FILE| Yes|Yes|
@@ -33,13 +33,27 @@
 <a name="stubgen_include"></a>
 # @stubgen:include
 ### Description
+This tag is used when we need to include definitions from another file. This tag imports the contents of the file while creating json generation and as well as in stub generation. 
+Like #include preprocessor the contents of the files are included before processing any other tags
 ### Example
+IDeviceInfo.h [includes](https://github.com/rdkcentral/ThunderInterfaces/blob/master/interfaces/IDeviceInfo.h#L24) com/IIteratorType.h to get the definition for RPC::IIteratorType
+
+`
+// @stubgen:include <com/IIteratorType.h>
+`
+
 [top](#table)
 
 <a name="insert"></a>
 # @insert
 ### Description
+This tag is same as [@stubgen:include](#stubgen_include). 
 ### Example
+Test code, IJsonGeneratorCorpus.h [includes](https://github.com/rdkcentral/Thunder/blob/master/Tests/jsongenerator/IJsonGeneratorCorpus.h#L27) com/IIteratorType.h using insert tag.
+
+`
+// @insert <com/IIteratorType.h>
+`
 
 [top](#table)
 
