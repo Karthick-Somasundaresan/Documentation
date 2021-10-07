@@ -1,5 +1,5 @@
 <a name="table"> </a>
-| Tag|Description|StubGen|JsonGen|
+| Tag|Short Description|StubGen|JsonGen|
 |--|--|--|--|
 |[@stubgen:include](#stubgen_include)|insert another C++ file FILE|Yes| Yes|
 |[@insert](#insert)|same as @stubgen:include FILE| Yes|Yes|
@@ -11,9 +11,9 @@
 |[@stub](#stub)|same as @stubgen:stub METHOD (PROXYSTUB-ONLY)| Yes| No|
 |[@in](#in)|marks an input parameter PARAM| Yes| Yes|
 |[@out](#out)|marks an output parameter PARAM| Yes|Yes|
-|[@length:<expr>](#length)|specifies the expresion to evaluate length of an array parameter PARAM(can be other parameter name, or constant, or math expression)| | |
-|[@maxlength:<expr>PARAM](#maxlength)| | | |
-|[@interface:<id>PARAM](#interface)| | | |
+|[@length](#length)|specifies the expresion to evaluate length of an array parameter PARAM(can be other parameter name, or constant, or math expression)| | |
+|[@maxlength](#maxlength)| | | |
+|[@interface](#interface)| | | |
 |[@inout](#inout)|marks as input and output parameter (a.k.a @in @out) PARAM| Yes|Yes|
 |[@json](#json)|marks a class as JsonGenerator input CLASS (JSON-ONLY)| No| Yes|
 |[@json:omit](#json_omit)|marks a method/property/notification to omit METHOD (JSON-ONLY| No| Yes|
@@ -24,148 +24,203 @@
 |[@obsolete](#obsolete)|marks a method/property/notification as obsolete METHOD (JSON-ONLY)| No| Yes|
 |[@index](#index)|marks an index parameter to a property or notification PARAM (JSON-ONLY)| No| Yes|
 |[@listener](#listener)|marks the notification as a "status listener" METHOD (JSON-ONLY)| No| Yes|
-|[@brief <text>](#brief)|specifies brief description of a method/property/notification or parameter or POD structure member METHOD, PARAM, POD MEMBER (JSON-ONLY)| No| Yes|
-|[@details <text>](#details)|specifies detaild description of a method/property/notification METHOD (JSON-ONLY)| No| Yes|
-|[@param <param> <text>](#param)|provide description for method/notification parameter or property/notification index METHOD| |
-|[@retval <code> <text>](#retval)|specifies possible return error codes for method/property (can be many) METHOD (JSON-ONLY)| No|Yes|
-|[@text <text>](#text)|renames identifier METHOD, PARAM, POD MEMBER, ENUM (JSON-ONLY)| No| Yes|
+|[@brief ](#brief)|specifies brief description of a method/property/notification or parameter or POD structure member METHOD, PARAM, POD MEMBER (JSON-ONLY)| No| Yes|
+|[@details ](#details)|specifies detaild description of a method/property/notification METHOD (JSON-ONLY)| No| Yes|
+|[@param ](#param)|provide description for method/notification parameter or property/notification index METHOD| |
+|[@retval ](#retval)|specifies possible return error codes for method/property (can be many) METHOD (JSON-ONLY)| No|Yes|
+|[@text](#text)|renames identifier METHOD, PARAM, POD MEMBER, ENUM (JSON-ONLY)| No| Yes|
 
 <a name="stubgen_include"></a>
 # @stubgen:include
-
+### Description
+### Example
 [top](#table)
 
 <a name="insert"></a>
 # @insert
+### Description
+### Example
 
 [top](#table)
 
 <a name="stubgen_skip"></a>
 # @stubgen:skip
+### Description
+### Example
 
 [top](#table)
 
 <a name="stop"></a>
 # @stop
+### Description
+### Example
 
 [top](#table)
 
 <a name="stubgen_omit"></a>
 # @stubgen:omit
+### Description
+### Example
 
 [top](#table)
 
 <a name="omit"></a>
 # @omit
+### Description
+### Example
 
 [top](#table)
 
 <a name="stubgen_stub"></a>
 # @stubgen:stub
+### Description
+### Example
 
 [top](#table)
 
 <a name="stub"></a>
 # @stub
+### Description
+### Example
 
 [top](#table)
 
 <a name="in"></a>
 # @in
+### Description
+### Example
 
 [top](#table)
 
 <a name="out"></a>
 # @out
+### Description
+### Example
 
 [top](#table)
 
 <a name="length"></a>
 # @length
+### Description
+### Example
 
 [top](#table)
 
 <a name="maxlength"></a>
 # @maxlength
+### Description
+### Example
 
 [top](#table)
 
 <a name="interface"></a>
 # @interface
+### Description
+### Example
 
 [top](#table)
 
 <a name="inout"></a>
 # @inout
+### Description
+### Example
 
 [top](#table)
 
 <a name="json"></a>
 # @json
+### Description
+### Example
 
 [top](#table)
 
 <a name="json_omit"></a>
 # @json:omit
+### Description
+### Example
 
 [top](#table)
 
 <a name="event"></a>
 # @event
+### Description
+### Example
 
 [top](#table)
 
 <a name="extended"></a>
 # @extended
+### Description
+### Example
 
 [top](#table)
 
 <a name="iterator"></a>
 # @iterator
+### Description
+### Example
 
 [top](#table)
 
 <a name="deprecated"></a>
 # @deprecated
+### Description
+### Example
 
 [top](#table)
 
 <a name="obsolete"></a>
 # @obsolete
+### Description
+### Example
 
 [top](#table)
 
 <a name="index"></a>
 # @index
+### Description
+### Example
 
 [top](#table)
 
 <a name="listener"></a>
 # @listener
+### Description
+### Example
 
 [top](#table)
 
 <a name="brief"></a>
 # @brief
+### Description
+### Example
 
 [top](#table)
 
 <a name="details"></a>
 # @details
+### Description
+### Example
 
 [top](#table)
 
 <a name="param"></a>
 # @param
+### Description
+### Example
 
 [top](#table)
 
 <a name="retval"></a>
-# @retbal
+# @retval
+### Description
+### Example
 
 [top](#table)
 
 <a name="text"></a>
 # @text
+### Description
+### Example
 
 [top](#table)
