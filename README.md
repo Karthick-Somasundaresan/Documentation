@@ -59,22 +59,39 @@ Test code, IJsonGeneratorCorpus.h [includes](https://github.com/rdkcentral/Thund
 
 <a name="stubgen_skip"></a>
 # @stubgen:skip
+
 ### Description
+Remaining portion of the file below this tag will be skipped from processing. If placed on top of the file, the complete file is skipped from processing.
+This tag is currently deprecated. [@omit](#omit) is preferred over this tag.
+
 ### Example
+[IDRM.h](https://github.com/rdkcentral/ThunderInterfaces/blob/master/interfaces/IDRM.h#L41) file is skipped from processing placing this tag at the top of this file.
+
+
+`
+// @stubgen:skip
+`
 
 [top](#table)
 
 <a name="stop"></a>
 # @stop
 ### Description
-### Example
+This tag is same as [@stubgen:skip](#stubgen_skip)
 
 [top](#table)
 
 <a name="stubgen_omit"></a>
 # @stubgen:omit
 ### Description
+
+This tag is applies to struct, class, functions. When the struct/class marked as omit, proxy stubs will not be created for those. 
+Including its inner class/struct/enums. 
+
 ### Example
+
+[ITimeSync.h](https://github.com/rdkcentral/ThunderInterfaces/blob/master/interfaces/ITimeSync.h#L27) uses omit flag to skip the content of the whole file. 
+This is the preferred way to skip the content.
 
 [top](#table)
 
