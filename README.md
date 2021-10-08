@@ -86,7 +86,7 @@ This tag is same as [@stubgen:skip](#stubgen_skip)
 ### Description
 
 This tag is applies to struct, class, functions. When the struct/class marked as omit, proxy stubs will not be created for those. 
-Including its inner class/struct/enums. 
+Including its inner class/struct/enums. But [@json](#json) tag will still be applicable to the struct/class. 
 
 ### Example
 
@@ -98,21 +98,30 @@ This is the preferred way to skip the content.
 <a name="omit"></a>
 # @omit
 ### Description
-### Example
+
+Same as [@stubgen:omit](#stubgen_omit)
 
 [top](#table)
 
 <a name="stubgen_stub"></a>
 # @stubgen:stub
 ### Description
+
+When we dont want to create a proxy implementation for a function we mark it with this tag.
+??? May be those functions which doesnt make sense to call from the other side of the process boundary ???
+
 ### Example
+
+In [IShell](https://github.com/rdkcentral/Thunder/blob/master/Source/plugins/IShell.h#L232) Submit function is marked as stub as it does not want that function to be called beyond WPEFramework process
+
 
 [top](#table)
 
 <a name="stub"></a>
 # @stub
 ### Description
-### Example
+
+Same as [@stubgen:stub](#stubgen_stub)
 
 [top](#table)
 
