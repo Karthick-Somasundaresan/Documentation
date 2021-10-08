@@ -147,12 +147,38 @@ If these conditions are not met, Error will be thrown during JSONRPC code genera
 
 ### Example
 In [IDolby.h](https://github.com/rdkcentral/ThunderInterfaces/blob/master/interfaces/IDolby.h#L67) supported parameter is marked as output paramter.
+
 [top](#table)
 
 <a name="length"></a>
 # @length
 ### Description
+
+This tag should be associated with an array. It specifies the expresion to evaluate length of an array parameter PARAM(can be other parameter name, or constant, or math expression)
+
+
 ### Example
+
+Possible usage of length tag
+
+As another parameter
+
+`/* @length:param1 */`
+
+As a constant.
+
+`/* @length:32 */`
+
+As an expression
+
+`/* @length:(param1+param2+16) */`
+
+In IOCDM.h, 
+
+function [StoreLicenseData](https://github.com/rdkcentral/ThunderInterfaces/blob/master/interfaces/IOCDM.h#L159) @length param is marked as constant.
+
+function [SelectKeyId](https://github.com/rdkcentral/ThunderInterfaces/blob/master/interfaces/IOCDM.h#L163) @length tag is marked as another parameter.
+
 
 [top](#table)
 
