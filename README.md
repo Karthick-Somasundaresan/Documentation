@@ -128,15 +128,25 @@ Same as [@stubgen:stub](#stubgen_stub)
 <a name="in"></a>
 # @in
 ### Description
+
+This tag will mark a parameter in a function as an input parameter. By default, all parameters in a function are treated as input paramter. 
+All input paramters are expected to be const. If not, warning will be thrown during JSONRPC code generation.
+
 ### Example
+
+In [IDolby.h](https://github.com/rdkcentral/ThunderInterfaces/blob/master/interfaces/IDolby.h#L77) enable parameter is marked as an input parameter.
 
 [top](#table)
 
 <a name="out"></a>
 # @out
 ### Description
-### Example
+This tag will mark a parameter in a function as an output parameter. By default, all parameters in a function are treated as input parameter.
+Output parameters should either be a reference or a pointer and should not be constant.
+If these conditions are not met, Error will be thrown during JSONRPC code generation.
 
+### Example
+In [IDolby.h](https://github.com/rdkcentral/ThunderInterfaces/blob/master/interfaces/IDolby.h#L67) supported parameter is marked as output paramter.
 [top](#table)
 
 <a name="length"></a>
