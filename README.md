@@ -12,7 +12,7 @@
 |[@in](#in)|marks an input parameter PARAM| Yes| Yes|
 |[@out](#out)|marks an output parameter PARAM| Yes|Yes|
 |[@length](#length)|specifies the expresion to evaluate length of an array parameter PARAM(can be other parameter name, or constant, or math expression)| | |
-|[@maxlength](#maxlength)| | | |
+|[@maxlength](#maxlength)|specifies a maximum buffer length value (a constant, a parameter name or a math expression),") if not specified @length is used as maximum length, use round parenthesis for expressions",) e.g.: @length:bufferSize @length:(width * height * 4) | | |
 |[@interface](#interface)| | | |
 |[@inout](#inout)|marks as input and output parameter (a.k.a @in @out) PARAM| Yes|Yes|
 |[@json](#json)|marks a class as JsonGenerator input CLASS (JSON-ONLY)| No| Yes|
@@ -185,21 +185,34 @@ function [SelectKeyId](https://github.com/rdkcentral/ThunderInterfaces/blob/mast
 <a name="maxlength"></a>
 # @maxlength
 ### Description
+This tag is associated with [/* @inout */](#inout) tag. It specifies a maximum buffer length value (a constant, a parameter name or a math expression if not specified @length is used as maximum length, use round parenthesis for expressions, e.g.: @length:bufferSize @length:(width * height * 4)
+It will use different buffer for output depending upon this tag. If not specified it will reuse the same input buffer for output as well.
 ### Example
+In [IPerformance.h](https://github.com/rdkcentral/ThunderInterfaces/blob/5fa166bd17c6b910696c6113c5520141bcdea07b/interfaces/IPerformance.h#L32) it specifies, the maximum length for the buffer.
 
 [top](#table)
 
 <a name="interface"></a>
 # @interface
 ### Description
+
+This tag specifies a parameter holding interface ID value for void* interface passing. Functions like (Aquire)[https://github.com/rdkcentral/Thunder/blob/master/Source/com/ICOM.h#L45] will return the pointer to the queried interface. For such functions, this tag will specify which field to look for to get the corresponding interface id.
+
 ### Example
+
+In [ICOM.h](https://github.com/rdkcentral/Thunder/blob/master/Source/com/ICOM.h#L45) specifies parameter 3 interfaceId holds the interface id for the returned interface.
 
 [top](#table)
 
 <a name="inout"></a>
 # @inout
 ### Description
+
+In few methods, a parameter will act both as input as well as output parameter. Such parameters are marked using this tag. 
+
 ### Example
+In [IDisplayInfo.h](https://github.com/rdkcentral/ThunderInterfaces/blob/5fa166bd17c6b910696c6113c5520141bcdea07b/interfaces/IDisplayInfo.h#L98) the parameter length acts both as input as well as the output. While calling this API, application will fill the buffer size in the length paramenter.
+When the function returns, the parameter will have the modified length value. Thus acts as both input and output parameter
 
 [top](#table)
 
