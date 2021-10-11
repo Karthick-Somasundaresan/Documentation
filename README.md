@@ -219,13 +219,29 @@ When the function returns, the parameter will have the modified length value. Th
 <a name="json"></a>
 # @json
 ### Description
+
+This tag helps to generate JSONRPC files for the given Class/Struct/Enum.
+It will creates files JsonData_<InterfaceName>Output.h, JsonEnum_<InterfaceName>Output.cpp, J<InterfaceName>Output.cpp
+
+JsonData_<structname>Output.h will have definitions for structs that are used in JsonMethods.
+JsonEnum_<Structname>Output.cpp will have definition for Enums
+J<InterfaceFilename>Output.h will have definition for the methods for JSONRPC.
+
 ### Example
+
+[IDisplayInfo.h](https://github.com/rdkcentral/ThunderInterfaces/blob/5fa166bd17c6b910696c6113c5520141bcdea07b/interfaces/IDisplayInfo.h#L121) uses this tag to generate JSONRPC files. 
+It will create the following files
+JsonEnum_HDRProperties.cpp
+JHDRProperties.h
+
 
 [top](#table)
 
 <a name="json_omit"></a>
 # @json:omit
 ### Description
+
+
 ### Example
 
 [top](#table)
