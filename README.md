@@ -11,9 +11,9 @@
 |[@stub](#stub)|same as @stubgen:stub METHOD (PROXYSTUB-ONLY)| Yes| No|
 |[@in](#in)|marks an input parameter PARAM| Yes| Yes|
 |[@out](#out)|marks an output parameter PARAM| Yes|Yes|
-|[@length](#length)|specifies the expresion to evaluate length of an array parameter PARAM(can be other parameter name, or constant, or math expression)| | |
-|[@maxlength](#maxlength)|specifies a maximum buffer length value (a constant, a parameter name or a math expression),") if not specified @length is used as maximum length, use round parenthesis for expressions",) e.g.: @length:bufferSize @length:(width * height * 4) | | |
-|[@interface](#interface)| | | |
+|[@length](#length)|specifies the expresion to evaluate length of an array parameter PARAM(can be other parameter name, or constant, or math expression)| No | Yes |
+|[@maxlength](#maxlength)|specifies a maximum buffer length value (a constant, a parameter name or a math expression),") if not specified @length is used as maximum length, use round parenthesis for expressions",) e.g.: @length:bufferSize @length:(width * height * 4) | No | Yes |
+|[@interface](#interface)| specifies a parameter holding interface ID value for void* interface passing | Yes | No |
 |[@inout](#inout)|marks as input and output parameter (a.k.a @in @out) PARAM| Yes|Yes|
 |[@json](#json)|marks a class as JsonGenerator input CLASS (JSON-ONLY)| No| Yes|
 |[@json:omit](#json_omit)|marks a method/property/notification to omit METHOD (JSON-ONLY| No| Yes|
@@ -26,10 +26,10 @@
 |[@listener](#listener)|marks the notification as a "status listener" METHOD (JSON-ONLY)| No| Yes|
 |[@brief ](#brief)|specifies brief description of a method/property/notification or parameter or POD structure member METHOD, PARAM, POD MEMBER (JSON-ONLY)| No| Yes|
 |[@details ](#details)|specifies detaild description of a method/property/notification METHOD (JSON-ONLY)| No| Yes|
-|[@param ](#param)|provide description for method/notification parameter or property/notification index METHOD| |
+|[@param ](#param)|provide description for method/notification parameter or property/notification index METHOD| No | Yes|
 |[@retval ](#retval)|specifies possible return error codes for method/property (can be many) METHOD (JSON-ONLY)| No|Yes|
 |[@text](#text)|renames identifier METHOD, PARAM, POD MEMBER, ENUM (JSON-ONLY)| No| Yes|
-
+|[@property](#property)||No|Yes|
 <a name="stubgen_include"></a>
 # @stubgen:include
 ### Description
@@ -108,6 +108,7 @@ Same as [@stubgen:omit](#stubgen_omit)
 ### Description
 
 When we dont want to create a proxy implementation for a function we mark it with this tag.
+
 ??? May be those functions which doesnt make sense to call from the other side of the process boundary ???
 
 ### Example
@@ -196,7 +197,7 @@ In [IPerformance.h](https://github.com/rdkcentral/ThunderInterfaces/blob/5fa166b
 # @interface
 ### Description
 
-This tag specifies a parameter holding interface ID value for void* interface passing. Functions like (Aquire)[https://github.com/rdkcentral/Thunder/blob/master/Source/com/ICOM.h#L45] will return the pointer to the queried interface. For such functions, this tag will specify which field to look for to get the corresponding interface id.
+This tag specifies a parameter holding interface ID value for void* interface passing. Functions like [Aquire](https://github.com/rdkcentral/Thunder/blob/master/Source/com/ICOM.h#L45) will return the pointer to the queried interface. For such functions, this tag will specify which field to look for to get the corresponding interface id.
 
 ### Example
 
@@ -241,49 +242,95 @@ JHDRProperties.h
 # @json:omit
 ### Description
 
+This tag is used to leave out any Class/Struct/Enum from generating JSONRPC file.
 
 ### Example
+
+[IBrowser.h](https://github.com/rdkcentral/ThunderInterfaces/blob/5fa166bd17c6b910696c6113c5520141bcdea07b/interfaces/IBrowser.h#L117) uses this tag to remove HeaderList function from JsonRPC file generation.
 
 [top](#table)
 
 <a name="event"></a>
 # @event
 ### Description
+
+This tag is used in JSONRPC file generation. This tag is used to mark a struct/class that will be called back as an notification by the framework.
+
 ### Example
+
+[IDolby.h](https://github.com/rdkcentral/ThunderInterfaces/blob/5fa166bd17c6b910696c6113c5520141bcdea07b/interfaces/IDolby.h#L53) Whenever the audio mode changes AudioModeChanged API will be called. 
 
 [top](#table)
 
 <a name="extended"></a>
 # @extended
 ### Description
+
+This tag is deprecated.
+By default, while creating the JSONRPC, if a method has a single POD paramenter, It's equivalent Json class is used.
+If a class is marked with this tag, such conversion will not take place. It will still create a separate Data class to access that parameter.
+
+???When to use???
+
 ### Example
+
+In [IVolumeControl.h](https://github.com/rdkcentral/ThunderInterfaces/blob/5fa166bd17c6b910696c6113c5520141bcdea07b/interfaces/IVolumeControl.h#L31) INotification structure is marked with this tag.
+The functions parameters for muted and volume will be implemented in expanded format meaning a JSON wrapper class will be created even if there is only one member present.
 
 [top](#table)
 
 <a name="iterator"></a>
 # @iterator
 ### Description
+
+This is a helper tag. This helps in generating helper functions to iterate through an array. 
+The helper functions are defined in IIteratorType.h. 
+The interfaces which needs iteration functionality should include that header using [@stubgen:include](#stubgen_include) tag.
+In Json Generator,it will help to convert the class to JsonArray.
+In Proxy generation, it will help in generating the helper function like Current, Next, Previous for iterating through the array.
+
+
 ### Example
+
+[IDeviceInfo.h](https://github.com/rdkcentral/ThunderInterfaces/blob/5fa166bd17c6b910696c6113c5520141bcdea07b/interfaces/IDeviceInfo.h#L24) uses @stubgen:include to insert the IIteratorType to that file.
+Which inturn used to iterate through iterators in function [AudioOutputs](https://github.com/rdkcentral/ThunderInterfaces/blob/5fa166bd17c6b910696c6113c5520141bcdea07b/interfaces/IDeviceInfo.h#L83), [VideoOutputs](https://github.com/rdkcentral/ThunderInterfaces/blob/5fa166bd17c6b910696c6113c5520141bcdea07b/interfaces/IDeviceInfo.h#L84), [Resolutions](https://github.com/rdkcentral/ThunderInterfaces/blob/5fa166bd17c6b910696c6113c5520141bcdea07b/interfaces/IDeviceInfo.h#L85)
 
 [top](#table)
 
 <a name="deprecated"></a>
 # @deprecated
 ### Description
+
+This tag is used to mark a Method, Property as deprecated in the generated document.
+
 ### Example
+
+When a method is marked with this tag, in the generated .md, it will be marked with the below Message 
+>This API is **deprecated** and may be removed in the future. It is no longer recommended for use in new implementations.
 
 [top](#table)
 
 <a name="obsolete"></a>
 # @obsolete
 ### Description
+
+This tag is used to mark a Method, Property as obolete in the generated document.
+
 ### Example
+
+When a method is marked with this tag, in the generated .md, it will be marked with the below Message 
+> This API is **obsolete**. It is no longer recommended for use in new implementations
 
 [top](#table)
 
 <a name="index"></a>
 # @index
 ### Description
+In some cases, clients are interested only in certain events. In such cases, we can use this tag.
+Index should be the first parameter in the function. 
+
+??? Not able to find an example ??? 
+
 ### Example
 
 [top](#table)
@@ -291,6 +338,9 @@ JHDRProperties.h
 <a name="listener"></a>
 # @listener
 ### Description
+
+??? Not able to find an example ???
+
 ### Example
 
 [top](#table)
@@ -298,34 +348,115 @@ JHDRProperties.h
 <a name="brief"></a>
 # @brief
 ### Description
+
+This is a short description about the function. This description will be appeneded to the method description in the JSONRPC generated file.
+
+??? From the code, it is understood that it can extract the example following the text e.g. but not able to find a working example???
+
 ### Example
+
+[IDolby.h](https://github.com/rdkcentral/ThunderInterfaces/blob/5fa166bd17c6b910696c6113c5520141bcdea07b/interfaces/IDolby.h#L65) mentions a brief descrption using this tag.
+JsonGenerator.py will create a file JDolbyOutput.h. In that file the method AtmosMetadata. It adds that description.
+
+```
+
+// Property: dolby_atmosmetadata - Atmos capabilities of Sink (r/o)
+
+    module.Register<void, Core::JSON::Boolean>(_T("dolby_atmosmetadata"),
+
+        [_destination](Core::JSON::Boolean& Result) -> uint32_t {
+
+            uint32_t _errorCode;
+
+            // read-only property get
+
+            bool result{};
+
+            _errorCode = _destination->AtmosMetadata(result);
+
+            if (_errorCode == Core::ERROR_NONE) {
+
+                Result = result;
+
+            }
+
+            return (_errorCode);
+
+        });
+
+```
 
 [top](#table)
 
 <a name="details"></a>
 # @details
 ### Description
-### Example
+Just like @brief starts a brief description, @details starts the detailed description. This tag will be used while creating markdown documents for the header.
+There it will be captured in the description section for the method. This description will not be added in the code generation. 
+It will be added only in the document generation.
 
 [top](#table)
 
 <a name="param"></a>
 # @param
 ### Description
+The syntax for this tag is @param <PARAMETER>. It is associated with a function/property.
+This tag adds the description about the specified parameter in the generated code and in the generated document.
+
 ### Example
+
+[IDolby.h](https://github.com/rdkcentral/ThunderInterfaces/blob/5fa166bd17c6b910696c6113c5520141bcdea07b/interfaces/IDolby.h#L76) add description about enable parameter using this tag.
 
 [top](#table)
 
 <a name="retval"></a>
 # @retval
 ### Description
+
+This tag is used in document creation.
+The syntax for this tag is @retval <ErrorCode>: <Description>. It is associated with function/property
+This tag adds description about each return codes specified in the generated markdown document.
+
 ### Example
+
+In [IVolumeControl.h](https://github.com/rdkcentral/ThunderInterfaces/blob/5fa166bd17c6b910696c6113c5520141bcdea07b/interfaces/IVolumeControl.h#L54), it uses this tag to add description about the returned error code.
 
 [top](#table)
 
 <a name="text"></a>
 # @text
 ### Description
+
+This tag is applicable to Enums, function names and function parameters. 
+When used with ENUMS, it will associate the Enum values to the given text in the JSON code.
+When used in function names like below, it will replace the actual function name with the text that is given.
+When used in function parameter like below, it will replace the parameter name with the text that is given in the tag.
+
 ### Example
+
+[IBrowser.h](https://github.com/rdkcentral/ThunderInterfaces/blob/5fa166bd17c6b910696c6113c5520141bcdea07b/interfaces/IBrowser.h#L61) uses this tag for ENUMS. The generated code for this header will map the text for these 
+enums as allowed and not as Allowed, blocked and not as Blocked. Without these tags the string equivalent of the enums will be first letter caps followed by all small. Now with this tag, we have changed it to all small.
+
+[top](#table)
+
+
+<a name="property"></a>
+# @property
+### Description
+
+We mark a method to be a property when we intented to simple get and set. It cannot have more than one parameter. 
+A method which does more than get and set should not be marked as property even if it is having a single parameter.
+A property is said to be write only if its parameter is const and there no ther method definition with non const is given for reading.
+A property is said to be read only if its parameter is non-const and there no ther method definition with const is given for setting.
+A property is said to be both if it has both const and non-const version present.
+
+### Example
+
+[IDolby.h](https://github.com/rdkcentral/ThunderInterfaces/blob/5fa166bd17c6b910696c6113c5520141bcdea07b/interfaces/IDolby.h#L64) is a read only property as it does not have a const version for setting the property.
+
+[IBrowser.h](https://github.com/rdkcentral/ThunderInterfaces/blob/5fa166bd17c6b910696c6113c5520141bcdea07b/interfaces/IBrowser.h#L140) is a write only property as it has only const version and not non const version is available.
+
+[IBrowser.h](https://github.com/rdkcentral/ThunderInterfaces/blob/5fa166bd17c6b910696c6113c5520141bcdea07b/interfaces/IBrowser.h#L100) is a read write property as it has both const and non const version defined.
+
 
 [top](#table)
