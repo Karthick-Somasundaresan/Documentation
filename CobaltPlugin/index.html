@@ -6,9 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         
-        <link rel="canonical" href="https://example.com/DisplayInfoAPI/">
+        <link rel="canonical" href="https://example.com/CobaltPlugin/">
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>DisplayInfoAPI - Interface Docs</title>
+        <title>CobaltPlugin - Interface Docs</title>
         <link href="../css/bootstrap.min.css" rel="stylesheet">
         <link href="../css/font-awesome.min.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -36,7 +36,7 @@
                             <li class="navitem">
                                 <a href=".." class="nav-link">Home</a>
                             </li>
-                            <li class="dropdown active">
+                            <li class="dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">API documentation <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
@@ -113,7 +113,7 @@
 </li>
                                     
 <li>
-    <a href="./" class="dropdown-item active">DisplayInfoAPI</a>
+    <a href="../DisplayInfoAPI/" class="dropdown-item">DisplayInfoAPI</a>
 </li>
                                     
 <li>
@@ -277,12 +277,12 @@
 </li>
                                 </ul>
                             </li>
-                            <li class="dropdown">
+                            <li class="dropdown active">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Plugin Documentation <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="../CobaltPlugin/" class="dropdown-item">CobaltPlugin</a>
+    <a href="./" class="dropdown-item active">CobaltPlugin</a>
 </li>
                                 </ul>
                             </li>
@@ -295,12 +295,12 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href="../DeviceInfoAPI/" class="nav-link">
+                                <a rel="prev" href="../WiFiControlAPI/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="../DisplayPropertiesAPI/" class="nav-link">
+                                <a rel="next" class="nav-link disabled">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -322,7 +322,7 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#display-info-api" class="nav-link">Display Info API</a>
+            <li class="nav-item" data-level="1"><a href="#cobalt-plugin" class="nav-link">Cobalt Plugin</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -353,9 +353,35 @@
               </ul>
             </li>
             
+            <li class="nav-item" data-level="1"><a href="#configuration" class="nav-link">Configuration</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#methods" class="nav-link">Methods</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#delete-method" class="nav-link">delete method</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
             <li class="nav-item" data-level="1"><a href="#properties" class="nav-link">Properties</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#displayinfo-property" class="nav-link">displayinfo property</a>
+            <li class="nav-item" data-level="2"><a href="#url-property" class="nav-link">url property</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#visibility-property" class="nav-link">visibility property</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#fps-property" class="nav-link">fps property</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#state-property" class="nav-link">state property</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -364,7 +390,15 @@
             
             <li class="nav-item" data-level="1"><a href="#notifications" class="nav-link">Notifications</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#updated-event" class="nav-link">updated event</a>
+            <li class="nav-item" data-level="2"><a href="#urlchange-event" class="nav-link">urlchange event</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#visibilitychange-event" class="nav-link">visibilitychange event</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#statechange-event" class="nav-link">statechange event</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -376,15 +410,17 @@
                     <div class="col-md-9" role="main">
 
 <!-- Generated automatically, DO NOT EDIT! -->
-<p><a name="head.Display_Info_API"></a></p>
-<h1 id="display-info-api">Display Info API</h1>
+<p><a name="head.Cobalt_Plugin"></a></p>
+<h1 id="cobalt-plugin">Cobalt Plugin</h1>
 <p><strong>Version: 1.0</strong></p>
 <p><strong>Status: :black_circle::white_circle::white_circle:</strong></p>
-<p>DisplayInfo interface for Thunder framework.</p>
+<p>Cobalt plugin for Thunder framework.</p>
 <h3 id="table-of-contents">Table of Contents</h3>
 <ul>
 <li><a href="#head.Introduction">Introduction</a></li>
 <li><a href="#head.Description">Description</a></li>
+<li><a href="#head.Configuration">Configuration</a></li>
+<li><a href="#head.Methods">Methods</a></li>
 <li><a href="#head.Properties">Properties</a></li>
 <li><a href="#head.Notifications">Notifications</a></li>
 </ul>
@@ -392,7 +428,7 @@
 <h1 id="introduction">Introduction</h1>
 <p><a name="head.Scope"></a></p>
 <h2 id="scope">Scope</h2>
-<p>This document describes purpose and functionality of the DisplayInfo interface. It includes detailed specification about its properties provided and notifications sent.</p>
+<p>This document describes purpose and functionality of the Cobalt plugin. It includes detailed specification about its configuration, methods and properties provided, as well as notifications sent.</p>
 <p><a name="head.Case_Sensitivity"></a></p>
 <h2 id="case-sensitivity">Case Sensitivity</h2>
 <p>All identifiers of the interfaces described in this document are case-sensitive. Thus, unless stated otherwise, all keywords, entities, properties, relations and actions should be treated as such.</p>
@@ -470,11 +506,198 @@
 </table>
 <p><a name="head.Description"></a></p>
 <h1 id="description">Description</h1>
-<p>DisplayInfo JSON-RPC interface.</p>
+<p>The Cobalt plugin provides web browsing functionality based on the Cobalt engine.</p>
+<p>The plugin is designed to be loaded and executed within the Thunder framework. For more information about the framework refer to [<a href="#ref.Thunder">Thunder</a>].</p>
+<p><a name="head.Configuration"></a></p>
+<h1 id="configuration">Configuration</h1>
+<p>The table below lists configuration options of the plugin.</p>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">callsign</td>
+<td align="left">string</td>
+<td align="left">Plugin instance name (default: <em>Cobalt</em>)</td>
+</tr>
+<tr>
+<td align="left">classname</td>
+<td align="left">string</td>
+<td align="left">Class name: <em>Cobalt</em></td>
+</tr>
+<tr>
+<td align="left">locator</td>
+<td align="left">string</td>
+<td align="left">Library name: <em>libWPEFrameworkCobalt.so</em></td>
+</tr>
+<tr>
+<td align="left">autostart</td>
+<td align="left">boolean</td>
+<td align="left">Determines if the plugin shall be started automatically along with the framework</td>
+</tr>
+<tr>
+<td align="left">configuration</td>
+<td align="left">object</td>
+<td align="left"><sup><em>(optional)</em></sup></td>
+</tr>
+<tr>
+<td align="left">configuration?.url</td>
+<td align="left">string</td>
+<td align="left"><sup><em>(optional)</em></sup> The URL that is loaded upon starting the browser</td>
+</tr>
+<tr>
+<td align="left">configuration?.width</td>
+<td align="left">number</td>
+<td align="left"><sup><em>(optional)</em></sup> The width in pixels of the surface to be used by the application</td>
+</tr>
+<tr>
+<td align="left">configuration?.height</td>
+<td align="left">number</td>
+<td align="left"><sup><em>(optional)</em></sup> The height in pixels of the surface to be used by the application</td>
+</tr>
+<tr>
+<td align="left">configuration?.repeatstart</td>
+<td align="left">number</td>
+<td align="left"><sup><em>(optional)</em></sup> The number of milliseconds a key should be pressed to start reapeating (set max to adhere to Thunder)</td>
+</tr>
+<tr>
+<td align="left">configuration?.repeatinterval</td>
+<td align="left">number</td>
+<td align="left"><sup><em>(optional)</em></sup> The number of milliseconds the repeated key is send after it started repeating (set max to adhere to Thunder)</td>
+</tr>
+<tr>
+<td align="left">configuration?.clientidentifier</td>
+<td align="left">string</td>
+<td align="left"><sup><em>(optional)</em></sup> An identifier, used during the surface creation as additional information</td>
+</tr>
+<tr>
+<td align="left">configuration?.operatorname</td>
+<td align="left">string</td>
+<td align="left"><sup><em>(optional)</em></sup> The name of the operator that owns the infrastructure on which this device is running</td>
+</tr>
+<tr>
+<td align="left">configuration?.language</td>
+<td align="left">string</td>
+<td align="left"><sup><em>(optional)</em></sup> The language to be used to for user interaction</td>
+</tr>
+<tr>
+<td align="left">configuration?.connection</td>
+<td align="left">string</td>
+<td align="left"><sup><em>(optional)</em></sup> The type of connection that is used for internet connectivity (must be one of the following: <em>cable</em>, <em>wireless</em>)</td>
+</tr>
+<tr>
+<td align="left">configuration?.playbackrates</td>
+<td align="left">boolean</td>
+<td align="left"><sup><em>(optional)</em></sup> If enabled, Cobalt supports different rates, otherwise, it supports only 0 and 1 (default: true)</td>
+</tr>
+</tbody>
+</table>
+<p><a name="head.Methods"></a></p>
+<h1 id="methods">Methods</h1>
+<p>The following methods are provided by the Cobalt plugin:</p>
+<p>Browser interface methods:</p>
+<table>
+<thead>
+<tr>
+<th align="left">Method</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="#method.delete">delete</a></td>
+<td align="left">Removes contents of a directory from the persistent storage</td>
+</tr>
+</tbody>
+</table>
+<p><a name="method.delete"></a></p>
+<h2 id="delete-method"><em>delete <sup>method</sup></em></h2>
+<p>Removes contents of a directory from the persistent storage.</p>
+<h3 id="description_1">Description</h3>
+<p>Use this method to recursively delete contents of a directory</p>
+<h3 id="parameters">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">params</td>
+<td align="left">object</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">params.path</td>
+<td align="left">string</td>
+<td align="left">Path to directory (within the persistent storage) to delete contents of</td>
+</tr>
+</tbody>
+</table>
+<h3 id="result">Result</h3>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">result</td>
+<td align="left">null</td>
+<td align="left">Always null</td>
+</tr>
+</tbody>
+</table>
+<h3 id="errors">Errors</h3>
+<table>
+<thead>
+<tr>
+<th align="left">Code</th>
+<th align="left">Message</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">22</td>
+<td align="left"><code>ERROR_UNKNOWN_KEY</code></td>
+<td align="left">The given path was incorrect</td>
+</tr>
+</tbody>
+</table>
+<h3 id="example">Example</h3>
+<h4 id="request">Request</h4>
+<pre><code class="language-json">{
+    &quot;jsonrpc&quot;: &quot;2.0&quot;,
+    &quot;id&quot;: 42,
+    &quot;method&quot;: &quot;Cobalt.1.delete&quot;,
+    &quot;params&quot;: {
+        &quot;path&quot;: &quot;.cache/wpe/disk-cache&quot;
+    }
+}
+</code></pre>
+<h4 id="response">Response</h4>
+<pre><code class="language-json">{
+    &quot;jsonrpc&quot;: &quot;2.0&quot;,
+    &quot;id&quot;: 42,
+    &quot;result&quot;: null
+}
+</code></pre>
 <p><a name="head.Properties"></a></p>
 <h1 id="properties">Properties</h1>
-<p>The following properties are provided by the DisplayInfo interface:</p>
-<p>DisplayInfo interface properties:</p>
+<p>The following properties are provided by the Cobalt plugin:</p>
+<p>Browser interface properties:</p>
 <table>
 <thead>
 <tr>
@@ -484,17 +707,38 @@
 </thead>
 <tbody>
 <tr>
-<td align="left"><a href="#property.displayinfo">displayinfo</a> <sup>RO</sup></td>
-<td align="left">Display general information</td>
+<td align="left"><a href="#property.url">url</a></td>
+<td align="left">URL loaded in the browser</td>
+</tr>
+<tr>
+<td align="left"><a href="#property.visibility">visibility</a></td>
+<td align="left">Current browser visibility</td>
+</tr>
+<tr>
+<td align="left"><a href="#property.fps">fps</a> <sup>RO</sup></td>
+<td align="left">Current number of frames per second the browser is rendering</td>
 </tr>
 </tbody>
 </table>
-<p><a name="property.displayinfo"></a></p>
-<h2 id="displayinfo-property"><em>displayinfo <sup>property</sup></em></h2>
-<p>Provides access to the display general information.</p>
-<blockquote>
-<p>This property is <strong>read-only</strong>.</p>
-</blockquote>
+<p>StateControl interface properties:</p>
+<table>
+<thead>
+<tr>
+<th align="left">Property</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="#property.state">state</a></td>
+<td align="left">Running state of the service</td>
+</tr>
+</tbody>
+</table>
+<p><a name="property.url"></a></p>
+<h2 id="url-property"><em>url <sup>property</sup></em></h2>
+<p>Provides access to the URL loaded in the browser.</p>
+<p>Also see: <a href="#event.urlchange">urlchange</a></p>
 <h3 id="value">Value</h3>
 <table>
 <thead>
@@ -507,80 +751,220 @@
 <tbody>
 <tr>
 <td align="left">(property)</td>
-<td align="left">object</td>
-<td align="left">Display general information</td>
-</tr>
-<tr>
-<td align="left">(property).totalgpuram</td>
-<td align="left">number</td>
-<td align="left">Total GPU DRAM memory (in bytes)</td>
-</tr>
-<tr>
-<td align="left">(property).freegpuram</td>
-<td align="left">number</td>
-<td align="left">Free GPU DRAM memory (in bytes)</td>
-</tr>
-<tr>
-<td align="left">(property).audiopassthrough</td>
-<td align="left">boolean</td>
-<td align="left">Audio Pass through is support for this device</td>
-</tr>
-<tr>
-<td align="left">(property).connected</td>
-<td align="left">boolean</td>
-<td align="left">HDMI display connection status</td>
-</tr>
-<tr>
-<td align="left">(property).width</td>
-<td align="left">number</td>
-<td align="left">Width of the connected HDMI display</td>
-</tr>
-<tr>
-<td align="left">(property).height</td>
-<td align="left">number</td>
-<td align="left">Height of the connected HDMI display</td>
-</tr>
-<tr>
-<td align="left">(property).hdcpprotection</td>
 <td align="left">string</td>
-<td align="left">HDCP Protection (must be one of the following: <em>Unencrypted</em>, <em>HDCP1x</em>, <em>HDCP2x</em>)</td>
-</tr>
-<tr>
-<td align="left">(property).hdrtype</td>
-<td align="left">string</td>
-<td align="left">HDR Type used (must be one of the following: <em>HDROff</em>, <em>HDR10</em>, <em>HDR10Plus</em>, <em>HDRDolbyVision</em>, <em>HDRTechnicolor</em>)</td>
+<td align="left">URL loaded in the browser</td>
 </tr>
 </tbody>
 </table>
-<h3 id="example">Example</h3>
+<h3 id="errors_1">Errors</h3>
+<table>
+<thead>
+<tr>
+<th align="left">Code</th>
+<th align="left">Message</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">15</td>
+<td align="left"><code>ERROR_INCORRECT_URL</code></td>
+<td align="left">Incorrect URL given</td>
+</tr>
+</tbody>
+</table>
+<h3 id="example_1">Example</h3>
 <h4 id="get-request">Get Request</h4>
 <pre><code class="language-json">{
     &quot;jsonrpc&quot;: &quot;2.0&quot;,
     &quot;id&quot;: 42,
-    &quot;method&quot;: &quot;DisplayInfo.1.displayinfo&quot;
+    &quot;method&quot;: &quot;Cobalt.1.url&quot;
 }
 </code></pre>
 <h4 id="get-response">Get Response</h4>
 <pre><code class="language-json">{
     &quot;jsonrpc&quot;: &quot;2.0&quot;,
     &quot;id&quot;: 42,
-    &quot;result&quot;: {
-        &quot;totalgpuram&quot;: 381681664,
-        &quot;freegpuram&quot;: 358612992,
-        &quot;audiopassthrough&quot;: false,
-        &quot;connected&quot;: true,
-        &quot;width&quot;: 1280,
-        &quot;height&quot;: 720,
-        &quot;hdcpprotection&quot;: &quot;HDCP1x&quot;,
-        &quot;hdrtype&quot;: &quot;HDROff&quot;
-    }
+    &quot;result&quot;: &quot;https://www.google.com&quot;
+}
+</code></pre>
+<h4 id="set-request">Set Request</h4>
+<pre><code class="language-json">{
+    &quot;jsonrpc&quot;: &quot;2.0&quot;,
+    &quot;id&quot;: 42,
+    &quot;method&quot;: &quot;Cobalt.1.url&quot;,
+    &quot;params&quot;: &quot;https://www.google.com&quot;
+}
+</code></pre>
+<h4 id="set-response">Set Response</h4>
+<pre><code class="language-json">{
+    &quot;jsonrpc&quot;: &quot;2.0&quot;,
+    &quot;id&quot;: 42,
+    &quot;result&quot;: &quot;null&quot;
+}
+</code></pre>
+<p><a name="property.visibility"></a></p>
+<h2 id="visibility-property"><em>visibility <sup>property</sup></em></h2>
+<p>Provides access to the current browser visibility.</p>
+<p>Also see: <a href="#event.visibilitychange">visibilitychange</a></p>
+<h3 id="value_1">Value</h3>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">(property)</td>
+<td align="left">string</td>
+<td align="left">Current browser visibility (must be one of the following: <em>visible</em>, <em>hidden</em>)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="errors_2">Errors</h3>
+<table>
+<thead>
+<tr>
+<th align="left">Code</th>
+<th align="left">Message</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">2</td>
+<td align="left"><code>ERROR_UNAVAILABLE</code></td>
+<td align="left">Returned when the operation is unavailable</td>
+</tr>
+</tbody>
+</table>
+<h3 id="example_2">Example</h3>
+<h4 id="get-request_1">Get Request</h4>
+<pre><code class="language-json">{
+    &quot;jsonrpc&quot;: &quot;2.0&quot;,
+    &quot;id&quot;: 42,
+    &quot;method&quot;: &quot;Cobalt.1.visibility&quot;
+}
+</code></pre>
+<h4 id="get-response_1">Get Response</h4>
+<pre><code class="language-json">{
+    &quot;jsonrpc&quot;: &quot;2.0&quot;,
+    &quot;id&quot;: 42,
+    &quot;result&quot;: &quot;visible&quot;
+}
+</code></pre>
+<h4 id="set-request_1">Set Request</h4>
+<pre><code class="language-json">{
+    &quot;jsonrpc&quot;: &quot;2.0&quot;,
+    &quot;id&quot;: 42,
+    &quot;method&quot;: &quot;Cobalt.1.visibility&quot;,
+    &quot;params&quot;: &quot;visible&quot;
+}
+</code></pre>
+<h4 id="set-response_1">Set Response</h4>
+<pre><code class="language-json">{
+    &quot;jsonrpc&quot;: &quot;2.0&quot;,
+    &quot;id&quot;: 42,
+    &quot;result&quot;: &quot;null&quot;
+}
+</code></pre>
+<p><a name="property.fps"></a></p>
+<h2 id="fps-property"><em>fps <sup>property</sup></em></h2>
+<p>Provides access to the current number of frames per second the browser is rendering.</p>
+<blockquote>
+<p>This property is <strong>read-only</strong>.</p>
+</blockquote>
+<h3 id="value_2">Value</h3>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">(property)</td>
+<td align="left">number</td>
+<td align="left">Current number of frames per second the browser is rendering</td>
+</tr>
+</tbody>
+</table>
+<h3 id="example_3">Example</h3>
+<h4 id="get-request_2">Get Request</h4>
+<pre><code class="language-json">{
+    &quot;jsonrpc&quot;: &quot;2.0&quot;,
+    &quot;id&quot;: 42,
+    &quot;method&quot;: &quot;Cobalt.1.fps&quot;
+}
+</code></pre>
+<h4 id="get-response_2">Get Response</h4>
+<pre><code class="language-json">{
+    &quot;jsonrpc&quot;: &quot;2.0&quot;,
+    &quot;id&quot;: 42,
+    &quot;result&quot;: 30
+}
+</code></pre>
+<p><a name="property.state"></a></p>
+<h2 id="state-property"><em>state <sup>property</sup></em></h2>
+<p>Provides access to the running state of the service.</p>
+<p>Also see: <a href="#event.statechange">statechange</a></p>
+<h3 id="value_3">Value</h3>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">(property)</td>
+<td align="left">string</td>
+<td align="left">Running state of the service (must be one of the following: <em>resumed</em>, <em>suspended</em>)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="example_4">Example</h3>
+<h4 id="get-request_3">Get Request</h4>
+<pre><code class="language-json">{
+    &quot;jsonrpc&quot;: &quot;2.0&quot;,
+    &quot;id&quot;: 42,
+    &quot;method&quot;: &quot;Cobalt.1.state&quot;
+}
+</code></pre>
+<h4 id="get-response_3">Get Response</h4>
+<pre><code class="language-json">{
+    &quot;jsonrpc&quot;: &quot;2.0&quot;,
+    &quot;id&quot;: 42,
+    &quot;result&quot;: &quot;resumed&quot;
+}
+</code></pre>
+<h4 id="set-request_2">Set Request</h4>
+<pre><code class="language-json">{
+    &quot;jsonrpc&quot;: &quot;2.0&quot;,
+    &quot;id&quot;: 42,
+    &quot;method&quot;: &quot;Cobalt.1.state&quot;,
+    &quot;params&quot;: &quot;resumed&quot;
+}
+</code></pre>
+<h4 id="set-response_2">Set Response</h4>
+<pre><code class="language-json">{
+    &quot;jsonrpc&quot;: &quot;2.0&quot;,
+    &quot;id&quot;: 42,
+    &quot;result&quot;: &quot;null&quot;
 }
 </code></pre>
 <p><a name="head.Notifications"></a></p>
 <h1 id="notifications">Notifications</h1>
 <p>Notifications are autonomous events, triggered by the internals of the implementation, and broadcasted via JSON-RPC to all registered observers. Refer to [<a href="#ref.Thunder">Thunder</a>] for information on how to register for a notification.</p>
-<p>The following events are provided by the DisplayInfo interface:</p>
-<p>DisplayInfo interface events:</p>
+<p>The following events are provided by the Cobalt plugin:</p>
+<p>Browser interface events:</p>
 <table>
 <thead>
 <tr>
@@ -590,22 +974,136 @@
 </thead>
 <tbody>
 <tr>
-<td align="left"><a href="#event.updated">updated</a></td>
-<td align="left">Notifies about a change/update in the connection</td>
+<td align="left"><a href="#event.urlchange">urlchange</a></td>
+<td align="left">Signals a URL change in the browser</td>
+</tr>
+<tr>
+<td align="left"><a href="#event.visibilitychange">visibilitychange</a></td>
+<td align="left">Signals a visibility change of the browser</td>
 </tr>
 </tbody>
 </table>
-<p><a name="event.updated"></a></p>
-<h2 id="updated-event"><em>updated <sup>event</sup></em></h2>
-<p>Notifies about a change/update in the connection.</p>
-<h3 id="description_1">Description</h3>
-<p>Register to this event to be notified about any change in the connection</p>
-<h3 id="parameters">Parameters</h3>
-<p>This event carries no parameters.</p>
-<h3 id="example_1">Example</h3>
+<p>StateControl interface events:</p>
+<table>
+<thead>
+<tr>
+<th align="left">Event</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="#event.statechange">statechange</a></td>
+<td align="left">Signals a state change of the service</td>
+</tr>
+</tbody>
+</table>
+<p><a name="event.urlchange"></a></p>
+<h2 id="urlchange-event"><em>urlchange <sup>event</sup></em></h2>
+<p>Signals a URL change in the browser.</p>
+<h3 id="parameters_1">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">params</td>
+<td align="left">object</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">params.url</td>
+<td align="left">string</td>
+<td align="left">The URL that has been loaded or requested</td>
+</tr>
+<tr>
+<td align="left">params.loaded</td>
+<td align="left">boolean</td>
+<td align="left">Determines if the URL has just been loaded (true) or if URL change has been requested (false)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="example_5">Example</h3>
 <pre><code class="language-json">{
     &quot;jsonrpc&quot;: &quot;2.0&quot;,
-    &quot;method&quot;: &quot;client.events.1.updated&quot;
+    &quot;method&quot;: &quot;client.events.1.urlchange&quot;,
+    &quot;params&quot;: {
+        &quot;url&quot;: &quot;https://www.google.com&quot;,
+        &quot;loaded&quot;: false
+    }
+}
+</code></pre>
+<p><a name="event.visibilitychange"></a></p>
+<h2 id="visibilitychange-event"><em>visibilitychange <sup>event</sup></em></h2>
+<p>Signals a visibility change of the browser.</p>
+<h3 id="parameters_2">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">params</td>
+<td align="left">object</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">params.hidden</td>
+<td align="left">boolean</td>
+<td align="left">Determines if the browser has been hidden (true) or made visible (false)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="example_6">Example</h3>
+<pre><code class="language-json">{
+    &quot;jsonrpc&quot;: &quot;2.0&quot;,
+    &quot;method&quot;: &quot;client.events.1.visibilitychange&quot;,
+    &quot;params&quot;: {
+        &quot;hidden&quot;: false
+    }
+}
+</code></pre>
+<p><a name="event.statechange"></a></p>
+<h2 id="statechange-event"><em>statechange <sup>event</sup></em></h2>
+<p>Signals a state change of the service.</p>
+<h3 id="parameters_3">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">params</td>
+<td align="left">object</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">params.suspended</td>
+<td align="left">boolean</td>
+<td align="left">Determines if the service has entered suspended state (true) or resumed state (false)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="example_7">Example</h3>
+<pre><code class="language-json">{
+    &quot;jsonrpc&quot;: &quot;2.0&quot;,
+    &quot;method&quot;: &quot;client.events.1.statechange&quot;,
+    &quot;params&quot;: {
+        &quot;suspended&quot;: false
+    }
 }
 </code></pre></div>
             </div>

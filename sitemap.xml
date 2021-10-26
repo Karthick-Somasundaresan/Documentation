@@ -56,6 +56,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://example.com/CobaltPlugin/</loc>
+         <lastmod>2021-10-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://example.com/CompositorAPI/</loc>
          <lastmod>2021-10-26</lastmod>
          <changefreq>daily</changefreq>
