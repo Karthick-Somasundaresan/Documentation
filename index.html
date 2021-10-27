@@ -1,528 +1,323 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="None">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="None">
+    
+    <link rel="canonical" href="https://karthick-somasundaresan.github.io/Documentation/">
+    <link rel="shortcut icon" href="./img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Documentation</title>
+    <link href="./css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="./css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="./css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="./js/jquery-3.2.1.min.js"></script>
+    <script src="./js/bootstrap-3.3.7.min.js"></script>
+    <script src="./js/highlight.pack.js"></script>
+    
+      <script src="./js/elasticlunr.min.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '.';
+      var is_top_frame = (window === window.parent);
         
-        <link rel="canonical" href="https://example.com/">
-        <link rel="shortcut icon" href="img/favicon.ico">
-        <title>Interface Docs</title>
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/font-awesome.min.css" rel="stylesheet">
-        <link href="css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+        var pageToc = [
+          {title: "Welcome to Documentation.", url: "#_top", children: [
+              {title: "Interface documentation", url: "#interface-documentation" },
+              {title: "WPEFramework-plugins documentation", url: "#wpeframework-plugins-documentation" },
+          ]},
+        ];
 
-        <script src="js/jquery-1.10.2.min.js" defer></script>
-        <script src="js/bootstrap.min.js" defer></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
-        <script>hljs.initHighlightingOnLoad();</script> 
-    </head>
+    </script>
+    <script src="./js/base.js"></script> 
+</head>
 
-    <body class="homepage">
-        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
-            <div class="container">
-                <a class="navbar-brand" href=".">Interface Docs</a>
-                <!-- Expander button -->
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
 
-                <!-- Expanded navigation -->
-                <div id="navbar-collapse" class="navbar-collapse collapse">
-                        <!-- Main navigation -->
-                        <ul class="nav navbar-nav">
-                            <li class="dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Interface doc <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    
-<li>
-    <a href="AVSControllerAPI/" class="dropdown-item">AVSControllerAPI</a>
-</li>
-                                    
-<li>
-    <a href="AmazonPrimeAPI/" class="dropdown-item">AmazonPrimeAPI</a>
-</li>
-                                    
-<li>
-    <a href="ApplicationAPI/" class="dropdown-item">ApplicationAPI</a>
-</li>
-                                    
-<li>
-    <a href="BluetoothControlAPI/" class="dropdown-item">BluetoothControlAPI</a>
-</li>
-                                    
-<li>
-    <a href="BluetoothRemoteControlAPI/" class="dropdown-item">BluetoothRemoteControlAPI</a>
-</li>
-                                    
-<li>
-    <a href="BrowserAPI/" class="dropdown-item">BrowserAPI</a>
-</li>
-                                    
-<li>
-    <a href="BrowserResourcesAPI/" class="dropdown-item">BrowserResourcesAPI</a>
-</li>
-                                    
-<li>
-    <a href="BrowserSecurityAPI/" class="dropdown-item">BrowserSecurityAPI</a>
-</li>
-                                    
-<li>
-    <a href="ButlerAPI/" class="dropdown-item">ButlerAPI</a>
-</li>
-                                    
-<li>
-    <a href="CobaltAPI/" class="dropdown-item">CobaltAPI</a>
-</li>
-                                    
-<li>
-    <a href="CompositorAPI/" class="dropdown-item">CompositorAPI</a>
-</li>
-                                    
-<li>
-    <a href="ConnectionPropertiesAPI/" class="dropdown-item">ConnectionPropertiesAPI</a>
-</li>
-                                    
-<li>
-    <a href="CustomerCareOperationsAPI/" class="dropdown-item">CustomerCareOperationsAPI</a>
-</li>
-                                    
-<li>
-    <a href="DHCPServerAPI/" class="dropdown-item">DHCPServerAPI</a>
-</li>
-                                    
-<li>
-    <a href="DIALServerAPI/" class="dropdown-item">DIALServerAPI</a>
-</li>
-                                    
-<li>
-    <a href="DTVAPI/" class="dropdown-item">DTVAPI</a>
-</li>
-                                    
-<li>
-    <a href="DeviceIdentificationAPI/" class="dropdown-item">DeviceIdentificationAPI</a>
-</li>
-                                    
-<li>
-    <a href="DeviceInfoAPI/" class="dropdown-item">DeviceInfoAPI</a>
-</li>
-                                    
-<li>
-    <a href="DisplayInfoAPI/" class="dropdown-item">DisplayInfoAPI</a>
-</li>
-                                    
-<li>
-    <a href="DisplayPropertiesAPI/" class="dropdown-item">DisplayPropertiesAPI</a>
-</li>
-                                    
-<li>
-    <a href="FirmwareControlAPI/" class="dropdown-item">FirmwareControlAPI</a>
-</li>
-                                    
-<li>
-    <a href="GraphicsPropertiesAPI/" class="dropdown-item">GraphicsPropertiesAPI</a>
-</li>
-                                    
-<li>
-    <a href="HDRPropertiesAPI/" class="dropdown-item">HDRPropertiesAPI</a>
-</li>
-                                    
-<li>
-    <a href="IOConnectorAPI/" class="dropdown-item">IOConnectorAPI</a>
-</li>
-                                    
-<li>
-    <a href="IOControlAPI/" class="dropdown-item">IOControlAPI</a>
-</li>
-                                    
-<li>
-    <a href="InputSwitchAPI/" class="dropdown-item">InputSwitchAPI</a>
-</li>
-                                    
-<li>
-    <a href="LanguageTagAPI/" class="dropdown-item">LanguageTagAPI</a>
-</li>
-                                    
-<li>
-    <a href="LocationSyncAPI/" class="dropdown-item">LocationSyncAPI</a>
-</li>
-                                    
-<li>
-    <a href="MessengerAPI/" class="dropdown-item">MessengerAPI</a>
-</li>
-                                    
-<li>
-    <a href="MonitorAPI/" class="dropdown-item">MonitorAPI</a>
-</li>
-                                    
-<li>
-    <a href="NetflixAPI/" class="dropdown-item">NetflixAPI</a>
-</li>
-                                    
-<li>
-    <a href="NetworkControlAPI/" class="dropdown-item">NetworkControlAPI</a>
-</li>
-                                    
-<li>
-    <a href="NetworkToolsAPI/" class="dropdown-item">NetworkToolsAPI</a>
-</li>
-                                    
-<li>
-    <a href="OpenCDMiAPI/" class="dropdown-item">OpenCDMiAPI</a>
-</li>
-                                    
-<li>
-    <a href="OutputAPI/" class="dropdown-item">OutputAPI</a>
-</li>
-                                    
-<li>
-    <a href="PackagerAPI/" class="dropdown-item">PackagerAPI</a>
-</li>
-                                    
-<li>
-    <a href="PerformanceMonitorAPI/" class="dropdown-item">PerformanceMonitorAPI</a>
-</li>
-                                    
-<li>
-    <a href="PlayerInfoAPI/" class="dropdown-item">PlayerInfoAPI</a>
-</li>
-                                    
-<li>
-    <a href="PlayerPropertiesAPI/" class="dropdown-item">PlayerPropertiesAPI</a>
-</li>
-                                    
-<li>
-    <a href="PowerAPI/" class="dropdown-item">PowerAPI</a>
-</li>
-                                    
-<li>
-    <a href="ProcessContainers/" class="dropdown-item">ProcessContainers</a>
-</li>
-                                    
-<li>
-    <a href="ProvisioningAPI/" class="dropdown-item">ProvisioningAPI</a>
-</li>
-                                    
-<li>
-    <a href="RemoteControlAPI/" class="dropdown-item">RemoteControlAPI</a>
-</li>
-                                    
-<li>
-    <a href="SecureShellServerAPI/" class="dropdown-item">SecureShellServerAPI</a>
-</li>
-                                    
-<li>
-    <a href="SecurityAgentAPI/" class="dropdown-item">SecurityAgentAPI</a>
-</li>
-                                    
-<li>
-    <a href="SparkAPI/" class="dropdown-item">SparkAPI</a>
-</li>
-                                    
-<li>
-    <a href="StateControlAPI/" class="dropdown-item">StateControlAPI</a>
-</li>
-                                    
-<li>
-    <a href="StreamerAPI/" class="dropdown-item">StreamerAPI</a>
-</li>
-                                    
-<li>
-    <a href="SubsystemControlAPI/" class="dropdown-item">SubsystemControlAPI</a>
-</li>
-                                    
-<li>
-    <a href="SystemCommandsAPI/" class="dropdown-item">SystemCommandsAPI</a>
-</li>
-                                    
-<li>
-    <a href="TestControllerAPI/" class="dropdown-item">TestControllerAPI</a>
-</li>
-                                    
-<li>
-    <a href="TestUtilityAPI/" class="dropdown-item">TestUtilityAPI</a>
-</li>
-                                    
-<li>
-    <a href="TestUtilityPlugin/" class="dropdown-item">TestUtilityPlugin</a>
-</li>
-                                    
-<li>
-    <a href="TimeSyncAPI/" class="dropdown-item">TimeSyncAPI</a>
-</li>
-                                    
-<li>
-    <a href="TraceControlAPI/" class="dropdown-item">TraceControlAPI</a>
-</li>
-                                    
-<li>
-    <a href="VolumeControlAPI/" class="dropdown-item">VolumeControlAPI</a>
-</li>
-                                    
-<li>
-    <a href="WebBrowserAPI/" class="dropdown-item">WebBrowserAPI</a>
-</li>
-                                    
-<li>
-    <a href="WebKitBrowserAPI/" class="dropdown-item">WebKitBrowserAPI</a>
-</li>
-                                    
-<li>
-    <a href="WiFiControlAPI/" class="dropdown-item">WiFiControlAPI</a>
-</li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Thunder Plugins doc <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    
-<li>
-    <a href="BluetoothControlPlugin/" class="dropdown-item">BluetoothControlPlugin</a>
-</li>
-                                    
-<li>
-    <a href="BluetoothRemoteControlPlugin/" class="dropdown-item">BluetoothRemoteControlPlugin</a>
-</li>
-                                    
-<li>
-    <a href="CobaltPlugin/" class="dropdown-item">CobaltPlugin</a>
-</li>
-                                    
-<li>
-    <a href="CommanderPlugin/" class="dropdown-item">CommanderPlugin</a>
-</li>
-                                    
-<li>
-    <a href="CompositorPlugin/" class="dropdown-item">CompositorPlugin</a>
-</li>
-                                    
-<li>
-    <a href="DHCPServerPlugin/" class="dropdown-item">DHCPServerPlugin</a>
-</li>
-                                    
-<li>
-    <a href="DIALServerPlugin/" class="dropdown-item">DIALServerPlugin</a>
-</li>
-                                    
-<li>
-    <a href="DTVPlugin/" class="dropdown-item">DTVPlugin</a>
-</li>
-                                    
-<li>
-    <a href="DictionaryPlugin/" class="dropdown-item">DictionaryPlugin</a>
-</li>
-                                    
-<li>
-    <a href="DisplayInfoPlugin/" class="dropdown-item">DisplayInfoPlugin</a>
-</li>
-                                    
-<li>
-    <a href="FileTransferPlugin/" class="dropdown-item">FileTransferPlugin</a>
-</li>
-                                    
-<li>
-    <a href="FirmwareControlPlugin/" class="dropdown-item">FirmwareControlPlugin</a>
-</li>
-                                    
-<li>
-    <a href="IOConnectorPlugin/" class="dropdown-item">IOConnectorPlugin</a>
-</li>
-                                    
-<li>
-    <a href="NetworkControlPlugin/" class="dropdown-item">NetworkControlPlugin</a>
-</li>
-                                    
-<li>
-    <a href="PerformanceMonitorPlugin/" class="dropdown-item">PerformanceMonitorPlugin</a>
-</li>
-                                    
-<li>
-    <a href="PlayerInfoPlugin/" class="dropdown-item">PlayerInfoPlugin</a>
-</li>
-                                    
-<li>
-    <a href="PowerPlugin/" class="dropdown-item">PowerPlugin</a>
-</li>
-                                    
-<li>
-    <a href="ProcessMonitorPlugin/" class="dropdown-item">ProcessMonitorPlugin</a>
-</li>
-                                    
-<li>
-    <a href="RemoteControlPlugin/" class="dropdown-item">RemoteControlPlugin</a>
-</li>
-                                    
-<li>
-    <a href="ResourceMonitorPlugin/" class="dropdown-item">ResourceMonitorPlugin</a>
-</li>
-                                    
-<li>
-    <a href="SparkPlugin/" class="dropdown-item">SparkPlugin</a>
-</li>
-                                    
-<li>
-    <a href="StreamerPlugin/" class="dropdown-item">StreamerPlugin</a>
-</li>
-                                    
-<li>
-    <a href="SyslogExportPlugin/" class="dropdown-item">SyslogExportPlugin</a>
-</li>
-                                    
-<li>
-    <a href="SystemCommandsPlugin/" class="dropdown-item">SystemCommandsPlugin</a>
-</li>
-                                    
-<li>
-    <a href="TestUtilityPlugin/" class="dropdown-item">TestUtilityPlugin</a>
-</li>
-                                    
-<li>
-    <a href="TimeSyncPlugin/" class="dropdown-item">TimeSyncPlugin</a>
-</li>
-                                    
-<li>
-    <a href="VolumeControlPlugin/" class="dropdown-item">VolumeControlPlugin</a>
-</li>
-                                    
-<li>
-    <a href="WebPAPlugin/" class="dropdown-item">WebPAPlugin</a>
-</li>
-                                    
-<li>
-    <a href="WifiControlPlugin/" class="dropdown-item">WifiControlPlugin</a>
-</li>
-                                </ul>
-                            </li>
-                        </ul>
+<nav class="navbar wm-page-top-frame">
+  <div class="container-fluid wm-top-container">
+    
+    <div class="wm-top-tool pull-right wm-vcenter">
+      <form class="dropdown wm-vcentered" id="wm-search-form" action="./search.html">
+        
+        <button id="wm-search-show" class="btn btn-sm btn-default" type="submit"
+          ><i class="fa fa-search" aria-hidden="true"></i></button>
 
-                    <ul class="nav navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
-                                <i class="fa fa-search"></i> Search
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+        <div class="input-group input-group-sm wm-top-search">
+          <input type="text" name="q" class="form-control" id="mkdocs-search-query" placeholder="Search" autocomplete="off">
+          <span class="input-group-btn" role="search">
+            
+            <button class="btn btn-default dropdown-toggle collapse" data-toggle="dropdown" type="button"><span class="caret"></span></button>
+            <ul id="mkdocs-search-results" class="dropdown-menu dropdown-menu-right"></ul>
+            <button id="wm-search-go" class="btn btn-default" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+          </span>
         </div>
-
-        <div class="container">
-            <div class="row">
-                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
-    <div class="navbar-header">
-        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
-            <span class="fa fa-angle-down"></span>
-        </button>
+      </form>
     </div>
 
     
-    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
-        <ul class="nav flex-column">
-            
-            <li class="nav-item" data-level="1"><a href="#welcome-to-documentation" class="nav-link">Welcome to Documentation.</a>
-              <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#interface-documentation" class="nav-link">Interface documentation</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#wpeframework-plugins-documentation" class="nav-link">WPEFramework-plugins documentation</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-              </ul>
-            </li>
-        </ul>
+    <div class="wm-top-tool wm-vcenter pull-right wm-small-left">
+      <button id="wm-toc-button" type="button" class="btn btn-sm btn-default wm-vcentered"><i class="fa fa-th-list" aria-hidden="true"></i></button>
     </div>
-</div></div>
-                    <div class="col-md-9" role="main">
 
-<h1 id="welcome-to-documentation">Welcome to Documentation.</h1>
+    
+    
+
+    
+    <a href="" class="wm-top-brand wm-top-link wm-vcenter">
+      
+      <div class="wm-top-title">
+        Documentation<br>
+        
+      </div>
+    </a>
+  </div>
+</nav>
+
+  <div id="main-content" class="wm-page-top-frame">
+    
+<nav class="wm-toc-pane">
+  
+  <ul class="wm-toctree">
+        <li class="wm-toc-li wm-toc-lev1 wm-toc-opener"><span class="wm-toc-text">Interface doc</span>
+</li>
+<li class="wm-toc-li-nested collapse">
+  <ul class="wm-toctree">
+      <li class="wm-toc-li wm-toc-lev2 "><a href="AVSControllerAPI/" class="wm-article-link wm-toc-text">AVSControllerAPI</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="AmazonPrimeAPI/" class="wm-article-link wm-toc-text">AmazonPrimeAPI</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="ApplicationAPI/" class="wm-article-link wm-toc-text">ApplicationAPI</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="BluetoothControlAPI/" class="wm-article-link wm-toc-text">BluetoothControlAPI</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="BluetoothRemoteControlAPI/" class="wm-article-link wm-toc-text">BluetoothRemoteControlAPI</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="BrowserAPI/" class="wm-article-link wm-toc-text">BrowserAPI</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="BrowserResourcesAPI/" class="wm-article-link wm-toc-text">BrowserResourcesAPI</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="BrowserSecurityAPI/" class="wm-article-link wm-toc-text">BrowserSecurityAPI</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="ButlerAPI/" class="wm-article-link wm-toc-text">ButlerAPI</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="CobaltAPI/" class="wm-article-link wm-toc-text">CobaltAPI</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="CompositorAPI/" class="wm-article-link wm-toc-text">CompositorAPI</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="ConnectionPropertiesAPI/" class="wm-article-link wm-toc-text">ConnectionPropertiesAPI</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="CustomerCareOperationsAPI/" class="wm-article-link wm-toc-text">CustomerCareOperationsAPI</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="DHCPServerAPI/" class="wm-article-link wm-toc-text">DHCPServerAPI</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="DIALServerAPI/" class="wm-article-link wm-toc-text">DIALServerAPI</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="DTVAPI/" class="wm-article-link wm-toc-text">DTVAPI</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="DeviceIdentificationAPI/" class="wm-article-link wm-toc-text">DeviceIdentificationAPI</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="DeviceInfoAPI/" class="wm-article-link wm-toc-text">DeviceInfoAPI</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="DisplayInfoAPI/" class="wm-article-link wm-toc-text">DisplayInfoAPI</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="DisplayPropertiesAPI/" class="wm-article-link wm-toc-text">DisplayPropertiesAPI</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="FirmwareControlAPI/" class="wm-article-link wm-toc-text">FirmwareControlAPI</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="GraphicsPropertiesAPI/" class="wm-article-link wm-toc-text">GraphicsPropertiesAPI</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="HDRPropertiesAPI/" class="wm-article-link wm-toc-text">HDRPropertiesAPI</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="IOConnectorAPI/" class="wm-article-link wm-toc-text">IOConnectorAPI</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="IOControlAPI/" class="wm-article-link wm-toc-text">IOControlAPI</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="InputSwitchAPI/" class="wm-article-link wm-toc-text">InputSwitchAPI</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="LanguageTagAPI/" class="wm-article-link wm-toc-text">LanguageTagAPI</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="LocationSyncAPI/" class="wm-article-link wm-toc-text">LocationSyncAPI</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="MessengerAPI/" class="wm-article-link wm-toc-text">MessengerAPI</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="MonitorAPI/" class="wm-article-link wm-toc-text">MonitorAPI</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="NetflixAPI/" class="wm-article-link wm-toc-text">NetflixAPI</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="NetworkControlAPI/" class="wm-article-link wm-toc-text">NetworkControlAPI</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="NetworkToolsAPI/" class="wm-article-link wm-toc-text">NetworkToolsAPI</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="OpenCDMiAPI/" class="wm-article-link wm-toc-text">OpenCDMiAPI</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="OutputAPI/" class="wm-article-link wm-toc-text">OutputAPI</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="PackagerAPI/" class="wm-article-link wm-toc-text">PackagerAPI</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="PerformanceMonitorAPI/" class="wm-article-link wm-toc-text">PerformanceMonitorAPI</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="PlayerInfoAPI/" class="wm-article-link wm-toc-text">PlayerInfoAPI</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="PlayerPropertiesAPI/" class="wm-article-link wm-toc-text">PlayerPropertiesAPI</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="PowerAPI/" class="wm-article-link wm-toc-text">PowerAPI</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="ProcessContainers/" class="wm-article-link wm-toc-text">ProcessContainers</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="ProvisioningAPI/" class="wm-article-link wm-toc-text">ProvisioningAPI</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="RemoteControlAPI/" class="wm-article-link wm-toc-text">RemoteControlAPI</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="SecureShellServerAPI/" class="wm-article-link wm-toc-text">SecureShellServerAPI</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="SecurityAgentAPI/" class="wm-article-link wm-toc-text">SecurityAgentAPI</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="SparkAPI/" class="wm-article-link wm-toc-text">SparkAPI</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="StateControlAPI/" class="wm-article-link wm-toc-text">StateControlAPI</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="StreamerAPI/" class="wm-article-link wm-toc-text">StreamerAPI</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="SubsystemControlAPI/" class="wm-article-link wm-toc-text">SubsystemControlAPI</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="SystemCommandsAPI/" class="wm-article-link wm-toc-text">SystemCommandsAPI</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="TestControllerAPI/" class="wm-article-link wm-toc-text">TestControllerAPI</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="TestUtilityAPI/" class="wm-article-link wm-toc-text">TestUtilityAPI</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="TestUtilityPlugin/" class="wm-article-link wm-toc-text">TestUtilityPlugin</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="TimeSyncAPI/" class="wm-article-link wm-toc-text">TimeSyncAPI</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="TraceControlAPI/" class="wm-article-link wm-toc-text">TraceControlAPI</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="VolumeControlAPI/" class="wm-article-link wm-toc-text">VolumeControlAPI</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="WebBrowserAPI/" class="wm-article-link wm-toc-text">WebBrowserAPI</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="WebKitBrowserAPI/" class="wm-article-link wm-toc-text">WebKitBrowserAPI</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="WiFiControlAPI/" class="wm-article-link wm-toc-text">WiFiControlAPI</a>
+</li>
+  </ul>
+</li>
+
+        <li class="wm-toc-li wm-toc-lev1 wm-toc-opener"><span class="wm-toc-text">Plugins doc</span>
+</li>
+<li class="wm-toc-li-nested collapse">
+  <ul class="wm-toctree">
+      <li class="wm-toc-li wm-toc-lev2 "><a href="BluetoothControlPlugin/" class="wm-article-link wm-toc-text">BluetoothControlPlugin</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="BluetoothRemoteControlPlugin/" class="wm-article-link wm-toc-text">BluetoothRemoteControlPlugin</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="CobaltPlugin/" class="wm-article-link wm-toc-text">CobaltPlugin</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="CommanderPlugin/" class="wm-article-link wm-toc-text">CommanderPlugin</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="CompositorPlugin/" class="wm-article-link wm-toc-text">CompositorPlugin</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="DHCPServerPlugin/" class="wm-article-link wm-toc-text">DHCPServerPlugin</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="DIALServerPlugin/" class="wm-article-link wm-toc-text">DIALServerPlugin</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="DTVPlugin/" class="wm-article-link wm-toc-text">DTVPlugin</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="DictionaryPlugin/" class="wm-article-link wm-toc-text">DictionaryPlugin</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="DisplayInfoPlugin/" class="wm-article-link wm-toc-text">DisplayInfoPlugin</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="FileTransferPlugin/" class="wm-article-link wm-toc-text">FileTransferPlugin</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="FirmwareControlPlugin/" class="wm-article-link wm-toc-text">FirmwareControlPlugin</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="IOConnectorPlugin/" class="wm-article-link wm-toc-text">IOConnectorPlugin</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="NetworkControlPlugin/" class="wm-article-link wm-toc-text">NetworkControlPlugin</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="PerformanceMonitorPlugin/" class="wm-article-link wm-toc-text">PerformanceMonitorPlugin</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="PlayerInfoPlugin/" class="wm-article-link wm-toc-text">PlayerInfoPlugin</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="PowerPlugin/" class="wm-article-link wm-toc-text">PowerPlugin</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="ProcessMonitorPlugin/" class="wm-article-link wm-toc-text">ProcessMonitorPlugin</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="RemoteControlPlugin/" class="wm-article-link wm-toc-text">RemoteControlPlugin</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="ResourceMonitorPlugin/" class="wm-article-link wm-toc-text">ResourceMonitorPlugin</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="SparkPlugin/" class="wm-article-link wm-toc-text">SparkPlugin</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="StreamerPlugin/" class="wm-article-link wm-toc-text">StreamerPlugin</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="SyslogExportPlugin/" class="wm-article-link wm-toc-text">SyslogExportPlugin</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="SystemCommandsPlugin/" class="wm-article-link wm-toc-text">SystemCommandsPlugin</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="TestUtilityPlugin/" class="wm-article-link wm-toc-text">TestUtilityPlugin</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="TimeSyncPlugin/" class="wm-article-link wm-toc-text">TimeSyncPlugin</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="VolumeControlPlugin/" class="wm-article-link wm-toc-text">VolumeControlPlugin</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="WebPAPlugin/" class="wm-article-link wm-toc-text">WebPAPlugin</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="WifiControlPlugin/" class="wm-article-link wm-toc-text">WifiControlPlugin</a>
+</li>
+  </ul>
+</li>
+
+  </ul>
+</nav>
+
+    <div class="wm-content-pane">
+      <iframe class="wm-article" name="article"></iframe>
+    </div>
+  </div>
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+
+    <h1 id="welcome-to-documentation">Welcome to Documentation.</h1>
 <p>These documentation are automatically created using mkdocs</p>
 <h2 id="interface-documentation">Interface documentation</h2>
 <p>This section contains the documentation created from interfaces defined in <a href="https://github.com/rdkcentral/ThunderInterfaces">ThunderInterfaces</a></p>
 <h2 id="wpeframework-plugins-documentation">WPEFramework-plugins documentation</h2>
-<p>This section contains the documentation created from plugins defined in <a href="https://github.com/rdkcentral/ThunderNanoServices">ThunderNanoServices</a></p></div>
-            </div>
-        </div>
+<p>This section contains the documentation created from plugins defined in <a href="https://github.com/rdkcentral/ThunderNanoServices">ThunderNanoServices</a></p>
 
-        <footer class="col-md-12">
-            <hr>
-            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
-        </footer>
-        <script>
-            var base_url = ".",
-                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
-        </script>
-        <script src="js/base.js" defer></script>
-        <script src="search/main.js" defer></script>
+  <br>
+    
 
-        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" id="searchModalLabel">Search</h4>
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-            </div>
-            <div class="modal-body">
-                <p>From here you can search these documents. Enter your search terms below.</p>
-                <form>
-                    <div class="form-group">
-                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
-                    </div>
-                </form>
-                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
-            </div>
-            <div class="modal-footer">
-            </div>
-        </div>
-    </div>
-</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-            </div>
-            <div class="modal-body">
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th style="width: 20%;">Keys</th>
-                    <th>Action</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td class="help shortcut"><kbd>?</kbd></td>
-                    <td>Open this help</td>
-                  </tr>
-                  <tr>
-                    <td class="next shortcut"><kbd>n</kbd></td>
-                    <td>Next page</td>
-                  </tr>
-                  <tr>
-                    <td class="prev shortcut"><kbd>p</kbd></td>
-                    <td>Previous page</td>
-                  </tr>
-                  <tr>
-                    <td class="search shortcut"><kbd>s</kbd></td>
-                    <td>Search</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="modal-footer">
-            </div>
-        </div>
-    </div>
+    <br>
 </div>
 
-    </body>
-</html>
+<footer class="container-fluid wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
 
+</body>
+</html>
 <!--
 MkDocs version : 1.2.3
-Build Date UTC : 2021-10-27 06:26:24.562020+00:00
+Build Date UTC : 2021-10-27 06:52:09.146112+00:00
 -->

@@ -1,555 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <link rel="canonical" href="https://karthick-somasundaresan.github.io/Documentation/DTVAPI/">
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>DTVAPI - Documentation</title>
+    <link href="../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '..';
+      var is_top_frame = false;
         
-        
-        <link rel="canonical" href="https://example.com/DTVAPI/">
-        <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>DTVAPI - Interface Docs</title>
-        <link href="../css/bootstrap.min.css" rel="stylesheet">
-        <link href="../css/font-awesome.min.css" rel="stylesheet">
-        <link href="../css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+        var pageToc = [
+          {title: "DTV API", url: "#_top", children: [
+              {title: "Table of Contents", url: "#table-of-contents" },
+          ]},
+          {title: "Introduction", url: "#introduction", children: [
+              {title: "Scope", url: "#scope" },
+              {title: "Case Sensitivity", url: "#case-sensitivity" },
+              {title: "Acronyms, Abbreviations and Terms", url: "#acronyms-abbreviations-and-terms" },
+              {title: "References", url: "#references" },
+          ]},
+          {title: "Description", url: "#description", children: [
+          ]},
+          {title: "Methods", url: "#methods", children: [
+              {title: "addLnb method", url: "#addlnb-method" },
+              {title: "addSatellite method", url: "#addsatellite-method" },
+              {title: "startServiceSearch method", url: "#startservicesearch-method" },
+              {title: "finishServiceSearch method", url: "#finishservicesearch-method" },
+              {title: "startPlaying method", url: "#startplaying-method" },
+              {title: "stopPlaying method", url: "#stopplaying-method" },
+          ]},
+          {title: "Properties", url: "#properties", children: [
+              {title: "numberOfCountries property", url: "#numberofcountries-property" },
+              {title: "countryList property", url: "#countrylist-property" },
+              {title: "country property", url: "#country-property" },
+              {title: "lnbList property", url: "#lnblist-property" },
+              {title: "satelliteList property", url: "#satellitelist-property" },
+              {title: "numberOfServices property", url: "#numberofservices-property" },
+              {title: "serviceList property", url: "#servicelist-property" },
+              {title: "nowNextEvents property", url: "#nownextevents-property" },
+              {title: "scheduleEvents property", url: "#scheduleevents-property" },
+              {title: "status property", url: "#status-property" },
+          ]},
+          {title: "Notifications", url: "#notifications", children: [
+              {title: "searchstatus event", url: "#searchstatus-event" },
+          ]},
+        ];
 
-        <script src="../js/jquery-1.10.2.min.js" defer></script>
-        <script src="../js/bootstrap.min.js" defer></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
-        <script>hljs.initHighlightingOnLoad();</script> 
-    </head>
+    </script>
+    <script src="../js/base.js"></script> 
+</head>
 
-    <body>
-        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
-            <div class="container">
-                <a class="navbar-brand" href="..">Interface Docs</a>
-                <!-- Expander button -->
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
 
-                <!-- Expanded navigation -->
-                <div id="navbar-collapse" class="navbar-collapse collapse">
-                        <!-- Main navigation -->
-                        <ul class="nav navbar-nav">
-                            <li class="dropdown active">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Interface doc <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    
-<li>
-    <a href="../AVSControllerAPI/" class="dropdown-item">AVSControllerAPI</a>
-</li>
-                                    
-<li>
-    <a href="../AmazonPrimeAPI/" class="dropdown-item">AmazonPrimeAPI</a>
-</li>
-                                    
-<li>
-    <a href="../ApplicationAPI/" class="dropdown-item">ApplicationAPI</a>
-</li>
-                                    
-<li>
-    <a href="../BluetoothControlAPI/" class="dropdown-item">BluetoothControlAPI</a>
-</li>
-                                    
-<li>
-    <a href="../BluetoothRemoteControlAPI/" class="dropdown-item">BluetoothRemoteControlAPI</a>
-</li>
-                                    
-<li>
-    <a href="../BrowserAPI/" class="dropdown-item">BrowserAPI</a>
-</li>
-                                    
-<li>
-    <a href="../BrowserResourcesAPI/" class="dropdown-item">BrowserResourcesAPI</a>
-</li>
-                                    
-<li>
-    <a href="../BrowserSecurityAPI/" class="dropdown-item">BrowserSecurityAPI</a>
-</li>
-                                    
-<li>
-    <a href="../ButlerAPI/" class="dropdown-item">ButlerAPI</a>
-</li>
-                                    
-<li>
-    <a href="../CobaltAPI/" class="dropdown-item">CobaltAPI</a>
-</li>
-                                    
-<li>
-    <a href="../CompositorAPI/" class="dropdown-item">CompositorAPI</a>
-</li>
-                                    
-<li>
-    <a href="../ConnectionPropertiesAPI/" class="dropdown-item">ConnectionPropertiesAPI</a>
-</li>
-                                    
-<li>
-    <a href="../CustomerCareOperationsAPI/" class="dropdown-item">CustomerCareOperationsAPI</a>
-</li>
-                                    
-<li>
-    <a href="../DHCPServerAPI/" class="dropdown-item">DHCPServerAPI</a>
-</li>
-                                    
-<li>
-    <a href="../DIALServerAPI/" class="dropdown-item">DIALServerAPI</a>
-</li>
-                                    
-<li>
-    <a href="./" class="dropdown-item active">DTVAPI</a>
-</li>
-                                    
-<li>
-    <a href="../DeviceIdentificationAPI/" class="dropdown-item">DeviceIdentificationAPI</a>
-</li>
-                                    
-<li>
-    <a href="../DeviceInfoAPI/" class="dropdown-item">DeviceInfoAPI</a>
-</li>
-                                    
-<li>
-    <a href="../DisplayInfoAPI/" class="dropdown-item">DisplayInfoAPI</a>
-</li>
-                                    
-<li>
-    <a href="../DisplayPropertiesAPI/" class="dropdown-item">DisplayPropertiesAPI</a>
-</li>
-                                    
-<li>
-    <a href="../FirmwareControlAPI/" class="dropdown-item">FirmwareControlAPI</a>
-</li>
-                                    
-<li>
-    <a href="../GraphicsPropertiesAPI/" class="dropdown-item">GraphicsPropertiesAPI</a>
-</li>
-                                    
-<li>
-    <a href="../HDRPropertiesAPI/" class="dropdown-item">HDRPropertiesAPI</a>
-</li>
-                                    
-<li>
-    <a href="../IOConnectorAPI/" class="dropdown-item">IOConnectorAPI</a>
-</li>
-                                    
-<li>
-    <a href="../IOControlAPI/" class="dropdown-item">IOControlAPI</a>
-</li>
-                                    
-<li>
-    <a href="../InputSwitchAPI/" class="dropdown-item">InputSwitchAPI</a>
-</li>
-                                    
-<li>
-    <a href="../LanguageTagAPI/" class="dropdown-item">LanguageTagAPI</a>
-</li>
-                                    
-<li>
-    <a href="../LocationSyncAPI/" class="dropdown-item">LocationSyncAPI</a>
-</li>
-                                    
-<li>
-    <a href="../MessengerAPI/" class="dropdown-item">MessengerAPI</a>
-</li>
-                                    
-<li>
-    <a href="../MonitorAPI/" class="dropdown-item">MonitorAPI</a>
-</li>
-                                    
-<li>
-    <a href="../NetflixAPI/" class="dropdown-item">NetflixAPI</a>
-</li>
-                                    
-<li>
-    <a href="../NetworkControlAPI/" class="dropdown-item">NetworkControlAPI</a>
-</li>
-                                    
-<li>
-    <a href="../NetworkToolsAPI/" class="dropdown-item">NetworkToolsAPI</a>
-</li>
-                                    
-<li>
-    <a href="../OpenCDMiAPI/" class="dropdown-item">OpenCDMiAPI</a>
-</li>
-                                    
-<li>
-    <a href="../OutputAPI/" class="dropdown-item">OutputAPI</a>
-</li>
-                                    
-<li>
-    <a href="../PackagerAPI/" class="dropdown-item">PackagerAPI</a>
-</li>
-                                    
-<li>
-    <a href="../PerformanceMonitorAPI/" class="dropdown-item">PerformanceMonitorAPI</a>
-</li>
-                                    
-<li>
-    <a href="../PlayerInfoAPI/" class="dropdown-item">PlayerInfoAPI</a>
-</li>
-                                    
-<li>
-    <a href="../PlayerPropertiesAPI/" class="dropdown-item">PlayerPropertiesAPI</a>
-</li>
-                                    
-<li>
-    <a href="../PowerAPI/" class="dropdown-item">PowerAPI</a>
-</li>
-                                    
-<li>
-    <a href="../ProcessContainers/" class="dropdown-item">ProcessContainers</a>
-</li>
-                                    
-<li>
-    <a href="../ProvisioningAPI/" class="dropdown-item">ProvisioningAPI</a>
-</li>
-                                    
-<li>
-    <a href="../RemoteControlAPI/" class="dropdown-item">RemoteControlAPI</a>
-</li>
-                                    
-<li>
-    <a href="../SecureShellServerAPI/" class="dropdown-item">SecureShellServerAPI</a>
-</li>
-                                    
-<li>
-    <a href="../SecurityAgentAPI/" class="dropdown-item">SecurityAgentAPI</a>
-</li>
-                                    
-<li>
-    <a href="../SparkAPI/" class="dropdown-item">SparkAPI</a>
-</li>
-                                    
-<li>
-    <a href="../StateControlAPI/" class="dropdown-item">StateControlAPI</a>
-</li>
-                                    
-<li>
-    <a href="../StreamerAPI/" class="dropdown-item">StreamerAPI</a>
-</li>
-                                    
-<li>
-    <a href="../SubsystemControlAPI/" class="dropdown-item">SubsystemControlAPI</a>
-</li>
-                                    
-<li>
-    <a href="../SystemCommandsAPI/" class="dropdown-item">SystemCommandsAPI</a>
-</li>
-                                    
-<li>
-    <a href="../TestControllerAPI/" class="dropdown-item">TestControllerAPI</a>
-</li>
-                                    
-<li>
-    <a href="../TestUtilityAPI/" class="dropdown-item">TestUtilityAPI</a>
-</li>
-                                    
-<li>
-    <a href="../TestUtilityPlugin/" class="dropdown-item">TestUtilityPlugin</a>
-</li>
-                                    
-<li>
-    <a href="../TimeSyncAPI/" class="dropdown-item">TimeSyncAPI</a>
-</li>
-                                    
-<li>
-    <a href="../TraceControlAPI/" class="dropdown-item">TraceControlAPI</a>
-</li>
-                                    
-<li>
-    <a href="../VolumeControlAPI/" class="dropdown-item">VolumeControlAPI</a>
-</li>
-                                    
-<li>
-    <a href="../WebBrowserAPI/" class="dropdown-item">WebBrowserAPI</a>
-</li>
-                                    
-<li>
-    <a href="../WebKitBrowserAPI/" class="dropdown-item">WebKitBrowserAPI</a>
-</li>
-                                    
-<li>
-    <a href="../WiFiControlAPI/" class="dropdown-item">WiFiControlAPI</a>
-</li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Thunder Plugins doc <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    
-<li>
-    <a href="../BluetoothControlPlugin/" class="dropdown-item">BluetoothControlPlugin</a>
-</li>
-                                    
-<li>
-    <a href="../BluetoothRemoteControlPlugin/" class="dropdown-item">BluetoothRemoteControlPlugin</a>
-</li>
-                                    
-<li>
-    <a href="../CobaltPlugin/" class="dropdown-item">CobaltPlugin</a>
-</li>
-                                    
-<li>
-    <a href="../CommanderPlugin/" class="dropdown-item">CommanderPlugin</a>
-</li>
-                                    
-<li>
-    <a href="../CompositorPlugin/" class="dropdown-item">CompositorPlugin</a>
-</li>
-                                    
-<li>
-    <a href="../DHCPServerPlugin/" class="dropdown-item">DHCPServerPlugin</a>
-</li>
-                                    
-<li>
-    <a href="../DIALServerPlugin/" class="dropdown-item">DIALServerPlugin</a>
-</li>
-                                    
-<li>
-    <a href="../DTVPlugin/" class="dropdown-item">DTVPlugin</a>
-</li>
-                                    
-<li>
-    <a href="../DictionaryPlugin/" class="dropdown-item">DictionaryPlugin</a>
-</li>
-                                    
-<li>
-    <a href="../DisplayInfoPlugin/" class="dropdown-item">DisplayInfoPlugin</a>
-</li>
-                                    
-<li>
-    <a href="../FileTransferPlugin/" class="dropdown-item">FileTransferPlugin</a>
-</li>
-                                    
-<li>
-    <a href="../FirmwareControlPlugin/" class="dropdown-item">FirmwareControlPlugin</a>
-</li>
-                                    
-<li>
-    <a href="../IOConnectorPlugin/" class="dropdown-item">IOConnectorPlugin</a>
-</li>
-                                    
-<li>
-    <a href="../NetworkControlPlugin/" class="dropdown-item">NetworkControlPlugin</a>
-</li>
-                                    
-<li>
-    <a href="../PerformanceMonitorPlugin/" class="dropdown-item">PerformanceMonitorPlugin</a>
-</li>
-                                    
-<li>
-    <a href="../PlayerInfoPlugin/" class="dropdown-item">PlayerInfoPlugin</a>
-</li>
-                                    
-<li>
-    <a href="../PowerPlugin/" class="dropdown-item">PowerPlugin</a>
-</li>
-                                    
-<li>
-    <a href="../ProcessMonitorPlugin/" class="dropdown-item">ProcessMonitorPlugin</a>
-</li>
-                                    
-<li>
-    <a href="../RemoteControlPlugin/" class="dropdown-item">RemoteControlPlugin</a>
-</li>
-                                    
-<li>
-    <a href="../ResourceMonitorPlugin/" class="dropdown-item">ResourceMonitorPlugin</a>
-</li>
-                                    
-<li>
-    <a href="../SparkPlugin/" class="dropdown-item">SparkPlugin</a>
-</li>
-                                    
-<li>
-    <a href="../StreamerPlugin/" class="dropdown-item">StreamerPlugin</a>
-</li>
-                                    
-<li>
-    <a href="../SyslogExportPlugin/" class="dropdown-item">SyslogExportPlugin</a>
-</li>
-                                    
-<li>
-    <a href="../SystemCommandsPlugin/" class="dropdown-item">SystemCommandsPlugin</a>
-</li>
-                                    
-<li>
-    <a href="../TestUtilityPlugin/" class="dropdown-item">TestUtilityPlugin</a>
-</li>
-                                    
-<li>
-    <a href="../TimeSyncPlugin/" class="dropdown-item">TimeSyncPlugin</a>
-</li>
-                                    
-<li>
-    <a href="../VolumeControlPlugin/" class="dropdown-item">VolumeControlPlugin</a>
-</li>
-                                    
-<li>
-    <a href="../WebPAPlugin/" class="dropdown-item">WebPAPlugin</a>
-</li>
-                                    
-<li>
-    <a href="../WifiControlPlugin/" class="dropdown-item">WifiControlPlugin</a>
-</li>
-                                </ul>
-                            </li>
-                        </ul>
 
-                    <ul class="nav navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
-                                <i class="fa fa-search"></i> Search
-                            </a>
-                        </li>
-                            <li class="nav-item">
-                                <a rel="prev" href="../DIALServerAPI/" class="nav-link">
-                                    <i class="fa fa-arrow-left"></i> Previous
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a rel="next" href="../DeviceIdentificationAPI/" class="nav-link">
-                                    Next <i class="fa fa-arrow-right"></i>
-                                </a>
-                            </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
 
-        <div class="container">
-            <div class="row">
-                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
-    <div class="navbar-header">
-        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
-            <span class="fa fa-angle-down"></span>
-        </button>
-    </div>
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
 
     
-    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
-        <ul class="nav flex-column">
-            
-            <li class="nav-item" data-level="1"><a href="#dtv-api" class="nav-link">DTV API</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            
-            <li class="nav-item" data-level="1"><a href="#introduction" class="nav-link">Introduction</a>
-              <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#scope" class="nav-link">Scope</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#case-sensitivity" class="nav-link">Case Sensitivity</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#acronyms-abbreviations-and-terms" class="nav-link">Acronyms, Abbreviations and Terms</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#references" class="nav-link">References</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-              </ul>
-            </li>
-            
-            <li class="nav-item" data-level="1"><a href="#description" class="nav-link">Description</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            
-            <li class="nav-item" data-level="1"><a href="#methods" class="nav-link">Methods</a>
-              <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#addlnb-method" class="nav-link">addLnb method</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#addsatellite-method" class="nav-link">addSatellite method</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#startservicesearch-method" class="nav-link">startServiceSearch method</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#finishservicesearch-method" class="nav-link">finishServiceSearch method</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#startplaying-method" class="nav-link">startPlaying method</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#stopplaying-method" class="nav-link">stopPlaying method</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-              </ul>
-            </li>
-            
-            <li class="nav-item" data-level="1"><a href="#properties" class="nav-link">Properties</a>
-              <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#numberofcountries-property" class="nav-link">numberOfCountries property</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#countrylist-property" class="nav-link">countryList property</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#country-property" class="nav-link">country property</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#lnblist-property" class="nav-link">lnbList property</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#satellitelist-property" class="nav-link">satelliteList property</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#numberofservices-property" class="nav-link">numberOfServices property</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#servicelist-property" class="nav-link">serviceList property</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#nownextevents-property" class="nav-link">nowNextEvents property</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#scheduleevents-property" class="nav-link">scheduleEvents property</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#status-property" class="nav-link">status property</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-              </ul>
-            </li>
-            
-            <li class="nav-item" data-level="1"><a href="#notifications" class="nav-link">Notifications</a>
-              <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#searchstatus-event" class="nav-link">searchstatus event</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-              </ul>
-            </li>
-        </ul>
-    </div>
-</div></div>
-                    <div class="col-md-9" role="main">
+    
+      
+    
 
-<!-- Generated automatically, DO NOT EDIT! -->
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../DeviceIdentificationAPI/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../DeviceIdentificationAPI/" class="btn btn-xs btn-link">
+        DeviceIdentificationAPI
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../DIALServerAPI/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../DIALServerAPI/" class="btn btn-xs btn-link">
+        DIALServerAPI
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <!-- Generated automatically, DO NOT EDIT! -->
 <p><a name="head.DTV_API"></a></p>
 <h1 id="dtv-api">DTV API</h1>
 <p><strong>Version: 1.0</strong></p>
@@ -2065,81 +1628,44 @@
         &quot;progress&quot;: 65
     }
 }
-</code></pre></div>
-            </div>
-        </div>
+</code></pre>
 
-        <footer class="col-md-12">
-            <hr>
-            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
-        </footer>
-        <script>
-            var base_url = "..",
-                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
-        </script>
-        <script src="../js/base.js" defer></script>
-        <script src="../search/main.js" defer></script>
+  <br>
+    
 
-        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" id="searchModalLabel">Search</h4>
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-            </div>
-            <div class="modal-body">
-                <p>From here you can search these documents. Enter your search terms below.</p>
-                <form>
-                    <div class="form-group">
-                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
-                    </div>
-                </form>
-                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
-            </div>
-            <div class="modal-footer">
-            </div>
-        </div>
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../DeviceIdentificationAPI/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../DeviceIdentificationAPI/" class="btn btn-xs btn-link">
+        DeviceIdentificationAPI
+      </a>
     </div>
-</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-            </div>
-            <div class="modal-body">
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th style="width: 20%;">Keys</th>
-                    <th>Action</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td class="help shortcut"><kbd>?</kbd></td>
-                    <td>Open this help</td>
-                  </tr>
-                  <tr>
-                    <td class="next shortcut"><kbd>n</kbd></td>
-                    <td>Next page</td>
-                  </tr>
-                  <tr>
-                    <td class="prev shortcut"><kbd>p</kbd></td>
-                    <td>Previous page</td>
-                  </tr>
-                  <tr>
-                    <td class="search shortcut"><kbd>s</kbd></td>
-                    <td>Search</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="modal-footer">
-            </div>
-        </div>
+    
+    <div class="wm-article-nav">
+      <a href="../DIALServerAPI/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../DIALServerAPI/" class="btn btn-xs btn-link">
+        DIALServerAPI
+      </a>
     </div>
+    
+  </div>
+
+    <br>
 </div>
 
-    </body>
+<footer class="container-fluid wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
 </html>

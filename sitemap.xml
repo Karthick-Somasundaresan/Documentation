@@ -1,442 +1,442 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://example.com/</loc>
+         <loc>https://karthick-somasundaresan.github.io/Documentation/</loc>
          <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/AVSControllerAPI/</loc>
+         <loc>https://karthick-somasundaresan.github.io/Documentation/AVSControllerAPI/</loc>
          <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/AmazonPrimeAPI/</loc>
+         <loc>https://karthick-somasundaresan.github.io/Documentation/AmazonPrimeAPI/</loc>
          <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/ApplicationAPI/</loc>
+         <loc>https://karthick-somasundaresan.github.io/Documentation/ApplicationAPI/</loc>
          <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/BluetoothControlAPI/</loc>
+         <loc>https://karthick-somasundaresan.github.io/Documentation/BluetoothControlAPI/</loc>
          <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/BluetoothControlPlugin/</loc>
+         <loc>https://karthick-somasundaresan.github.io/Documentation/BluetoothControlPlugin/</loc>
          <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/BluetoothRemoteControlAPI/</loc>
+         <loc>https://karthick-somasundaresan.github.io/Documentation/BluetoothRemoteControlAPI/</loc>
          <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/BluetoothRemoteControlPlugin/</loc>
+         <loc>https://karthick-somasundaresan.github.io/Documentation/BluetoothRemoteControlPlugin/</loc>
          <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/BrowserAPI/</loc>
+         <loc>https://karthick-somasundaresan.github.io/Documentation/BrowserAPI/</loc>
          <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/BrowserResourcesAPI/</loc>
+         <loc>https://karthick-somasundaresan.github.io/Documentation/BrowserResourcesAPI/</loc>
          <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/BrowserSecurityAPI/</loc>
+         <loc>https://karthick-somasundaresan.github.io/Documentation/BrowserSecurityAPI/</loc>
          <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/ButlerAPI/</loc>
+         <loc>https://karthick-somasundaresan.github.io/Documentation/ButlerAPI/</loc>
          <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/CobaltAPI/</loc>
+         <loc>https://karthick-somasundaresan.github.io/Documentation/CobaltAPI/</loc>
          <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/CobaltPlugin/</loc>
+         <loc>https://karthick-somasundaresan.github.io/Documentation/CobaltPlugin/</loc>
          <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/CommanderPlugin/</loc>
+         <loc>https://karthick-somasundaresan.github.io/Documentation/CommanderPlugin/</loc>
          <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/CompositorAPI/</loc>
+         <loc>https://karthick-somasundaresan.github.io/Documentation/CompositorAPI/</loc>
          <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/CompositorPlugin/</loc>
+         <loc>https://karthick-somasundaresan.github.io/Documentation/CompositorPlugin/</loc>
          <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/ConnectionPropertiesAPI/</loc>
+         <loc>https://karthick-somasundaresan.github.io/Documentation/ConnectionPropertiesAPI/</loc>
          <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/CustomerCareOperationsAPI/</loc>
+         <loc>https://karthick-somasundaresan.github.io/Documentation/CustomerCareOperationsAPI/</loc>
          <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/DHCPServerAPI/</loc>
+         <loc>https://karthick-somasundaresan.github.io/Documentation/DHCPServerAPI/</loc>
          <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/DHCPServerPlugin/</loc>
+         <loc>https://karthick-somasundaresan.github.io/Documentation/DHCPServerPlugin/</loc>
          <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/DIALServerAPI/</loc>
+         <loc>https://karthick-somasundaresan.github.io/Documentation/DIALServerAPI/</loc>
          <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/DIALServerPlugin/</loc>
+         <loc>https://karthick-somasundaresan.github.io/Documentation/DIALServerPlugin/</loc>
          <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/DTVAPI/</loc>
+         <loc>https://karthick-somasundaresan.github.io/Documentation/DTVAPI/</loc>
          <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/DTVPlugin/</loc>
+         <loc>https://karthick-somasundaresan.github.io/Documentation/DTVPlugin/</loc>
          <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/DeviceIdentificationAPI/</loc>
+         <loc>https://karthick-somasundaresan.github.io/Documentation/DeviceIdentificationAPI/</loc>
          <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/DeviceInfoAPI/</loc>
+         <loc>https://karthick-somasundaresan.github.io/Documentation/DeviceInfoAPI/</loc>
          <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/DictionaryPlugin/</loc>
+         <loc>https://karthick-somasundaresan.github.io/Documentation/DictionaryPlugin/</loc>
          <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/DisplayInfoAPI/</loc>
+         <loc>https://karthick-somasundaresan.github.io/Documentation/DisplayInfoAPI/</loc>
          <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/DisplayInfoPlugin/</loc>
+         <loc>https://karthick-somasundaresan.github.io/Documentation/DisplayInfoPlugin/</loc>
          <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/DisplayPropertiesAPI/</loc>
+         <loc>https://karthick-somasundaresan.github.io/Documentation/DisplayPropertiesAPI/</loc>
          <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/FileTransferPlugin/</loc>
+         <loc>https://karthick-somasundaresan.github.io/Documentation/FileTransferPlugin/</loc>
          <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/FirmwareControlAPI/</loc>
+         <loc>https://karthick-somasundaresan.github.io/Documentation/FirmwareControlAPI/</loc>
          <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/FirmwareControlPlugin/</loc>
+         <loc>https://karthick-somasundaresan.github.io/Documentation/FirmwareControlPlugin/</loc>
          <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/GraphicsPropertiesAPI/</loc>
+         <loc>https://karthick-somasundaresan.github.io/Documentation/GraphicsPropertiesAPI/</loc>
          <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/HDRPropertiesAPI/</loc>
+         <loc>https://karthick-somasundaresan.github.io/Documentation/HDRPropertiesAPI/</loc>
          <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/IOConnectorAPI/</loc>
+         <loc>https://karthick-somasundaresan.github.io/Documentation/IOConnectorAPI/</loc>
          <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/IOConnectorPlugin/</loc>
+         <loc>https://karthick-somasundaresan.github.io/Documentation/IOConnectorPlugin/</loc>
          <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/IOControlAPI/</loc>
+         <loc>https://karthick-somasundaresan.github.io/Documentation/IOControlAPI/</loc>
          <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/InputSwitchAPI/</loc>
+         <loc>https://karthick-somasundaresan.github.io/Documentation/InputSwitchAPI/</loc>
          <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/LanguageTagAPI/</loc>
+         <loc>https://karthick-somasundaresan.github.io/Documentation/LanguageTagAPI/</loc>
          <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/LocationSyncAPI/</loc>
+         <loc>https://karthick-somasundaresan.github.io/Documentation/LocationSyncAPI/</loc>
          <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/MessengerAPI/</loc>
+         <loc>https://karthick-somasundaresan.github.io/Documentation/MessengerAPI/</loc>
          <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/MonitorAPI/</loc>
+         <loc>https://karthick-somasundaresan.github.io/Documentation/MonitorAPI/</loc>
          <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/NetflixAPI/</loc>
+         <loc>https://karthick-somasundaresan.github.io/Documentation/NetflixAPI/</loc>
          <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/NetworkControlAPI/</loc>
+         <loc>https://karthick-somasundaresan.github.io/Documentation/NetworkControlAPI/</loc>
          <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/NetworkControlPlugin/</loc>
+         <loc>https://karthick-somasundaresan.github.io/Documentation/NetworkControlPlugin/</loc>
          <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/NetworkToolsAPI/</loc>
+         <loc>https://karthick-somasundaresan.github.io/Documentation/NetworkToolsAPI/</loc>
          <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/OpenCDMiAPI/</loc>
+         <loc>https://karthick-somasundaresan.github.io/Documentation/OpenCDMiAPI/</loc>
          <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/OutputAPI/</loc>
+         <loc>https://karthick-somasundaresan.github.io/Documentation/OutputAPI/</loc>
          <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/PackagerAPI/</loc>
+         <loc>https://karthick-somasundaresan.github.io/Documentation/PackagerAPI/</loc>
          <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/PerformanceMonitorAPI/</loc>
+         <loc>https://karthick-somasundaresan.github.io/Documentation/PerformanceMonitorAPI/</loc>
          <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/PerformanceMonitorPlugin/</loc>
+         <loc>https://karthick-somasundaresan.github.io/Documentation/PerformanceMonitorPlugin/</loc>
          <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/PlayerInfoAPI/</loc>
+         <loc>https://karthick-somasundaresan.github.io/Documentation/PlayerInfoAPI/</loc>
          <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/PlayerInfoPlugin/</loc>
+         <loc>https://karthick-somasundaresan.github.io/Documentation/PlayerInfoPlugin/</loc>
          <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/PlayerPropertiesAPI/</loc>
+         <loc>https://karthick-somasundaresan.github.io/Documentation/PlayerPropertiesAPI/</loc>
          <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/PowerAPI/</loc>
+         <loc>https://karthick-somasundaresan.github.io/Documentation/PowerAPI/</loc>
          <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/PowerPlugin/</loc>
+         <loc>https://karthick-somasundaresan.github.io/Documentation/PowerPlugin/</loc>
          <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/ProcessContainers/</loc>
+         <loc>https://karthick-somasundaresan.github.io/Documentation/ProcessContainers/</loc>
          <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/ProcessMonitorPlugin/</loc>
+         <loc>https://karthick-somasundaresan.github.io/Documentation/ProcessMonitorPlugin/</loc>
          <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/ProvisioningAPI/</loc>
+         <loc>https://karthick-somasundaresan.github.io/Documentation/ProvisioningAPI/</loc>
          <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/RemoteControlAPI/</loc>
+         <loc>https://karthick-somasundaresan.github.io/Documentation/RemoteControlAPI/</loc>
          <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/RemoteControlPlugin/</loc>
+         <loc>https://karthick-somasundaresan.github.io/Documentation/RemoteControlPlugin/</loc>
          <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/ResourceMonitorPlugin/</loc>
+         <loc>https://karthick-somasundaresan.github.io/Documentation/ResourceMonitorPlugin/</loc>
          <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/SecureShellServerAPI/</loc>
+         <loc>https://karthick-somasundaresan.github.io/Documentation/SecureShellServerAPI/</loc>
          <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/SecurityAgentAPI/</loc>
+         <loc>https://karthick-somasundaresan.github.io/Documentation/SecurityAgentAPI/</loc>
          <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/SparkAPI/</loc>
+         <loc>https://karthick-somasundaresan.github.io/Documentation/SparkAPI/</loc>
          <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/SparkPlugin/</loc>
+         <loc>https://karthick-somasundaresan.github.io/Documentation/SparkPlugin/</loc>
          <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/StateControlAPI/</loc>
+         <loc>https://karthick-somasundaresan.github.io/Documentation/StateControlAPI/</loc>
          <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/StreamerAPI/</loc>
+         <loc>https://karthick-somasundaresan.github.io/Documentation/StreamerAPI/</loc>
          <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/StreamerPlugin/</loc>
+         <loc>https://karthick-somasundaresan.github.io/Documentation/StreamerPlugin/</loc>
          <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/SubsystemControlAPI/</loc>
+         <loc>https://karthick-somasundaresan.github.io/Documentation/SubsystemControlAPI/</loc>
          <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/SyslogExportPlugin/</loc>
+         <loc>https://karthick-somasundaresan.github.io/Documentation/SyslogExportPlugin/</loc>
          <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/SystemCommandsAPI/</loc>
+         <loc>https://karthick-somasundaresan.github.io/Documentation/SystemCommandsAPI/</loc>
          <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/SystemCommandsPlugin/</loc>
+         <loc>https://karthick-somasundaresan.github.io/Documentation/SystemCommandsPlugin/</loc>
          <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/TestControllerAPI/</loc>
+         <loc>https://karthick-somasundaresan.github.io/Documentation/TestControllerAPI/</loc>
          <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/TestUtilityAPI/</loc>
+         <loc>https://karthick-somasundaresan.github.io/Documentation/TestUtilityAPI/</loc>
          <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/TestUtilityPlugin/</loc>
+         <loc>https://karthick-somasundaresan.github.io/Documentation/TestUtilityPlugin/</loc>
          <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/TimeSyncAPI/</loc>
+         <loc>https://karthick-somasundaresan.github.io/Documentation/TimeSyncAPI/</loc>
          <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/TimeSyncPlugin/</loc>
+         <loc>https://karthick-somasundaresan.github.io/Documentation/TimeSyncPlugin/</loc>
          <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/TraceControlAPI/</loc>
+         <loc>https://karthick-somasundaresan.github.io/Documentation/TraceControlAPI/</loc>
          <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/VolumeControlAPI/</loc>
+         <loc>https://karthick-somasundaresan.github.io/Documentation/VolumeControlAPI/</loc>
          <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/VolumeControlPlugin/</loc>
+         <loc>https://karthick-somasundaresan.github.io/Documentation/VolumeControlPlugin/</loc>
          <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/WebBrowserAPI/</loc>
+         <loc>https://karthick-somasundaresan.github.io/Documentation/WebBrowserAPI/</loc>
          <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/WebKitBrowserAPI/</loc>
+         <loc>https://karthick-somasundaresan.github.io/Documentation/WebKitBrowserAPI/</loc>
          <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/WebPAPlugin/</loc>
+         <loc>https://karthick-somasundaresan.github.io/Documentation/WebPAPlugin/</loc>
          <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/WiFiControlAPI/</loc>
+         <loc>https://karthick-somasundaresan.github.io/Documentation/WiFiControlAPI/</loc>
          <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://example.com/WifiControlPlugin/</loc>
+         <loc>https://karthick-somasundaresan.github.io/Documentation/WifiControlPlugin/</loc>
          <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
