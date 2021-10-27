@@ -2,307 +2,442 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://example.com/</loc>
-         <lastmod>2021-10-26</lastmod>
+         <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/AVSControllerAPI/</loc>
-         <lastmod>2021-10-26</lastmod>
+         <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/AmazonPrimeAPI/</loc>
-         <lastmod>2021-10-26</lastmod>
+         <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/ApplicationAPI/</loc>
-         <lastmod>2021-10-26</lastmod>
+         <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/BluetoothControlAPI/</loc>
-         <lastmod>2021-10-26</lastmod>
+         <lastmod>2021-10-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://example.com/BluetoothControlPlugin/</loc>
+         <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/BluetoothRemoteControlAPI/</loc>
-         <lastmod>2021-10-26</lastmod>
+         <lastmod>2021-10-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://example.com/BluetoothRemoteControlPlugin/</loc>
+         <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/BrowserAPI/</loc>
-         <lastmod>2021-10-26</lastmod>
+         <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/BrowserResourcesAPI/</loc>
-         <lastmod>2021-10-26</lastmod>
+         <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/BrowserSecurityAPI/</loc>
-         <lastmod>2021-10-26</lastmod>
+         <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/ButlerAPI/</loc>
-         <lastmod>2021-10-26</lastmod>
+         <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/CobaltAPI/</loc>
-         <lastmod>2021-10-26</lastmod>
+         <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/CobaltPlugin/</loc>
-         <lastmod>2021-10-26</lastmod>
+         <lastmod>2021-10-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://example.com/CommanderPlugin/</loc>
+         <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/CompositorAPI/</loc>
-         <lastmod>2021-10-26</lastmod>
+         <lastmod>2021-10-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://example.com/CompositorPlugin/</loc>
+         <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/ConnectionPropertiesAPI/</loc>
-         <lastmod>2021-10-26</lastmod>
+         <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/CustomerCareOperationsAPI/</loc>
-         <lastmod>2021-10-26</lastmod>
+         <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/DHCPServerAPI/</loc>
-         <lastmod>2021-10-26</lastmod>
+         <lastmod>2021-10-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://example.com/DHCPServerPlugin/</loc>
+         <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/DIALServerAPI/</loc>
-         <lastmod>2021-10-26</lastmod>
+         <lastmod>2021-10-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://example.com/DIALServerPlugin/</loc>
+         <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/DTVAPI/</loc>
-         <lastmod>2021-10-26</lastmod>
+         <lastmod>2021-10-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://example.com/DTVPlugin/</loc>
+         <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/DeviceIdentificationAPI/</loc>
-         <lastmod>2021-10-26</lastmod>
+         <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/DeviceInfoAPI/</loc>
-         <lastmod>2021-10-26</lastmod>
+         <lastmod>2021-10-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://example.com/DictionaryPlugin/</loc>
+         <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/DisplayInfoAPI/</loc>
-         <lastmod>2021-10-26</lastmod>
+         <lastmod>2021-10-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://example.com/DisplayInfoPlugin/</loc>
+         <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/DisplayPropertiesAPI/</loc>
-         <lastmod>2021-10-26</lastmod>
+         <lastmod>2021-10-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://example.com/FileTransferPlugin/</loc>
+         <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/FirmwareControlAPI/</loc>
-         <lastmod>2021-10-26</lastmod>
+         <lastmod>2021-10-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://example.com/FirmwareControlPlugin/</loc>
+         <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/GraphicsPropertiesAPI/</loc>
-         <lastmod>2021-10-26</lastmod>
+         <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/HDRPropertiesAPI/</loc>
-         <lastmod>2021-10-26</lastmod>
+         <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/IOConnectorAPI/</loc>
-         <lastmod>2021-10-26</lastmod>
+         <lastmod>2021-10-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://example.com/IOConnectorPlugin/</loc>
+         <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/IOControlAPI/</loc>
-         <lastmod>2021-10-26</lastmod>
+         <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/InputSwitchAPI/</loc>
-         <lastmod>2021-10-26</lastmod>
+         <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/LanguageTagAPI/</loc>
-         <lastmod>2021-10-26</lastmod>
+         <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/LocationSyncAPI/</loc>
-         <lastmod>2021-10-26</lastmod>
+         <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/MessengerAPI/</loc>
-         <lastmod>2021-10-26</lastmod>
+         <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/MonitorAPI/</loc>
-         <lastmod>2021-10-26</lastmod>
+         <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/NetflixAPI/</loc>
-         <lastmod>2021-10-26</lastmod>
+         <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/NetworkControlAPI/</loc>
-         <lastmod>2021-10-26</lastmod>
+         <lastmod>2021-10-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://example.com/NetworkControlPlugin/</loc>
+         <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/NetworkToolsAPI/</loc>
-         <lastmod>2021-10-26</lastmod>
+         <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/OpenCDMiAPI/</loc>
-         <lastmod>2021-10-26</lastmod>
+         <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/OutputAPI/</loc>
-         <lastmod>2021-10-26</lastmod>
+         <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/PackagerAPI/</loc>
-         <lastmod>2021-10-26</lastmod>
+         <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/PerformanceMonitorAPI/</loc>
-         <lastmod>2021-10-26</lastmod>
+         <lastmod>2021-10-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://example.com/PerformanceMonitorPlugin/</loc>
+         <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/PlayerInfoAPI/</loc>
-         <lastmod>2021-10-26</lastmod>
+         <lastmod>2021-10-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://example.com/PlayerInfoPlugin/</loc>
+         <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/PlayerPropertiesAPI/</loc>
-         <lastmod>2021-10-26</lastmod>
+         <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/PowerAPI/</loc>
-         <lastmod>2021-10-26</lastmod>
+         <lastmod>2021-10-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://example.com/PowerPlugin/</loc>
+         <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/ProcessContainers/</loc>
-         <lastmod>2021-10-26</lastmod>
+         <lastmod>2021-10-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://example.com/ProcessMonitorPlugin/</loc>
+         <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/ProvisioningAPI/</loc>
-         <lastmod>2021-10-26</lastmod>
+         <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/RemoteControlAPI/</loc>
-         <lastmod>2021-10-26</lastmod>
+         <lastmod>2021-10-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://example.com/RemoteControlPlugin/</loc>
+         <lastmod>2021-10-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://example.com/ResourceMonitorPlugin/</loc>
+         <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/SecureShellServerAPI/</loc>
-         <lastmod>2021-10-26</lastmod>
+         <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/SecurityAgentAPI/</loc>
-         <lastmod>2021-10-26</lastmod>
+         <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/SparkAPI/</loc>
-         <lastmod>2021-10-26</lastmod>
+         <lastmod>2021-10-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://example.com/SparkPlugin/</loc>
+         <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/StateControlAPI/</loc>
-         <lastmod>2021-10-26</lastmod>
+         <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/StreamerAPI/</loc>
-         <lastmod>2021-10-26</lastmod>
+         <lastmod>2021-10-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://example.com/StreamerPlugin/</loc>
+         <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/SubsystemControlAPI/</loc>
-         <lastmod>2021-10-26</lastmod>
+         <lastmod>2021-10-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://example.com/SyslogExportPlugin/</loc>
+         <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/SystemCommandsAPI/</loc>
-         <lastmod>2021-10-26</lastmod>
+         <lastmod>2021-10-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://example.com/SystemCommandsPlugin/</loc>
+         <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/TestControllerAPI/</loc>
-         <lastmod>2021-10-26</lastmod>
+         <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/TestUtilityAPI/</loc>
-         <lastmod>2021-10-26</lastmod>
+         <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/TestUtilityPlugin/</loc>
-         <lastmod>2021-10-26</lastmod>
+         <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/TimeSyncAPI/</loc>
-         <lastmod>2021-10-26</lastmod>
+         <lastmod>2021-10-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://example.com/TimeSyncPlugin/</loc>
+         <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/TraceControlAPI/</loc>
-         <lastmod>2021-10-26</lastmod>
+         <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/VolumeControlAPI/</loc>
-         <lastmod>2021-10-26</lastmod>
+         <lastmod>2021-10-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://example.com/VolumeControlPlugin/</loc>
+         <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/WebBrowserAPI/</loc>
-         <lastmod>2021-10-26</lastmod>
+         <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/WebKitBrowserAPI/</loc>
-         <lastmod>2021-10-26</lastmod>
+         <lastmod>2021-10-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://example.com/WebPAPlugin/</loc>
+         <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/WiFiControlAPI/</loc>
-         <lastmod>2021-10-26</lastmod>
+         <lastmod>2021-10-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://example.com/WifiControlPlugin/</loc>
+         <lastmod>2021-10-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
