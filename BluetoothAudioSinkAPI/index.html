@@ -1,0 +1,2570 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="canonical" href="https://karthick-somasundaresan.github.io/Documentation/BluetoothAudioSinkAPI/">
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-7.3.6">
+    
+    
+      
+        <title>BluetoothAudioSink API - Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.a57b2b03.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.3f5d1f46.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+    
+      
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    <script>function __prefix(e){return new URL("..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#bluetoothaudiosink-api" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Documentation" class="md-header__button md-logo" aria-label="Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              BluetoothAudioSink API
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Documentation" class="md-nav__button md-logo" aria-label="Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Documentation
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          Interface Documentation
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Interface Documentation" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Interface Documentation
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CustomerCareOperationsAPI/" class="md-nav__link">
+        CustomerCareOperations API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ApplicationAPI/" class="md-nav__link">
+        Application API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          BluetoothAudioSink API
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        BluetoothAudioSink API
+      </a>
+      
+        
+
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    Table of Contents
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AmazonPrimeAPI/" class="md-nav__link">
+        AmazonPrime API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../GraphicsPropertiesAPI/" class="md-nav__link">
+        GraphicsProperties API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ConnectionPropertiesAPI/" class="md-nav__link">
+        ConnectionProperties API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../HDRPropertiesAPI/" class="md-nav__link">
+        HDRProperties API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../DisplayPropertiesAPI/" class="md-nav__link">
+        DisplayProperties API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../PlayerPropertiesAPI/" class="md-nav__link">
+        PlayerProperties API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../LanguageTagAPI/" class="md-nav__link">
+        LanguageTag API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../WebBrowserAPI/" class="md-nav__link">
+        WebBrowser API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../BrowserResourcesAPI/" class="md-nav__link">
+        BrowserResources API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../BrowserSecurityAPI/" class="md-nav__link">
+        BrowserSecurity API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../VolumeControlAPI/" class="md-nav__link">
+        VolumeControl API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AVSControllerAPI/" class="md-nav__link">
+        AVSController API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../OutputAPI/" class="md-nav__link">
+        Output API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../MathAPI/" class="md-nav__link">
+        Math API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../NetworkToolsAPI/" class="md-nav__link">
+        NetworkTools API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../StreamerAPI/" class="md-nav__link">
+        Streamer API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../FirmwareControlAPI/" class="md-nav__link">
+        Firmware Control API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SparkAPI/" class="md-nav__link">
+        Spark API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../IOControlAPI/" class="md-nav__link">
+        IO Control API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SecureShellServerAPI/" class="md-nav__link">
+        SecureShell Server API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../DisplayInfoAPI/" class="md-nav__link">
+        Display Info API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../IOConnectorAPI/" class="md-nav__link">
+        IO Connector API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../MonitorAPI/" class="md-nav__link">
+        Monitor API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../BluetoothControlAPI/" class="md-nav__link">
+        Bluetooth Control API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../PlayerInfoAPI/" class="md-nav__link">
+        Player Info API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../WebKitBrowserAPI/" class="md-nav__link">
+        WebKit Browser API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TestControllerAPI/" class="md-nav__link">
+        Test Controller API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../PowerAPI/" class="md-nav__link">
+        Power API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../DHCPServerAPI/" class="md-nav__link">
+        DHCP Server API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TestUtilityAPI/" class="md-nav__link">
+        Test Utility API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../NetworkControlAPI/" class="md-nav__link">
+        Network Control API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CobaltAPI/" class="md-nav__link">
+        Cobalt API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../OpenCDMiAPI/" class="md-nav__link">
+        OpenCDMi API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SecurityAgentAPI/" class="md-nav__link">
+        Security Agent API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../MessengerAPI/" class="md-nav__link">
+        Messenger API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../PerformanceMonitorAPI/" class="md-nav__link">
+        Performance Monitor API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../RemoteControlAPI/" class="md-nav__link">
+        Remote Control API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../StateControlAPI/" class="md-nav__link">
+        StateControl API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ProcessContainers/" class="md-nav__link">
+        Process Containers
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SystemCommandsAPI/" class="md-nav__link">
+        System Commands API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../DeviceInfoAPI/" class="md-nav__link">
+        Device Info API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../NetflixAPI/" class="md-nav__link">
+        Netflix API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../PackagerAPI/" class="md-nav__link">
+        Packager API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../LocationSyncAPI/" class="md-nav__link">
+        Location Sync API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SubsystemControlAPI/" class="md-nav__link">
+        Subsystem Control API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../DTVAPI/" class="md-nav__link">
+        DTV API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ProvisioningAPI/" class="md-nav__link">
+        Provisioning API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../DeviceIdentificationAPI/" class="md-nav__link">
+        Device Identification API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CompositorAPI/" class="md-nav__link">
+        Compositor API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../WiFiControlAPI/" class="md-nav__link">
+        WiFi Control API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../BrowserAPI/" class="md-nav__link">
+        Browser API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TraceControlAPI/" class="md-nav__link">
+        Trace Control API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TimeSyncAPI/" class="md-nav__link">
+        Time Sync API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../DIALServerAPI/" class="md-nav__link">
+        DIAL Server API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../BluetoothRemoteControlAPI/" class="md-nav__link">
+        Bluetooth Remote Control API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../InputSwitchAPI/" class="md-nav__link">
+        Input Switch API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ButlerAPI/" class="md-nav__link">
+        Butler API
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Plugin Documentation
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Plugin Documentation" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Plugin Documentation
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../PowerPlugin/" class="md-nav__link">
+        Power Plugin
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../WifiControlPlugin/" class="md-nav__link">
+        Wifi Control Plugin
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../PlayerInfoPlugin/" class="md-nav__link">
+        Player Info Plugin
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CommanderPlugin/" class="md-nav__link">
+        Commander Plugin
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../DIALServerPlugin/" class="md-nav__link">
+        DIAL Server Plugin
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../FirmwareControlPlugin/" class="md-nav__link">
+        Firmware Control Plugin
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../NetworkControlPlugin/" class="md-nav__link">
+        Network Control Plugin
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CompositorPlugin/" class="md-nav__link">
+        Compositor Plugin
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ProcessMonitorPlugin/" class="md-nav__link">
+        ProcessMonitor Plugin
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../WebPAPlugin/" class="md-nav__link">
+        WebPA Plugin
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../DHCPServerPlugin/" class="md-nav__link">
+        DHCP Server Plugin
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ContainersPlugin/" class="md-nav__link">
+        Containers Plugin
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CobaltPlugin/" class="md-nav__link">
+        Cobalt Plugin
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../DisplayInfoPlugin/" class="md-nav__link">
+        Display Info Plugin
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../VolumeControlPlugin/" class="md-nav__link">
+        Volume Control Plugin
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../BluetoothControlPlugin/" class="md-nav__link">
+        Bluetooth Control Plugin
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../StreamerPlugin/" class="md-nav__link">
+        Streamer Plugin
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../DTVPlugin/" class="md-nav__link">
+        DTV Plugin
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SystemCommandsPlugin/" class="md-nav__link">
+        System Commands Plugin
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../DictionaryPlugin/" class="md-nav__link">
+        Dictionary Plugin
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ResourceMonitorPlugin/" class="md-nav__link">
+        ResourceMonitor Plugin
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TimeSyncPlugin/" class="md-nav__link">
+        Time Sync Plugin
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../FileTransferPlugin/" class="md-nav__link">
+        FileTransfer Plugin
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../PerformanceMonitorPlugin/" class="md-nav__link">
+        Performance Monitor Plugin
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../RemoteControlPlugin/" class="md-nav__link">
+        Remote Control Plugin
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SubsystemControlPlugin/" class="md-nav__link">
+        Subsystem Control Plugin
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../BluetoothRemoteControlPlugin/" class="md-nav__link">
+        Bluetooth Remote Control Plugin
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../IOConnectorPlugin/" class="md-nav__link">
+        IO Connector Plugin
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SparkPlugin/" class="md-nav__link">
+        Spark Plugin
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../DeviceIdentificationAPI/" class="md-nav__link">
+        Device Identification API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../WebKitBrowserPlugin/" class="md-nav__link">
+        WebKit Browser Plugin
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../MonitorPlugin/" class="md-nav__link">
+        Monitor Plugin
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TraceControlPlugin/" class="md-nav__link">
+        Trace Control Plugin
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../LocationSyncPlugin/" class="md-nav__link">
+        Location Sync Plugin
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../DeviceInfoPlugin/" class="md-nav__link">
+        Device Info Plugin
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../MessengerPlugin/" class="md-nav__link">
+        Messenger Plugin
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../OpenCDMiPlugin/" class="md-nav__link">
+        OpenCDMi Plugin
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../PackagerPlugin/" class="md-nav__link">
+        Packager Plugin
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SecurityAgentPlugin/" class="md-nav__link">
+        Security Agent Plugin
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    Table of Contents
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <!-- Generated automatically, DO NOT EDIT! -->
+<p><a name="head.BluetoothAudioSink_API"></a></p>
+<h1 id="bluetoothaudiosink-api">BluetoothAudioSink API</h1>
+<p><strong>Version: 1.0</strong></p>
+<p><strong>Status: <img alt="⚫" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26ab.svg" title=":black_circle:" /><img alt="⚪" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26aa.svg" title=":white_circle:" /><img alt="⚪" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26aa.svg" title=":white_circle:" /></strong></p>
+<p>BluetoothAudioSink interface for Thunder framework.</p>
+<h3 id="table-of-contents">Table of Contents</h3>
+<ul>
+<li><a href="#head.Introduction">Introduction</a></li>
+<li><a href="#head.Description">Description</a></li>
+<li><a href="#head.Methods">Methods</a></li>
+<li><a href="#head.Properties">Properties</a></li>
+<li><a href="#head.Notifications">Notifications</a></li>
+</ul>
+<p><a name="head.Introduction"></a></p>
+<h1 id="introduction">Introduction</h1>
+<p><a name="head.Scope"></a></p>
+<h2 id="scope">Scope</h2>
+<p>This document describes purpose and functionality of the BluetoothAudioSink interface. It includes detailed specification about its methods and properties provided, as well as notifications sent.</p>
+<p><a name="head.Case_Sensitivity"></a></p>
+<h2 id="case-sensitivity">Case Sensitivity</h2>
+<p>All identifiers of the interfaces described in this document are case-sensitive. Thus, unless stated otherwise, all keywords, entities, properties, relations and actions should be treated as such.</p>
+<p><a name="head.Acronyms,_Abbreviations_and_Terms"></a></p>
+<h2 id="acronyms-abbreviations-and-terms">Acronyms, Abbreviations and Terms</h2>
+<p>The table below provides and overview of acronyms used in this document and their definitions.</p>
+<table>
+<thead>
+<tr>
+<th align="left">Acronym</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a name="acronym.API">API</a></td>
+<td align="left">Application Programming Interface</td>
+</tr>
+<tr>
+<td align="left"><a name="acronym.HTTP">HTTP</a></td>
+<td align="left">Hypertext Transfer Protocol</td>
+</tr>
+<tr>
+<td align="left"><a name="acronym.JSON">JSON</a></td>
+<td align="left">JavaScript Object Notation; a data interchange format</td>
+</tr>
+<tr>
+<td align="left"><a name="acronym.JSON-RPC">JSON-RPC</a></td>
+<td align="left">A remote procedure call protocol encoded in JSON</td>
+</tr>
+</tbody>
+</table>
+<p>The table below provides and overview of terms and abbreviations used in this document and their definitions.</p>
+<table>
+<thead>
+<tr>
+<th align="left">Term</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a name="term.callsign">callsign</a></td>
+<td align="left">The name given to an instance of a plugin. One plugin can be instantiated multiple times, but each instance the instance name, callsign, must be unique.</td>
+</tr>
+</tbody>
+</table>
+<p><a name="head.References"></a></p>
+<h2 id="references">References</h2>
+<table>
+<thead>
+<tr>
+<th align="left">Ref ID</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a name="ref.HTTP"><a href="http://www.w3.org/Protocols">HTTP</a></a></td>
+<td align="left">HTTP specification</td>
+</tr>
+<tr>
+<td align="left"><a name="ref.JSON-RPC"><a href="https://www.jsonrpc.org/specification">JSON-RPC</a></a></td>
+<td align="left">JSON-RPC 2.0 specification</td>
+</tr>
+<tr>
+<td align="left"><a name="ref.JSON"><a href="http://www.json.org/">JSON</a></a></td>
+<td align="left">JSON specification</td>
+</tr>
+<tr>
+<td align="left"><a name="ref.Thunder"><a href="https://github.com/WebPlatformForEmbedded/Thunder/blob/master/doc/WPE%20-%20API%20-%20WPEFramework.docx">Thunder</a></a></td>
+<td align="left">Thunder API Reference</td>
+</tr>
+</tbody>
+</table>
+<p><a name="head.Description"></a></p>
+<h1 id="description">Description</h1>
+<p>BluetoothAudioSink JSON-RPC interface.</p>
+<p><a name="head.Methods"></a></p>
+<h1 id="methods">Methods</h1>
+<p>The following methods are provided by the BluetoothAudioSink interface:</p>
+<p>BluetoothAudioSink interface methods:</p>
+<table>
+<thead>
+<tr>
+<th align="left">Method</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="#method.exchange_assign">exchange assign</a></td>
+<td align="left">Assigns a Bluetooth device for audio playback</td>
+</tr>
+<tr>
+<td align="left"><a href="#method.exchange_revoke">exchange revoke</a></td>
+<td align="left">Revokes a Bluetooth device from audio playback</td>
+</tr>
+</tbody>
+</table>
+<p><a name="method.exchange_assign"></a></p>
+<h2 id="exchange_assign-method"><em>exchange_assign <sup>method</sup></em></h2>
+<p>Assigns a Bluetooth device for audio playback.</p>
+<h3 id="parameters">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">address</td>
+<td align="left">string</td>
+<td align="left">Address of the bluetooth device to assign</td>
+</tr>
+</tbody>
+</table>
+<h3 id="result">Result</h3>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">result</td>
+<td align="left">null</td>
+<td align="left">Always null</td>
+</tr>
+</tbody>
+</table>
+<h3 id="errors">Errors</h3>
+<table>
+<thead>
+<tr>
+<th align="left">Code</th>
+<th align="left">Message</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"></td>
+<td align="left"><code>ERROR_ALREADY_CONNECTED</code></td>
+<td align="left">A device is already assigned</td>
+</tr>
+</tbody>
+</table>
+<h3 id="example">Example</h3>
+<h4 id="request">Request</h4>
+<pre><code class="language-json">{
+    &quot;jsonrpc&quot;: &quot;2.0&quot;,
+    &quot;id&quot;: 42,
+    &quot;method&quot;: &quot;BluetoothAudioSink.1.exchange_assign&quot;,
+    &quot;params&quot;: &quot;...&quot;
+}
+</code></pre>
+<h4 id="response">Response</h4>
+<pre><code class="language-json">{
+    &quot;jsonrpc&quot;: &quot;2.0&quot;,
+    &quot;id&quot;: 42,
+    &quot;result&quot;: null
+}
+</code></pre>
+<p><a name="method.exchange_revoke"></a></p>
+<h2 id="exchange_revoke-method"><em>exchange_revoke <sup>method</sup></em></h2>
+<p>Revokes a Bluetooth device from audio playback.</p>
+<h3 id="parameters_1">Parameters</h3>
+<p>This method takes no parameters.</p>
+<h3 id="result_1">Result</h3>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">result</td>
+<td align="left">null</td>
+<td align="left">Always null</td>
+</tr>
+</tbody>
+</table>
+<h3 id="errors_1">Errors</h3>
+<table>
+<thead>
+<tr>
+<th align="left">Code</th>
+<th align="left">Message</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"></td>
+<td align="left"><code>ERROR_ALREADY_RELEASED</code></td>
+<td align="left">No device is currently assigned</td>
+</tr>
+</tbody>
+</table>
+<h3 id="example_1">Example</h3>
+<h4 id="request_1">Request</h4>
+<pre><code class="language-json">{
+    &quot;jsonrpc&quot;: &quot;2.0&quot;,
+    &quot;id&quot;: 42,
+    &quot;method&quot;: &quot;BluetoothAudioSink.1.exchange_revoke&quot;
+}
+</code></pre>
+<h4 id="response_1">Response</h4>
+<pre><code class="language-json">{
+    &quot;jsonrpc&quot;: &quot;2.0&quot;,
+    &quot;id&quot;: 42,
+    &quot;result&quot;: null
+}
+</code></pre>
+<p><a name="head.Properties"></a></p>
+<h1 id="properties">Properties</h1>
+<p>The following properties are provided by the BluetoothAudioSink interface:</p>
+<p>BluetoothAudioSink interface properties:</p>
+<table>
+<thead>
+<tr>
+<th align="left">Property</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="#property.exchange_state">exchange state</a> <sup>RO</sup></td>
+<td align="left">Current audio sink state</td>
+</tr>
+<tr>
+<td align="left"><a href="#property.exchange_type">exchange type</a> <sup>RO</sup></td>
+<td align="left">Audio sink type</td>
+</tr>
+<tr>
+<td align="left"><a href="#property.exchange_supportedcodecs">exchange supportedcodecs</a> <sup>RO</sup></td>
+<td align="left">Audio codecs supported by the sink</td>
+</tr>
+<tr>
+<td align="left"><a href="#property.exchange_supporteddrms">exchange supporteddrms</a> <sup>RO</sup></td>
+<td align="left">DRM schemes supported by the sink</td>
+</tr>
+<tr>
+<td align="left"><a href="#property.exchange_codec">exchange codec</a> <sup>RO</sup></td>
+<td align="left">Properites of the currently used codec</td>
+</tr>
+<tr>
+<td align="left"><a href="#property.exchange_drm">exchange drm</a> <sup>RO</sup></td>
+<td align="left">Properties of the currently used DRM scheme</td>
+</tr>
+<tr>
+<td align="left"><a href="#property.exchange_stream">exchange stream</a> <sup>RO</sup></td>
+<td align="left">Properties of the current output stream</td>
+</tr>
+</tbody>
+</table>
+<p><a name="property.exchange_state"></a></p>
+<h2 id="exchange_state-property"><em>exchange_state <sup>property</sup></em></h2>
+<p>Provides access to the current audio sink state.</p>
+<blockquote>
+<p>This property is <strong>read-only</strong>.</p>
+</blockquote>
+<h3 id="value">Value</h3>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">sinkstate</td>
+<td align="left">string</td>
+<td align="left">Current audio sink state (must be one of the following: <em>Unassigned</em>, <em>Disconnected</em>, <em>ConnectedBadDevice</em>, <em>ConnectedRestricted</em>, <em>Connected</em>, <em>Ready</em>, <em>Streaming</em>)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="example_2">Example</h3>
+<h4 id="get-request">Get Request</h4>
+<pre><code class="language-json">{
+    &quot;jsonrpc&quot;: &quot;2.0&quot;,
+    &quot;id&quot;: 42,
+    &quot;method&quot;: &quot;BluetoothAudioSink.1.exchange_state&quot;
+}
+</code></pre>
+<h4 id="get-response">Get Response</h4>
+<pre><code class="language-json">{
+    &quot;jsonrpc&quot;: &quot;2.0&quot;,
+    &quot;id&quot;: 42,
+    &quot;result&quot;: &quot;Unassigned&quot;
+}
+</code></pre>
+<p><a name="property.exchange_type"></a></p>
+<h2 id="exchange_type-property"><em>exchange_type <sup>property</sup></em></h2>
+<p>Provides access to the audio sink type.</p>
+<blockquote>
+<p>This property is <strong>read-only</strong>.</p>
+</blockquote>
+<h3 id="value_1">Value</h3>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">type</td>
+<td align="left">string</td>
+<td align="left">Audio sink type (must be one of the following: <em>Unknown</em>, <em>Headphone</em>, <em>Speaker</em>, <em>Recorder</em>, <em>Amplifier</em>)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="errors_2">Errors</h3>
+<table>
+<thead>
+<tr>
+<th align="left">Code</th>
+<th align="left">Message</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"></td>
+<td align="left"><code>ERROR_ILLEGAL_STATE</code></td>
+<td align="left">The sink device is not connected</td>
+</tr>
+</tbody>
+</table>
+<h3 id="example_3">Example</h3>
+<h4 id="get-request_1">Get Request</h4>
+<pre><code class="language-json">{
+    &quot;jsonrpc&quot;: &quot;2.0&quot;,
+    &quot;id&quot;: 42,
+    &quot;method&quot;: &quot;BluetoothAudioSink.1.exchange_type&quot;
+}
+</code></pre>
+<h4 id="get-response_1">Get Response</h4>
+<pre><code class="language-json">{
+    &quot;jsonrpc&quot;: &quot;2.0&quot;,
+    &quot;id&quot;: 42,
+    &quot;result&quot;: &quot;Unknown&quot;
+}
+</code></pre>
+<p><a name="property.exchange_supportedcodecs"></a></p>
+<h2 id="exchange_supportedcodecs-property"><em>exchange_supportedcodecs <sup>property</sup></em></h2>
+<p>Provides access to the audio codecs supported by the sink.</p>
+<blockquote>
+<p>This property is <strong>read-only</strong>.</p>
+</blockquote>
+<h3 id="value_2">Value</h3>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">codecs</td>
+<td align="left">array</td>
+<td align="left">Audio codecs supported by the sink</td>
+</tr>
+<tr>
+<td align="left">codecs[#]</td>
+<td align="left">string</td>
+<td align="left">(must be one of the following: <em>LC-SBC</em>)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="errors_3">Errors</h3>
+<table>
+<thead>
+<tr>
+<th align="left">Code</th>
+<th align="left">Message</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"></td>
+<td align="left"><code>ERROR_ILLEGAL_STATE</code></td>
+<td align="left">The sink device is not connected</td>
+</tr>
+</tbody>
+</table>
+<h3 id="example_4">Example</h3>
+<h4 id="get-request_2">Get Request</h4>
+<pre><code class="language-json">{
+    &quot;jsonrpc&quot;: &quot;2.0&quot;,
+    &quot;id&quot;: 42,
+    &quot;method&quot;: &quot;BluetoothAudioSink.1.exchange_supportedcodecs&quot;
+}
+</code></pre>
+<h4 id="get-response_2">Get Response</h4>
+<pre><code class="language-json">{
+    &quot;jsonrpc&quot;: &quot;2.0&quot;,
+    &quot;id&quot;: 42,
+    &quot;result&quot;: [
+        &quot;LC-SBC&quot;
+    ]
+}
+</code></pre>
+<p><a name="property.exchange_supporteddrms"></a></p>
+<h2 id="exchange_supporteddrms-property"><em>exchange_supporteddrms <sup>property</sup></em></h2>
+<p>Provides access to the DRM schemes supported by the sink.</p>
+<blockquote>
+<p>This property is <strong>read-only</strong>.</p>
+</blockquote>
+<h3 id="value_3">Value</h3>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">drms</td>
+<td align="left">array</td>
+<td align="left">DRM schemes supported by the sink</td>
+</tr>
+<tr>
+<td align="left">drms[#]</td>
+<td align="left">string</td>
+<td align="left">(must be one of the following: <em>None</em>, <em>DTCP</em>, <em>SCMS-T</em>)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="errors_4">Errors</h3>
+<table>
+<thead>
+<tr>
+<th align="left">Code</th>
+<th align="left">Message</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"></td>
+<td align="left"><code>ERROR_ILLEGAL_STATE</code></td>
+<td align="left">The sink device is not connected</td>
+</tr>
+</tbody>
+</table>
+<h3 id="example_5">Example</h3>
+<h4 id="get-request_3">Get Request</h4>
+<pre><code class="language-json">{
+    &quot;jsonrpc&quot;: &quot;2.0&quot;,
+    &quot;id&quot;: 42,
+    &quot;method&quot;: &quot;BluetoothAudioSink.1.exchange_supporteddrms&quot;
+}
+</code></pre>
+<h4 id="get-response_3">Get Response</h4>
+<pre><code class="language-json">{
+    &quot;jsonrpc&quot;: &quot;2.0&quot;,
+    &quot;id&quot;: 42,
+    &quot;result&quot;: [
+        &quot;None&quot;
+    ]
+}
+</code></pre>
+<p><a name="property.exchange_codec"></a></p>
+<h2 id="exchange_codec-property"><em>exchange_codec <sup>property</sup></em></h2>
+<p>Provides access to the properites of the currently used codec.</p>
+<blockquote>
+<p>This property is <strong>read-only</strong>.</p>
+</blockquote>
+<h3 id="value_4">Value</h3>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">properties</td>
+<td align="left">object</td>
+<td align="left">Properites of the currently used codec</td>
+</tr>
+<tr>
+<td align="left">properties.codec</td>
+<td align="left">string</td>
+<td align="left">Audio codec used (must be one of the following: <em>LC-SBC</em>)</td>
+</tr>
+<tr>
+<td align="left">properties.settings</td>
+<td align="left">string</td>
+<td align="left">Codec-specific audio quality preset, compression profile, etc</td>
+</tr>
+</tbody>
+</table>
+<h3 id="errors_5">Errors</h3>
+<table>
+<thead>
+<tr>
+<th align="left">Code</th>
+<th align="left">Message</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"></td>
+<td align="left"><code>ERROR_ILLEGAL_STATE</code></td>
+<td align="left">Currently not streaming</td>
+</tr>
+</tbody>
+</table>
+<h3 id="example_6">Example</h3>
+<h4 id="get-request_4">Get Request</h4>
+<pre><code class="language-json">{
+    &quot;jsonrpc&quot;: &quot;2.0&quot;,
+    &quot;id&quot;: 42,
+    &quot;method&quot;: &quot;BluetoothAudioSink.1.exchange_codec&quot;
+}
+</code></pre>
+<h4 id="get-response_4">Get Response</h4>
+<pre><code class="language-json">{
+    &quot;jsonrpc&quot;: &quot;2.0&quot;,
+    &quot;id&quot;: 42,
+    &quot;result&quot;: {
+        &quot;codec&quot;: &quot;LC-SBC&quot;,
+        &quot;settings&quot;: &quot;...&quot;
+    }
+}
+</code></pre>
+<p><a name="property.exchange_drm"></a></p>
+<h2 id="exchange_drm-property"><em>exchange_drm <sup>property</sup></em></h2>
+<p>Provides access to the properties of the currently used DRM scheme.</p>
+<blockquote>
+<p>This property is <strong>read-only</strong>.</p>
+</blockquote>
+<h3 id="value_5">Value</h3>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">properties</td>
+<td align="left">object</td>
+<td align="left">Properties of the currently used DRM scheme</td>
+</tr>
+<tr>
+<td align="left">properties.drm</td>
+<td align="left">string</td>
+<td align="left">Content protection scheme used (must be one of the following: <em>None</em>, <em>DTCP</em>, <em>SCMS-T</em>)</td>
+</tr>
+<tr>
+<td align="left">properties.settings</td>
+<td align="left">string</td>
+<td align="left">DRM-specific content protection level, encoding rules, etc</td>
+</tr>
+</tbody>
+</table>
+<h3 id="errors_6">Errors</h3>
+<table>
+<thead>
+<tr>
+<th align="left">Code</th>
+<th align="left">Message</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"></td>
+<td align="left"><code>ERROR_ILLEGAL_STATE</code></td>
+<td align="left">Currently not streaming</td>
+</tr>
+</tbody>
+</table>
+<h3 id="example_7">Example</h3>
+<h4 id="get-request_5">Get Request</h4>
+<pre><code class="language-json">{
+    &quot;jsonrpc&quot;: &quot;2.0&quot;,
+    &quot;id&quot;: 42,
+    &quot;method&quot;: &quot;BluetoothAudioSink.1.exchange_drm&quot;
+}
+</code></pre>
+<h4 id="get-response_5">Get Response</h4>
+<pre><code class="language-json">{
+    &quot;jsonrpc&quot;: &quot;2.0&quot;,
+    &quot;id&quot;: 42,
+    &quot;result&quot;: {
+        &quot;drm&quot;: &quot;None&quot;,
+        &quot;settings&quot;: &quot;...&quot;
+    }
+}
+</code></pre>
+<p><a name="property.exchange_stream"></a></p>
+<h2 id="exchange_stream-property"><em>exchange_stream <sup>property</sup></em></h2>
+<p>Provides access to the properties of the current output stream.</p>
+<blockquote>
+<p>This property is <strong>read-only</strong>.</p>
+</blockquote>
+<h3 id="value_6">Value</h3>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">properties</td>
+<td align="left">object</td>
+<td align="left">Properties of the current output stream</td>
+</tr>
+<tr>
+<td align="left">properties.samplerate</td>
+<td align="left">integer</td>
+<td align="left">Sample rate in Hz</td>
+</tr>
+<tr>
+<td align="left">properties.bitrate</td>
+<td align="left">integer</td>
+<td align="left">Target bitrate in bits per second (eg. 320000)</td>
+</tr>
+<tr>
+<td align="left">properties.channels</td>
+<td align="left">integer</td>
+<td align="left">Number of audio channels</td>
+</tr>
+<tr>
+<td align="left">properties.resolution</td>
+<td align="left">integer</td>
+<td align="left">Sampling resolution in bits per sample</td>
+</tr>
+<tr>
+<td align="left">properties.isresampling</td>
+<td align="left">boolean</td>
+<td align="left">Indicates if the sink is resampling the input stream</td>
+</tr>
+</tbody>
+</table>
+<h3 id="errors_7">Errors</h3>
+<table>
+<thead>
+<tr>
+<th align="left">Code</th>
+<th align="left">Message</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"></td>
+<td align="left"><code>ERROR_ILLEGAL_STATE</code></td>
+<td align="left">Currently not streaming</td>
+</tr>
+</tbody>
+</table>
+<h3 id="example_8">Example</h3>
+<h4 id="get-request_6">Get Request</h4>
+<pre><code class="language-json">{
+    &quot;jsonrpc&quot;: &quot;2.0&quot;,
+    &quot;id&quot;: 42,
+    &quot;method&quot;: &quot;BluetoothAudioSink.1.exchange_stream&quot;
+}
+</code></pre>
+<h4 id="get-response_6">Get Response</h4>
+<pre><code class="language-json">{
+    &quot;jsonrpc&quot;: &quot;2.0&quot;,
+    &quot;id&quot;: 42,
+    &quot;result&quot;: {
+        &quot;samplerate&quot;: 44100,
+        &quot;bitrate&quot;: 0,
+        &quot;channels&quot;: 2,
+        &quot;resolution&quot;: 16,
+        &quot;isresampling&quot;: false
+    }
+}
+</code></pre>
+<p><a name="head.Notifications"></a></p>
+<h1 id="notifications">Notifications</h1>
+<p>Notifications are autonomous events, triggered by the internals of the implementation, and broadcasted via JSON-RPC to all registered observers. Refer to [<a href="#ref.Thunder">Thunder</a>] for information on how to register for a notification.</p>
+<p>The following events are provided by the BluetoothAudioSink interface:</p>
+<p>BluetoothAudioSink interface events:</p>
+<table>
+<thead>
+<tr>
+<th align="left">Event</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="#event.exchange_updated">exchange updated</a></td>
+<td align="left">Signals audio sink state change or stream properties update</td>
+</tr>
+</tbody>
+</table>
+<p><a name="event.exchange_updated"></a></p>
+<h2 id="exchange_updated-event"><em>exchange_updated <sup>event</sup></em></h2>
+<p>Signals audio sink state change or stream properties update.</p>
+<h3 id="parameters_2">Parameters</h3>
+<p>This event carries no parameters.</p>
+<h3 id="example_9">Example</h3>
+<pre><code class="language-json">{
+    &quot;jsonrpc&quot;: &quot;2.0&quot;,
+    &quot;method&quot;: &quot;client.events.1.exchange_updated&quot;
+}
+</code></pre>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../ApplicationAPI/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Application API" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Application API
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../AmazonPrimeAPI/" class="md-footer__link md-footer__link--next" aria-label="Next: AmazonPrime API" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              AmazonPrime API
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        
+          Made with
+          <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+            Material for MkDocs
+          </a>
+        
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.fcfe8b6d.min.js", "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.b1047164.min.js"></script>
+      
+    
+  </body>
+</html>

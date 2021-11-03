@@ -1,323 +1,1856 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="canonical" href="https://karthick-somasundaresan.github.io/Documentation/">
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-7.3.6">
+    
+    
+      
+        <title>Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.a57b2b03.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.3f5d1f46.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+    
+      
+
+
+    
+    
+  </head>
   
   
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="None">
     
-    <link rel="canonical" href="https://karthick-somasundaresan.github.io/Documentation/">
-    <link rel="shortcut icon" href="./img/favicon.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-    <title>Documentation</title>
-    <link href="./css/bootstrap-3.3.7.min.css" rel="stylesheet">
-    <link href="./css/font-awesome-4.7.0.css" rel="stylesheet">
-    <link href="./css/base.css" rel="stylesheet">
-    <link rel="stylesheet" href="./css/highlight.css">
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->
-
-    <script src="./js/jquery-3.2.1.min.js"></script>
-    <script src="./js/bootstrap-3.3.7.min.js"></script>
-    <script src="./js/highlight.pack.js"></script>
     
-      <script src="./js/elasticlunr.min.js"></script>
     
-    <base target="_top">
-    <script>
-      var base_url = '.';
-      var is_top_frame = (window === window.parent);
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    <script>function __prefix(e){return new URL(".",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
         
-        var pageToc = [
-          {title: "Welcome to Documentation.", url: "#_top", children: [
-              {title: "Interface documentation", url: "#interface-documentation" },
-              {title: "WPEFramework-plugins documentation", url: "#wpeframework-plugins-documentation" },
-          ]},
-        ];
-
-    </script>
-    <script src="./js/base.js"></script> 
-</head>
-
-<body>
-<script>
-if (is_top_frame) { $('body').addClass('wm-top-page'); }
-</script>
-
-<nav class="navbar wm-page-top-frame">
-  <div class="container-fluid wm-top-container">
+        <a href="#welcome-to-documentation" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
     
-    <div class="wm-top-tool pull-right wm-vcenter">
-      <form class="dropdown wm-vcentered" id="wm-search-form" action="./search.html">
-        
-        <button id="wm-search-show" class="btn btn-sm btn-default" type="submit"
-          ><i class="fa fa-search" aria-hidden="true"></i></button>
+      
 
-        <div class="input-group input-group-sm wm-top-search">
-          <input type="text" name="q" class="form-control" id="mkdocs-search-query" placeholder="Search" autocomplete="off">
-          <span class="input-group-btn" role="search">
-            
-            <button class="btn btn-default dropdown-toggle collapse" data-toggle="dropdown" type="button"><span class="caret"></span></button>
-            <ul id="mkdocs-search-results" class="dropdown-menu dropdown-menu-right"></ul>
-            <button id="wm-search-go" class="btn btn-default" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="." title="Documentation" class="md-header__button md-logo" aria-label="Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Documentation
           </span>
         </div>
-      </form>
-    </div>
-
-    
-    <div class="wm-top-tool wm-vcenter pull-right wm-small-left">
-      <button id="wm-toc-button" type="button" class="btn btn-sm btn-default wm-vcentered"><i class="fa fa-th-list" aria-hidden="true"></i></button>
-    </div>
-
-    
-    
-
-    
-    <a href="" class="wm-top-brand wm-top-link wm-vcenter">
-      
-      <div class="wm-top-title">
-        Documentation<br>
-        
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Documentation
+            
+          </span>
+        </div>
       </div>
-    </a>
-  </div>
-</nav>
-
-  <div id="main-content" class="wm-page-top-frame">
+    </div>
     
-<nav class="wm-toc-pane">
-  
-  <ul class="wm-toctree">
-        <li class="wm-toc-li wm-toc-lev1 wm-toc-opener"><span class="wm-toc-text">Interface doc</span>
-</li>
-<li class="wm-toc-li-nested collapse">
-  <ul class="wm-toctree">
-      <li class="wm-toc-li wm-toc-lev2 "><a href="AVSControllerAPI/" class="wm-article-link wm-toc-text">AVSControllerAPI</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="AmazonPrimeAPI/" class="wm-article-link wm-toc-text">AmazonPrimeAPI</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="ApplicationAPI/" class="wm-article-link wm-toc-text">ApplicationAPI</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="BluetoothControlAPI/" class="wm-article-link wm-toc-text">BluetoothControlAPI</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="BluetoothRemoteControlAPI/" class="wm-article-link wm-toc-text">BluetoothRemoteControlAPI</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="BrowserAPI/" class="wm-article-link wm-toc-text">BrowserAPI</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="BrowserResourcesAPI/" class="wm-article-link wm-toc-text">BrowserResourcesAPI</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="BrowserSecurityAPI/" class="wm-article-link wm-toc-text">BrowserSecurityAPI</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="ButlerAPI/" class="wm-article-link wm-toc-text">ButlerAPI</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="CobaltAPI/" class="wm-article-link wm-toc-text">CobaltAPI</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="CompositorAPI/" class="wm-article-link wm-toc-text">CompositorAPI</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="ConnectionPropertiesAPI/" class="wm-article-link wm-toc-text">ConnectionPropertiesAPI</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="CustomerCareOperationsAPI/" class="wm-article-link wm-toc-text">CustomerCareOperationsAPI</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="DHCPServerAPI/" class="wm-article-link wm-toc-text">DHCPServerAPI</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="DIALServerAPI/" class="wm-article-link wm-toc-text">DIALServerAPI</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="DTVAPI/" class="wm-article-link wm-toc-text">DTVAPI</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="DeviceIdentificationAPI/" class="wm-article-link wm-toc-text">DeviceIdentificationAPI</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="DeviceInfoAPI/" class="wm-article-link wm-toc-text">DeviceInfoAPI</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="DisplayInfoAPI/" class="wm-article-link wm-toc-text">DisplayInfoAPI</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="DisplayPropertiesAPI/" class="wm-article-link wm-toc-text">DisplayPropertiesAPI</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="FirmwareControlAPI/" class="wm-article-link wm-toc-text">FirmwareControlAPI</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="GraphicsPropertiesAPI/" class="wm-article-link wm-toc-text">GraphicsPropertiesAPI</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="HDRPropertiesAPI/" class="wm-article-link wm-toc-text">HDRPropertiesAPI</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="IOConnectorAPI/" class="wm-article-link wm-toc-text">IOConnectorAPI</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="IOControlAPI/" class="wm-article-link wm-toc-text">IOControlAPI</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="InputSwitchAPI/" class="wm-article-link wm-toc-text">InputSwitchAPI</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="LanguageTagAPI/" class="wm-article-link wm-toc-text">LanguageTagAPI</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="LocationSyncAPI/" class="wm-article-link wm-toc-text">LocationSyncAPI</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="MessengerAPI/" class="wm-article-link wm-toc-text">MessengerAPI</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="MonitorAPI/" class="wm-article-link wm-toc-text">MonitorAPI</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="NetflixAPI/" class="wm-article-link wm-toc-text">NetflixAPI</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="NetworkControlAPI/" class="wm-article-link wm-toc-text">NetworkControlAPI</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="NetworkToolsAPI/" class="wm-article-link wm-toc-text">NetworkToolsAPI</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="OpenCDMiAPI/" class="wm-article-link wm-toc-text">OpenCDMiAPI</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="OutputAPI/" class="wm-article-link wm-toc-text">OutputAPI</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="PackagerAPI/" class="wm-article-link wm-toc-text">PackagerAPI</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="PerformanceMonitorAPI/" class="wm-article-link wm-toc-text">PerformanceMonitorAPI</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="PlayerInfoAPI/" class="wm-article-link wm-toc-text">PlayerInfoAPI</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="PlayerPropertiesAPI/" class="wm-article-link wm-toc-text">PlayerPropertiesAPI</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="PowerAPI/" class="wm-article-link wm-toc-text">PowerAPI</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="ProcessContainers/" class="wm-article-link wm-toc-text">ProcessContainers</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="ProvisioningAPI/" class="wm-article-link wm-toc-text">ProvisioningAPI</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="RemoteControlAPI/" class="wm-article-link wm-toc-text">RemoteControlAPI</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="SecureShellServerAPI/" class="wm-article-link wm-toc-text">SecureShellServerAPI</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="SecurityAgentAPI/" class="wm-article-link wm-toc-text">SecurityAgentAPI</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="SparkAPI/" class="wm-article-link wm-toc-text">SparkAPI</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="StateControlAPI/" class="wm-article-link wm-toc-text">StateControlAPI</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="StreamerAPI/" class="wm-article-link wm-toc-text">StreamerAPI</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="SubsystemControlAPI/" class="wm-article-link wm-toc-text">SubsystemControlAPI</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="SystemCommandsAPI/" class="wm-article-link wm-toc-text">SystemCommandsAPI</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="TestControllerAPI/" class="wm-article-link wm-toc-text">TestControllerAPI</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="TestUtilityAPI/" class="wm-article-link wm-toc-text">TestUtilityAPI</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="TestUtilityPlugin/" class="wm-article-link wm-toc-text">TestUtilityPlugin</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="TimeSyncAPI/" class="wm-article-link wm-toc-text">TimeSyncAPI</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="TraceControlAPI/" class="wm-article-link wm-toc-text">TraceControlAPI</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="VolumeControlAPI/" class="wm-article-link wm-toc-text">VolumeControlAPI</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="WebBrowserAPI/" class="wm-article-link wm-toc-text">WebBrowserAPI</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="WebKitBrowserAPI/" class="wm-article-link wm-toc-text">WebKitBrowserAPI</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="WiFiControlAPI/" class="wm-article-link wm-toc-text">WiFiControlAPI</a>
-</li>
-  </ul>
-</li>
-
-        <li class="wm-toc-li wm-toc-lev1 wm-toc-opener"><span class="wm-toc-text">Plugins doc</span>
-</li>
-<li class="wm-toc-li-nested collapse">
-  <ul class="wm-toctree">
-      <li class="wm-toc-li wm-toc-lev2 "><a href="BluetoothControlPlugin/" class="wm-article-link wm-toc-text">BluetoothControlPlugin</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="BluetoothRemoteControlPlugin/" class="wm-article-link wm-toc-text">BluetoothRemoteControlPlugin</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="CobaltPlugin/" class="wm-article-link wm-toc-text">CobaltPlugin</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="CommanderPlugin/" class="wm-article-link wm-toc-text">CommanderPlugin</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="CompositorPlugin/" class="wm-article-link wm-toc-text">CompositorPlugin</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="DHCPServerPlugin/" class="wm-article-link wm-toc-text">DHCPServerPlugin</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="DIALServerPlugin/" class="wm-article-link wm-toc-text">DIALServerPlugin</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="DTVPlugin/" class="wm-article-link wm-toc-text">DTVPlugin</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="DictionaryPlugin/" class="wm-article-link wm-toc-text">DictionaryPlugin</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="DisplayInfoPlugin/" class="wm-article-link wm-toc-text">DisplayInfoPlugin</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="FileTransferPlugin/" class="wm-article-link wm-toc-text">FileTransferPlugin</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="FirmwareControlPlugin/" class="wm-article-link wm-toc-text">FirmwareControlPlugin</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="IOConnectorPlugin/" class="wm-article-link wm-toc-text">IOConnectorPlugin</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="NetworkControlPlugin/" class="wm-article-link wm-toc-text">NetworkControlPlugin</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="PerformanceMonitorPlugin/" class="wm-article-link wm-toc-text">PerformanceMonitorPlugin</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="PlayerInfoPlugin/" class="wm-article-link wm-toc-text">PlayerInfoPlugin</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="PowerPlugin/" class="wm-article-link wm-toc-text">PowerPlugin</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="ProcessMonitorPlugin/" class="wm-article-link wm-toc-text">ProcessMonitorPlugin</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="RemoteControlPlugin/" class="wm-article-link wm-toc-text">RemoteControlPlugin</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="ResourceMonitorPlugin/" class="wm-article-link wm-toc-text">ResourceMonitorPlugin</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="SparkPlugin/" class="wm-article-link wm-toc-text">SparkPlugin</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="StreamerPlugin/" class="wm-article-link wm-toc-text">StreamerPlugin</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="SyslogExportPlugin/" class="wm-article-link wm-toc-text">SyslogExportPlugin</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="SystemCommandsPlugin/" class="wm-article-link wm-toc-text">SystemCommandsPlugin</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="TestUtilityPlugin/" class="wm-article-link wm-toc-text">TestUtilityPlugin</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="TimeSyncPlugin/" class="wm-article-link wm-toc-text">TimeSyncPlugin</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="VolumeControlPlugin/" class="wm-article-link wm-toc-text">VolumeControlPlugin</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="WebPAPlugin/" class="wm-article-link wm-toc-text">WebPAPlugin</a>
-</li>
-      <li class="wm-toc-li wm-toc-lev2 "><a href="WifiControlPlugin/" class="wm-article-link wm-toc-text">WifiControlPlugin</a>
-</li>
-  </ul>
-</li>
-
-  </ul>
-</nav>
-
-    <div class="wm-content-pane">
-      <iframe class="wm-article" name="article"></iframe>
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
     </div>
   </div>
-
-<div class="container-fluid wm-page-content">
-  <a name="_top"></a>
+</div>
     
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="Documentation" class="md-nav__button md-logo" aria-label="Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Documentation
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="." class="md-nav__link md-nav__link--active">
+        Documentation
+      </a>
+      
+        
+
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#interface-documentation" class="md-nav__link">
+    Interface documentation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wpeframework-plugins-documentation" class="md-nav__link">
+    WPEFramework-plugins documentation
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
 
     
+      
+      
+      
 
-    <h1 id="welcome-to-documentation">Welcome to Documentation.</h1>
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          Interface Documentation
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Interface Documentation" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Interface Documentation
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="CustomerCareOperationsAPI/" class="md-nav__link">
+        CustomerCareOperations API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ApplicationAPI/" class="md-nav__link">
+        Application API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="BluetoothAudioSinkAPI/" class="md-nav__link">
+        BluetoothAudioSink API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="AmazonPrimeAPI/" class="md-nav__link">
+        AmazonPrime API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="GraphicsPropertiesAPI/" class="md-nav__link">
+        GraphicsProperties API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ConnectionPropertiesAPI/" class="md-nav__link">
+        ConnectionProperties API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="HDRPropertiesAPI/" class="md-nav__link">
+        HDRProperties API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="DisplayPropertiesAPI/" class="md-nav__link">
+        DisplayProperties API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="PlayerPropertiesAPI/" class="md-nav__link">
+        PlayerProperties API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="LanguageTagAPI/" class="md-nav__link">
+        LanguageTag API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="WebBrowserAPI/" class="md-nav__link">
+        WebBrowser API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="BrowserResourcesAPI/" class="md-nav__link">
+        BrowserResources API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="BrowserSecurityAPI/" class="md-nav__link">
+        BrowserSecurity API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="VolumeControlAPI/" class="md-nav__link">
+        VolumeControl API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="AVSControllerAPI/" class="md-nav__link">
+        AVSController API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="OutputAPI/" class="md-nav__link">
+        Output API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="MathAPI/" class="md-nav__link">
+        Math API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="NetworkToolsAPI/" class="md-nav__link">
+        NetworkTools API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="StreamerAPI/" class="md-nav__link">
+        Streamer API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="FirmwareControlAPI/" class="md-nav__link">
+        Firmware Control API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="SparkAPI/" class="md-nav__link">
+        Spark API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="IOControlAPI/" class="md-nav__link">
+        IO Control API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="SecureShellServerAPI/" class="md-nav__link">
+        SecureShell Server API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="DisplayInfoAPI/" class="md-nav__link">
+        Display Info API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="IOConnectorAPI/" class="md-nav__link">
+        IO Connector API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="MonitorAPI/" class="md-nav__link">
+        Monitor API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="BluetoothControlAPI/" class="md-nav__link">
+        Bluetooth Control API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="PlayerInfoAPI/" class="md-nav__link">
+        Player Info API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="WebKitBrowserAPI/" class="md-nav__link">
+        WebKit Browser API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="TestControllerAPI/" class="md-nav__link">
+        Test Controller API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="PowerAPI/" class="md-nav__link">
+        Power API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="DHCPServerAPI/" class="md-nav__link">
+        DHCP Server API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="TestUtilityAPI/" class="md-nav__link">
+        Test Utility API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="NetworkControlAPI/" class="md-nav__link">
+        Network Control API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="CobaltAPI/" class="md-nav__link">
+        Cobalt API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="OpenCDMiAPI/" class="md-nav__link">
+        OpenCDMi API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="SecurityAgentAPI/" class="md-nav__link">
+        Security Agent API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="MessengerAPI/" class="md-nav__link">
+        Messenger API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="PerformanceMonitorAPI/" class="md-nav__link">
+        Performance Monitor API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="RemoteControlAPI/" class="md-nav__link">
+        Remote Control API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="StateControlAPI/" class="md-nav__link">
+        StateControl API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ProcessContainers/" class="md-nav__link">
+        Process Containers
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="SystemCommandsAPI/" class="md-nav__link">
+        System Commands API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="DeviceInfoAPI/" class="md-nav__link">
+        Device Info API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="NetflixAPI/" class="md-nav__link">
+        Netflix API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="PackagerAPI/" class="md-nav__link">
+        Packager API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="LocationSyncAPI/" class="md-nav__link">
+        Location Sync API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="SubsystemControlAPI/" class="md-nav__link">
+        Subsystem Control API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="DTVAPI/" class="md-nav__link">
+        DTV API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ProvisioningAPI/" class="md-nav__link">
+        Provisioning API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="DeviceIdentificationAPI/" class="md-nav__link">
+        Device Identification API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="CompositorAPI/" class="md-nav__link">
+        Compositor API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="WiFiControlAPI/" class="md-nav__link">
+        WiFi Control API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="BrowserAPI/" class="md-nav__link">
+        Browser API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="TraceControlAPI/" class="md-nav__link">
+        Trace Control API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="TimeSyncAPI/" class="md-nav__link">
+        Time Sync API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="DIALServerAPI/" class="md-nav__link">
+        DIAL Server API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="BluetoothRemoteControlAPI/" class="md-nav__link">
+        Bluetooth Remote Control API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="InputSwitchAPI/" class="md-nav__link">
+        Input Switch API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ButlerAPI/" class="md-nav__link">
+        Butler API
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Plugin Documentation
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Plugin Documentation" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Plugin Documentation
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="PowerPlugin/" class="md-nav__link">
+        Power Plugin
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="WifiControlPlugin/" class="md-nav__link">
+        Wifi Control Plugin
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="PlayerInfoPlugin/" class="md-nav__link">
+        Player Info Plugin
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="CommanderPlugin/" class="md-nav__link">
+        Commander Plugin
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="DIALServerPlugin/" class="md-nav__link">
+        DIAL Server Plugin
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="FirmwareControlPlugin/" class="md-nav__link">
+        Firmware Control Plugin
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="NetworkControlPlugin/" class="md-nav__link">
+        Network Control Plugin
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="CompositorPlugin/" class="md-nav__link">
+        Compositor Plugin
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ProcessMonitorPlugin/" class="md-nav__link">
+        ProcessMonitor Plugin
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="WebPAPlugin/" class="md-nav__link">
+        WebPA Plugin
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="DHCPServerPlugin/" class="md-nav__link">
+        DHCP Server Plugin
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ContainersPlugin/" class="md-nav__link">
+        Containers Plugin
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="CobaltPlugin/" class="md-nav__link">
+        Cobalt Plugin
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="DisplayInfoPlugin/" class="md-nav__link">
+        Display Info Plugin
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="VolumeControlPlugin/" class="md-nav__link">
+        Volume Control Plugin
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="BluetoothControlPlugin/" class="md-nav__link">
+        Bluetooth Control Plugin
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="StreamerPlugin/" class="md-nav__link">
+        Streamer Plugin
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="DTVPlugin/" class="md-nav__link">
+        DTV Plugin
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="SystemCommandsPlugin/" class="md-nav__link">
+        System Commands Plugin
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="DictionaryPlugin/" class="md-nav__link">
+        Dictionary Plugin
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ResourceMonitorPlugin/" class="md-nav__link">
+        ResourceMonitor Plugin
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="TimeSyncPlugin/" class="md-nav__link">
+        Time Sync Plugin
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="FileTransferPlugin/" class="md-nav__link">
+        FileTransfer Plugin
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="PerformanceMonitorPlugin/" class="md-nav__link">
+        Performance Monitor Plugin
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="RemoteControlPlugin/" class="md-nav__link">
+        Remote Control Plugin
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="SubsystemControlPlugin/" class="md-nav__link">
+        Subsystem Control Plugin
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="BluetoothRemoteControlPlugin/" class="md-nav__link">
+        Bluetooth Remote Control Plugin
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="IOConnectorPlugin/" class="md-nav__link">
+        IO Connector Plugin
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="SparkPlugin/" class="md-nav__link">
+        Spark Plugin
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="DeviceIdentificationAPI/" class="md-nav__link">
+        Device Identification API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="WebKitBrowserPlugin/" class="md-nav__link">
+        WebKit Browser Plugin
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="MonitorPlugin/" class="md-nav__link">
+        Monitor Plugin
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="TraceControlPlugin/" class="md-nav__link">
+        Trace Control Plugin
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="LocationSyncPlugin/" class="md-nav__link">
+        Location Sync Plugin
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="DeviceInfoPlugin/" class="md-nav__link">
+        Device Info Plugin
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="MessengerPlugin/" class="md-nav__link">
+        Messenger Plugin
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="OpenCDMiPlugin/" class="md-nav__link">
+        OpenCDMi Plugin
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="PackagerPlugin/" class="md-nav__link">
+        Packager Plugin
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="SecurityAgentPlugin/" class="md-nav__link">
+        Security Agent Plugin
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#interface-documentation" class="md-nav__link">
+    Interface documentation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wpeframework-plugins-documentation" class="md-nav__link">
+    WPEFramework-plugins documentation
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="welcome-to-documentation">Welcome to Documentation.</h1>
 <p>These documentation are automatically created using mkdocs</p>
 <h2 id="interface-documentation">Interface documentation</h2>
-<p>This section contains the documentation created from interfaces defined in <a href="https://github.com/rdkcentral/ThunderInterfaces">ThunderInterfaces</a></p>
+<p>This section contains the documentation created from interfaces</p>
+<table>
+<thead>
+<tr>
+<th align="left">Repo</th>
+<th align="left">Commit-Id</th>
+<th align="left">Commit-Date</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="https://github.com/rdkcentral/ThunderInterfaces">ThunderInterfaces</a></td>
+<td align="left">e151403775370c5e77d7d1333795a66dd35d9cc4</td>
+<td align="left">Mon, 01 Nov 2021 12:21</td>
+</tr>
+</tbody>
+</table>
 <h2 id="wpeframework-plugins-documentation">WPEFramework-plugins documentation</h2>
-<p>This section contains the documentation created from plugins defined in <a href="https://github.com/rdkcentral/ThunderNanoServices">ThunderNanoServices</a></p>
+<p>This section contains the documentation created from plugins</p>
+<table>
+<thead>
+<tr>
+<th align="left">Repo</th>
+<th align="left">Commit-Id</th>
+<th align="left">Commit-Date</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="https://github.com/rdkcentral/ThunderNanoServices.git">ThunderNanoServices</a></td>
+<td align="left">b88fe7f3f06789ba8c42fd021351e97251d60937</td>
+<td align="left">Fri, 29 Oct 2021 05:52</td>
+</tr>
+<tr>
+<td align="left"><a href="https://github.com/WebPlatformForEmbedded/ThunderNanoServicesRDK.git">ThunderNanoServicesRDK</a></td>
+<td align="left">da8d917e18b6b2ba7268439a7bb6fa478ab1a27e</td>
+<td align="left">Tue, 02 Nov 2021 11:55</td>
+</tr>
+</tbody>
+</table>
+                
+              
+              
+                
 
-  <br>
-    
 
-    <br>
-</div>
-
-<footer class="container-fluid wm-page-content">
-  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+      
+        
+        <a href="CustomerCareOperationsAPI/" class="md-footer__link md-footer__link--next" aria-label="Next: CustomerCareOperations API" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              CustomerCareOperations API
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        
+          Made with
+          <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+            Material for MkDocs
+          </a>
+        
+        
+      </div>
+      
+    </div>
+  </div>
 </footer>
-
-</body>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": ".", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "assets/javascripts/workers/search.fcfe8b6d.min.js", "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.b1047164.min.js"></script>
+      
+    
+  </body>
 </html>
-<!--
-MkDocs version : 1.2.3
-Build Date UTC : 2021-10-29 01:34:09.154357+00:00
--->
