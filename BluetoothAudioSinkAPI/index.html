@@ -1739,7 +1739,8 @@
 <h1 id="bluetoothaudiosink-api">BluetoothAudioSink API</h1>
 <p><strong>Version: 1.0</strong></p>
 <p><strong>Status: <img alt="⚫" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26ab.svg" title=":black_circle:" /><img alt="⚪" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26aa.svg" title=":white_circle:" /><img alt="⚪" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26aa.svg" title=":white_circle:" /></strong></p>
-<p>BluetoothAudioSink interface for Thunder framework.</p>
+<p>A BluetoothAudioSink interface for Thunder framework.</p>
+<p>(Defined with Exchange::IBluetoothAudioSink in <a href="https://github.com/rdkcentral/ThunderInterfaces/tree/master/interfaces/IBluetoothAudio.h">IBluetoothAudio.h</a>)</p>
 <h3 id="table-of-contents">Table of Contents</h3>
 <ul>
 <li><a href="#head.Introduction">Introduction</a></li>
@@ -1854,7 +1855,7 @@
 </tbody>
 </table>
 <p><a name="method.exchange_assign"></a></p>
-<h2 id="exchange_assign-method"><em>exchange_assign <sup>method</sup></em></h2>
+<h2 id="exchange_assign-method"><em>exchange_assign <a href="#head.Methods"><sup>method</sup></a></em></h2>
 <p>Assigns a Bluetooth device for audio playback.</p>
 <h3 id="parameters">Parameters</h3>
 <table>
@@ -1924,7 +1925,7 @@
 }
 </code></pre>
 <p><a name="method.exchange_revoke"></a></p>
-<h2 id="exchange_revoke-method"><em>exchange_revoke <sup>method</sup></em></h2>
+<h2 id="exchange_revoke-method"><em>exchange_revoke <a href="#head.Methods"><sup>method</sup></a></em></h2>
 <p>Revokes a Bluetooth device from audio playback.</p>
 <h3 id="parameters_1">Parameters</h3>
 <p>This method takes no parameters.</p>
@@ -2020,7 +2021,7 @@
 </tbody>
 </table>
 <p><a name="property.exchange_state"></a></p>
-<h2 id="exchange_state-property"><em>exchange_state <sup>property</sup></em></h2>
+<h2 id="exchange_state-property"><em>exchange_state <a href="#head.Properties"><sup>property</sup></a></em></h2>
 <p>Provides access to the current audio sink state.</p>
 <blockquote>
 <p>This property is <strong>read-only</strong>.</p>
@@ -2058,7 +2059,7 @@
 }
 </code></pre>
 <p><a name="property.exchange_type"></a></p>
-<h2 id="exchange_type-property"><em>exchange_type <sup>property</sup></em></h2>
+<h2 id="exchange_type-property"><em>exchange_type <a href="#head.Properties"><sup>property</sup></a></em></h2>
 <p>Provides access to the audio sink type.</p>
 <blockquote>
 <p>This property is <strong>read-only</strong>.</p>
@@ -2113,7 +2114,7 @@
 }
 </code></pre>
 <p><a name="property.exchange_supportedcodecs"></a></p>
-<h2 id="exchange_supportedcodecs-property"><em>exchange_supportedcodecs <sup>property</sup></em></h2>
+<h2 id="exchange_supportedcodecs-property"><em>exchange_supportedcodecs <a href="#head.Properties"><sup>property</sup></a></em></h2>
 <p>Provides access to the audio codecs supported by the sink.</p>
 <blockquote>
 <p>This property is <strong>read-only</strong>.</p>
@@ -2175,7 +2176,7 @@
 }
 </code></pre>
 <p><a name="property.exchange_supporteddrms"></a></p>
-<h2 id="exchange_supporteddrms-property"><em>exchange_supporteddrms <sup>property</sup></em></h2>
+<h2 id="exchange_supporteddrms-property"><em>exchange_supporteddrms <a href="#head.Properties"><sup>property</sup></a></em></h2>
 <p>Provides access to the DRM schemes supported by the sink.</p>
 <blockquote>
 <p>This property is <strong>read-only</strong>.</p>
@@ -2237,7 +2238,7 @@
 }
 </code></pre>
 <p><a name="property.exchange_codec"></a></p>
-<h2 id="exchange_codec-property"><em>exchange_codec <sup>property</sup></em></h2>
+<h2 id="exchange_codec-property"><em>exchange_codec <a href="#head.Properties"><sup>property</sup></a></em></h2>
 <p>Provides access to the properites of the currently used codec.</p>
 <blockquote>
 <p>This property is <strong>read-only</strong>.</p>
@@ -2305,7 +2306,7 @@
 }
 </code></pre>
 <p><a name="property.exchange_drm"></a></p>
-<h2 id="exchange_drm-property"><em>exchange_drm <sup>property</sup></em></h2>
+<h2 id="exchange_drm-property"><em>exchange_drm <a href="#head.Properties"><sup>property</sup></a></em></h2>
 <p>Provides access to the properties of the currently used DRM scheme.</p>
 <blockquote>
 <p>This property is <strong>read-only</strong>.</p>
@@ -2373,7 +2374,7 @@
 }
 </code></pre>
 <p><a name="property.exchange_stream"></a></p>
-<h2 id="exchange_stream-property"><em>exchange_stream <sup>property</sup></em></h2>
+<h2 id="exchange_stream-property"><em>exchange_stream <a href="#head.Properties"><sup>property</sup></a></em></h2>
 <p>Provides access to the properties of the current output stream.</p>
 <blockquote>
 <p>This property is <strong>read-only</strong>.</p>
@@ -2478,7 +2479,7 @@
 </tbody>
 </table>
 <p><a name="event.exchange_updated"></a></p>
-<h2 id="exchange_updated-event"><em>exchange_updated <sup>event</sup></em></h2>
+<h2 id="exchange_updated-event"><em>exchange_updated <a href="#head.Notifications"><sup>event</sup></a></em></h2>
 <p>Signals audio sink state change or stream properties update.</p>
 <h3 id="parameters_2">Parameters</h3>
 <p>This event carries no parameters.</p>

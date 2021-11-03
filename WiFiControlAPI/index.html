@@ -1739,7 +1739,8 @@
 <h1 id="wifi-control-api">WiFi Control API</h1>
 <p><strong>Version: 1.0</strong></p>
 <p><strong>Status: <img alt="⚫" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26ab.svg" title=":black_circle:" /><img alt="⚪" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26aa.svg" title=":white_circle:" /><img alt="⚪" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26aa.svg" title=":white_circle:" /></strong></p>
-<p>WifiControl interface for Thunder framework.</p>
+<p>A WifiControl interface for Thunder framework.</p>
+<p>(Defined by <a href="https://github.com/rdkcentral/ThunderInterfaces/tree/master/jsonrpc/WifiControl.json">WifiControl.json</a>)</p>
 <h3 id="table-of-contents">Table of Contents</h3>
 <ul>
 <li><a href="#head.Introduction">Introduction</a></li>
@@ -1866,7 +1867,7 @@
 </tbody>
 </table>
 <p><a name="method.delete"></a></p>
-<h2 id="delete-method"><em>delete <sup>method</sup></em></h2>
+<h2 id="delete-method"><em>delete <a href="#head.Methods"><sup>method</sup></a></em></h2>
 <p>Forgets the configuration of a network.</p>
 <h3 id="parameters">Parameters</h3>
 <table>
@@ -1943,7 +1944,7 @@
 }
 </code></pre>
 <p><a name="method.store"></a></p>
-<h2 id="store-method"><em>store <sup>method</sup></em></h2>
+<h2 id="store-method"><em>store <a href="#head.Methods"><sup>method</sup></a></em></h2>
 <p>Stores the configurations in persistent storage.</p>
 <h3 id="parameters_1">Parameters</h3>
 <p>This method takes no parameters.</p>
@@ -1997,7 +1998,7 @@
 }
 </code></pre>
 <p><a name="method.scan"></a></p>
-<h2 id="scan-method"><em>scan <sup>method</sup></em></h2>
+<h2 id="scan-method"><em>scan <a href="#head.Methods"><sup>method</sup></a></em></h2>
 <p>Searches for available networks.</p>
 <p>Also see: <a href="#event.scanresults">scanresults</a></p>
 <h3 id="parameters_2">Parameters</h3>
@@ -2057,7 +2058,7 @@
 }
 </code></pre>
 <p><a name="method.connect"></a></p>
-<h2 id="connect-method"><em>connect <sup>method</sup></em></h2>
+<h2 id="connect-method"><em>connect <a href="#head.Methods"><sup>method</sup></a></em></h2>
 <p>Attempts connection to a network.</p>
 <p>Also see: <a href="#event.connectionchange">connectionchange</a></p>
 <h3 id="parameters_3">Parameters</h3>
@@ -2160,7 +2161,7 @@
 }
 </code></pre>
 <p><a name="method.disconnect"></a></p>
-<h2 id="disconnect-method"><em>disconnect <sup>method</sup></em></h2>
+<h2 id="disconnect-method"><em>disconnect <a href="#head.Methods"><sup>method</sup></a></em></h2>
 <p>Disconnects from a network.</p>
 <p>Also see: <a href="#event.connectionchange">connectionchange</a></p>
 <h3 id="parameters_4">Parameters</h3>
@@ -2277,7 +2278,7 @@
 </tbody>
 </table>
 <p><a name="property.status"></a></p>
-<h2 id="status-property"><em>status <sup>property</sup></em></h2>
+<h2 id="status-property"><em>status <a href="#head.Properties"><sup>property</sup></a></em></h2>
 <p>Provides access to the network status.</p>
 <blockquote>
 <p>This property is <strong>read-only</strong>.</p>
@@ -2328,7 +2329,7 @@
 }
 </code></pre>
 <p><a name="property.networks"></a></p>
-<h2 id="networks-property"><em>networks <sup>property</sup></em></h2>
+<h2 id="networks-property"><em>networks <a href="#head.Properties"><sup>property</sup></a></em></h2>
 <p>Provides access to the available networks.</p>
 <blockquote>
 <p>This property is <strong>read-only</strong>.</p>
@@ -2431,7 +2432,7 @@
 }
 </code></pre>
 <p><a name="property.configs"></a></p>
-<h2 id="configs-property"><em>configs <sup>property</sup></em></h2>
+<h2 id="configs-property"><em>configs <a href="#head.Properties"><sup>property</sup></a></em></h2>
 <p>Provides access to the all WiFi configurations.</p>
 <blockquote>
 <p>This property is <strong>read-only</strong>.</p>
@@ -2542,7 +2543,7 @@
 }
 </code></pre>
 <p><a name="property.config"></a></p>
-<h2 id="config-property"><em>config <sup>property</sup></em></h2>
+<h2 id="config-property"><em>config <a href="#head.Properties"><sup>property</sup></a></em></h2>
 <p>Provides access to the single WiFi configuration.</p>
 <h3 id="value_3">Value</h3>
 <table>
@@ -2675,7 +2676,7 @@
 }
 </code></pre>
 <p><a name="property.debug"></a></p>
-<h2 id="debug-property"><em>debug <sup>property</sup></em></h2>
+<h2 id="debug-property"><em>debug <a href="#head.Properties"><sup>property</sup></a></em></h2>
 <p>Provides access to the sets debug level.</p>
 <blockquote>
 <p>This property is <strong>write-only</strong>.</p>
@@ -2758,7 +2759,7 @@
 </tbody>
 </table>
 <p><a name="event.scanresults"></a></p>
-<h2 id="scanresults-event"><em>scanresults <sup>event</sup></em></h2>
+<h2 id="scanresults-event"><em>scanresults <a href="#head.Notifications"><sup>event</sup></a></em></h2>
 <p>Signals that the scan operation has finished.</p>
 <h3 id="parameters_5">Parameters</h3>
 <table>
@@ -2850,7 +2851,7 @@
 }
 </code></pre>
 <p><a name="event.networkchange"></a></p>
-<h2 id="networkchange-event"><em>networkchange <sup>event</sup></em></h2>
+<h2 id="networkchange-event"><em>networkchange <a href="#head.Notifications"><sup>event</sup></a></em></h2>
 <p>Signals that a network property has changed. e.g. frequency.</p>
 <h3 id="parameters_6">Parameters</h3>
 <p>This event carries no parameters.</p>
@@ -2861,7 +2862,7 @@
 }
 </code></pre>
 <p><a name="event.connectionchange"></a></p>
-<h2 id="connectionchange-event"><em>connectionchange <sup>event</sup></em></h2>
+<h2 id="connectionchange-event"><em>connectionchange <a href="#head.Notifications"><sup>event</sup></a></em></h2>
 <p>Notifies about connection state change. i.e. connected/disconnected.</p>
 <h3 id="parameters_7">Parameters</h3>
 <table>

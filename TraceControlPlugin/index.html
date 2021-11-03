@@ -1739,12 +1739,13 @@
 <h1 id="trace-control-plugin">Trace Control Plugin</h1>
 <p><strong>Version: 1.0</strong></p>
 <p><strong>Status: <img alt="⚫" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26ab.svg" title=":black_circle:" /><img alt="⚫" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26ab.svg" title=":black_circle:" /><img alt="⚫" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26ab.svg" title=":black_circle:" /></strong></p>
-<p>TraceControl plugin for Thunder framework.</p>
+<p>A TraceControl plugin for Thunder framework.</p>
 <h3 id="table-of-contents">Table of Contents</h3>
 <ul>
 <li><a href="#head.Introduction">Introduction</a></li>
 <li><a href="#head.Description">Description</a></li>
 <li><a href="#head.Configuration">Configuration</a></li>
+<li><a href="#head.Interfaces">Interfaces</a></li>
 <li><a href="#head.Methods">Methods</a></li>
 </ul>
 <p><a name="head.Introduction"></a></p>
@@ -1900,6 +1901,12 @@
 </tr>
 </tbody>
 </table>
+<p><a name="head.Interfaces"></a></p>
+<h1 id="interfaces">Interfaces</h1>
+<p>This plugin implements the following interfaces:</p>
+<ul>
+<li><a href="https://github.com/rdkcentral/ThunderInterfaces/tree/master/jsonrpc/TraceControl.json">TraceControl.json</a></li>
+</ul>
 <p><a name="head.Methods"></a></p>
 <h1 id="methods">Methods</h1>
 <p>The following methods are provided by the TraceControl plugin:</p>
@@ -1923,7 +1930,7 @@
 </tbody>
 </table>
 <p><a name="method.status"></a></p>
-<h2 id="status-method"><em>status <sup>method</sup></em></h2>
+<h2 id="status-method"><em>status <a href="#head.Methods"><sup>method</sup></a></em></h2>
 <p>Retrieves general information.</p>
 <h3 id="description_1">Description</h3>
 <p>Retrieves the actual trace status information for targeted module and category, if either category nor module is given, all information is returned. It will retrieves the details about console status and remote address(port and binding address), if these are configured.</p>
@@ -2049,7 +2056,7 @@
 }
 </code></pre>
 <p><a name="method.set"></a></p>
-<h2 id="set-method"><em>set <sup>method</sup></em></h2>
+<h2 id="set-method"><em>set <a href="#head.Methods"><sup>method</sup></a></em></h2>
 <p>Sets traces.</p>
 <h3 id="description_2">Description</h3>
 <p>Disables/enables all/select category traces for particular module.</p>

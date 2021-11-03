@@ -1739,7 +1739,8 @@
 <h1 id="bluetooth-control-api">Bluetooth Control API</h1>
 <p><strong>Version: 1.0</strong></p>
 <p><strong>Status: <img alt="⚫" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26ab.svg" title=":black_circle:" /><img alt="⚪" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26aa.svg" title=":white_circle:" /><img alt="⚪" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26aa.svg" title=":white_circle:" /></strong></p>
-<p>BluetoothControl interface for Thunder framework.</p>
+<p>A BluetoothControl interface for Thunder framework.</p>
+<p>(Defined by <a href="https://github.com/rdkcentral/ThunderInterfaces/tree/master/jsonrpc/BluetoothControl.json">BluetoothControl.json</a>)</p>
 <h3 id="table-of-contents">Table of Contents</h3>
 <ul>
 <li><a href="#head.Introduction">Introduction</a></li>
@@ -1886,7 +1887,7 @@
 </tbody>
 </table>
 <p><a name="method.scan"></a></p>
-<h2 id="scan-method"><em>scan <sup>method</sup></em></h2>
+<h2 id="scan-method"><em>scan <a href="#head.Methods"><sup>method</sup></a></em></h2>
 <p>Starts active scanning for Bluetooth devices.</p>
 <p>Also see: <a href="#event.scanstarted">scanstarted</a>, <a href="#event.scancomplete">scancomplete</a></p>
 <h3 id="parameters">Parameters</h3>
@@ -1981,7 +1982,7 @@
 }
 </code></pre>
 <p><a name="method.stopscanning"></a></p>
-<h2 id="stopscanning-method"><em>stopscanning <sup>method</sup></em></h2>
+<h2 id="stopscanning-method"><em>stopscanning <a href="#head.Methods"><sup>method</sup></a></em></h2>
 <p>Stops scanning procedure.</p>
 <p>Also see: <a href="#event.scancomplete">scancomplete</a></p>
 <h3 id="parameters_1">Parameters</h3>
@@ -2041,7 +2042,7 @@
 }
 </code></pre>
 <p><a name="method.connect"></a></p>
-<h2 id="connect-method"><em>connect <sup>method</sup></em></h2>
+<h2 id="connect-method"><em>connect <a href="#head.Methods"><sup>method</sup></a></em></h2>
 <p>Connects to a Bluetooth device.</p>
 <h3 id="description_1">Description</h3>
 <p>If the device is not available it will be automatically connected as soon it becomes available.</p>
@@ -2141,7 +2142,7 @@
 }
 </code></pre>
 <p><a name="method.disconnect"></a></p>
-<h2 id="disconnect-method"><em>disconnect <sup>method</sup></em></h2>
+<h2 id="disconnect-method"><em>disconnect <a href="#head.Methods"><sup>method</sup></a></em></h2>
 <p>Disconnects from a connected Bluetooth device.</p>
 <h3 id="description_2">Description</h3>
 <p>Device will cease to re-connect automatically.</p>
@@ -2231,7 +2232,7 @@
 }
 </code></pre>
 <p><a name="method.pair"></a></p>
-<h2 id="pair-method"><em>pair <sup>method</sup></em></h2>
+<h2 id="pair-method"><em>pair <a href="#head.Methods"><sup>method</sup></a></em></h2>
 <p>Pairs a Bluetooth device.</p>
 <h3 id="description_3">Description</h3>
 <p>The client may expect PIN or passkey requests during the pairing process. The process can be cancelled any time by calling the <em>abortpairing</em> method</p>
@@ -2327,7 +2328,7 @@
 }
 </code></pre>
 <p><a name="method.unpair"></a></p>
-<h2 id="unpair-method"><em>unpair <sup>method</sup></em></h2>
+<h2 id="unpair-method"><em>unpair <a href="#head.Methods"><sup>method</sup></a></em></h2>
 <p>Unpairs a paired Bluetooth device.</p>
 <p>Also see: <a href="#event.devicestatechange">devicestatechange</a></p>
 <h3 id="parameters_5">Parameters</h3>
@@ -2410,7 +2411,7 @@
 }
 </code></pre>
 <p><a name="method.abortpairing"></a></p>
-<h2 id="abortpairing-method"><em>abortpairing <sup>method</sup></em></h2>
+<h2 id="abortpairing-method"><em>abortpairing <a href="#head.Methods"><sup>method</sup></a></em></h2>
 <p>Aborts the pairing process.</p>
 <h3 id="parameters_6">Parameters</h3>
 <table>
@@ -2492,7 +2493,7 @@
 }
 </code></pre>
 <p><a name="method.pincode"></a></p>
-<h2 id="pincode-method"><em>pincode <sup>method</sup></em></h2>
+<h2 id="pincode-method"><em>pincode <a href="#head.Methods"><sup>method</sup></a></em></h2>
 <p>Specifies a PIN code for authentication during a legacy pairing process.</p>
 <h3 id="description_4">Description</h3>
 <p>This method is to be called upon receiving a <em>pincoderequest</em> event during a legacy pairing process. If the specified PIN code is incorrect the pairing process will be aborted.</p>
@@ -2583,7 +2584,7 @@
 }
 </code></pre>
 <p><a name="method.passkey"></a></p>
-<h2 id="passkey-method"><em>passkey <sup>method</sup></em></h2>
+<h2 id="passkey-method"><em>passkey <a href="#head.Methods"><sup>method</sup></a></em></h2>
 <p>Specifies a passkey for authentication during a pairing process.</p>
 <h3 id="description_5">Description</h3>
 <p>This method is to be called upon receiving a <em>passkeyrequest</em> event during a pairing process. If the specified passkey is incorrect or empty the pairing process will be aborted.</p>
@@ -2674,7 +2675,7 @@
 }
 </code></pre>
 <p><a name="method.confirmpasskey"></a></p>
-<h2 id="confirmpasskey-method"><em>confirmpasskey <sup>method</sup></em></h2>
+<h2 id="confirmpasskey-method"><em>confirmpasskey <a href="#head.Methods"><sup>method</sup></a></em></h2>
 <p>Confirms a passkey for authentication during a pairing process.</p>
 <h3 id="description_6">Description</h3>
 <p>This method is to be called upon receiving a <em>passkeyconfirmationrequest</em> event during a pairing process. If the confirmation is negative or the pairing process will be aborted.</p>
@@ -2795,7 +2796,7 @@
 </tbody>
 </table>
 <p><a name="property.adapters"></a></p>
-<h2 id="adapters-property"><em>adapters <sup>property</sup></em></h2>
+<h2 id="adapters-property"><em>adapters <a href="#head.Properties"><sup>property</sup></a></em></h2>
 <p>Provides access to the list of local Bluetooth adapters.</p>
 <blockquote>
 <p>This property is <strong>read-only</strong>.</p>
@@ -2840,7 +2841,7 @@
 }
 </code></pre>
 <p><a name="property.adapter"></a></p>
-<h2 id="adapter-property"><em>adapter <sup>property</sup></em></h2>
+<h2 id="adapter-property"><em>adapter <a href="#head.Properties"><sup>property</sup></a></em></h2>
 <p>Provides access to the local Bluetooth adapter information.</p>
 <blockquote>
 <p>This property is <strong>read-only</strong>.</p>
@@ -2935,7 +2936,7 @@
 }
 </code></pre>
 <p><a name="property.devices"></a></p>
-<h2 id="devices-property"><em>devices <sup>property</sup></em></h2>
+<h2 id="devices-property"><em>devices <a href="#head.Properties"><sup>property</sup></a></em></h2>
 <p>Provides access to the list of known remote Bluetooth devices.</p>
 <blockquote>
 <p>This property is <strong>read-only</strong>.</p>
@@ -2980,7 +2981,7 @@
 }
 </code></pre>
 <p><a name="property.device"></a></p>
-<h2 id="device-property"><em>device <sup>property</sup></em></h2>
+<h2 id="device-property"><em>device <a href="#head.Properties"><sup>property</sup></a></em></h2>
 <p>Provides access to the remote Bluetooth device information.</p>
 <blockquote>
 <p>This property is <strong>read-only</strong>.</p>
@@ -3108,7 +3109,7 @@
 </tbody>
 </table>
 <p><a name="event.scanstarted"></a></p>
-<h2 id="scanstarted-event"><em>scanstarted <sup>event</sup></em></h2>
+<h2 id="scanstarted-event"><em>scanstarted <a href="#head.Notifications"><sup>event</sup></a></em></h2>
 <p>Notifies about start scanning.</p>
 <h3 id="description_7">Description</h3>
 <p>Register to this event to be notified about device scan start</p>
@@ -3121,7 +3122,7 @@
 }
 </code></pre>
 <p><a name="event.scancomplete"></a></p>
-<h2 id="scancomplete-event"><em>scancomplete <sup>event</sup></em></h2>
+<h2 id="scancomplete-event"><em>scancomplete <a href="#head.Notifications"><sup>event</sup></a></em></h2>
 <p>Notifies about scan completion.</p>
 <h3 id="description_8">Description</h3>
 <p>Register to this event to be notified about device scan completion</p>
@@ -3134,7 +3135,7 @@
 }
 </code></pre>
 <p><a name="event.devicestatechange"></a></p>
-<h2 id="devicestatechange-event"><em>devicestatechange <sup>event</sup></em></h2>
+<h2 id="devicestatechange-event"><em>devicestatechange <a href="#head.Notifications"><sup>event</sup></a></em></h2>
 <p>Notifies about device state change.</p>
 <h3 id="description_9">Description</h3>
 <p>Register to this event to be notified about device state changes</p>
@@ -3182,7 +3183,7 @@
 }
 </code></pre>
 <p><a name="event.pincoderequest"></a></p>
-<h2 id="pincoderequest-event"><em>pincoderequest <sup>event</sup></em></h2>
+<h2 id="pincoderequest-event"><em>pincoderequest <a href="#head.Notifications"><sup>event</sup></a></em></h2>
 <p>Notifies about a PIN code request.</p>
 <h3 id="description_10">Description</h3>
 <p>Register to this event to be notified about PIN code requests during a legacy pairing process. Upon receiving this event the client is required to respond with a <em>pincode</em> call in order to complete the pairing procedure. The PIN code value would typically be collected by prompting the end-user. If the client fails to respond before the pairing timeout elapses the pairing procedure will be aborted.<br><br>Note that this event will never be send for a Bluetooth LowEnergy device.</p>
@@ -3218,7 +3219,7 @@
 }
 </code></pre>
 <p><a name="event.passkeyrequest"></a></p>
-<h2 id="passkeyrequest-event"><em>passkeyrequest <sup>event</sup></em></h2>
+<h2 id="passkeyrequest-event"><em>passkeyrequest <a href="#head.Notifications"><sup>event</sup></a></em></h2>
 <p>Notifies about a passkey request.</p>
 <h3 id="description_11">Description</h3>
 <p>Register to this event to be notified about passkey requests that may be required during a pairing process. Upon receiving this event the client is required to respond with a <em>passkey</em> call in order to complete the pairing procedure. The passkey value would typically be collected by prompting the end-user. If the client fails to respond before the pairing timeout elapses the pairing procedure will be aborted.</p>
@@ -3254,7 +3255,7 @@
 }
 </code></pre>
 <p><a name="event.passkeyconfirmrequest"></a></p>
-<h2 id="passkeyconfirmrequest-event"><em>passkeyconfirmrequest <sup>event</sup></em></h2>
+<h2 id="passkeyconfirmrequest-event"><em>passkeyconfirmrequest <a href="#head.Notifications"><sup>event</sup></a></em></h2>
 <p>Notifies about a passkey confirmation request.</p>
 <h3 id="description_12">Description</h3>
 <p>Register to this event to be notified about passkey confirmation requests that may required during a pairing process. Upon receiving this event the client is required to respond with a <em>passkeyconfirm</em> call in order to complete the pairing procedure. The passkey confirmation would typically be collected by prompting the end-user. If the client fails to respond before the pairing timeout elapses the pairing procedure will be aborted.</p>

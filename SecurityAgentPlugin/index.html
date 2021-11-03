@@ -1739,12 +1739,13 @@
 <h1 id="security-agent-plugin">Security Agent Plugin</h1>
 <p><strong>Version: 1.0</strong></p>
 <p><strong>Status: <img alt="⚫" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26ab.svg" title=":black_circle:" /><img alt="⚫" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26ab.svg" title=":black_circle:" /><img alt="⚫" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26ab.svg" title=":black_circle:" /></strong></p>
-<p>SecurityAgent plugin for Thunder framework.</p>
+<p>A SecurityAgent plugin for Thunder framework.</p>
 <h3 id="table-of-contents">Table of Contents</h3>
 <ul>
 <li><a href="#head.Introduction">Introduction</a></li>
 <li><a href="#head.Description">Description</a></li>
 <li><a href="#head.Configuration">Configuration</a></li>
+<li><a href="#head.Interfaces">Interfaces</a></li>
 <li><a href="#head.Methods">Methods</a></li>
 </ul>
 <p><a name="head.Introduction"></a></p>
@@ -1880,6 +1881,12 @@
 </tr>
 </tbody>
 </table>
+<p><a name="head.Interfaces"></a></p>
+<h1 id="interfaces">Interfaces</h1>
+<p>This plugin implements the following interfaces:</p>
+<ul>
+<li><a href="https://github.com/rdkcentral/ThunderInterfaces/tree/master/jsonrpc/SecurityAgent.json">SecurityAgent.json</a></li>
+</ul>
 <p><a name="head.Methods"></a></p>
 <h1 id="methods">Methods</h1>
 <p>The following methods are provided by the SecurityAgent plugin:</p>
@@ -1903,7 +1910,7 @@
 </tbody>
 </table>
 <p><a name="method.createtoken"></a></p>
-<h2 id="createtoken-method"><em>createtoken <sup>method</sup></em></h2>
+<h2 id="createtoken-method"><em>createtoken <a href="#head.Methods"><sup>method</sup></a></em></h2>
 <p>Creates Token.</p>
 <h3 id="description_1">Description</h3>
 <p>Create a signed JsonWeb token from provided payload.</p>
@@ -2001,7 +2008,7 @@
 }
 </code></pre>
 <p><a name="method.validate"></a></p>
-<h2 id="validate-method"><em>validate <sup>method</sup></em></h2>
+<h2 id="validate-method"><em>validate <a href="#head.Methods"><sup>method</sup></a></em></h2>
 <p>Validates Token.</p>
 <h3 id="description_2">Description</h3>
 <p>Checks whether the token is valid and properly signed.</p>

@@ -1739,12 +1739,13 @@
 <h1 id="webkit-browser-plugin">WebKit Browser Plugin</h1>
 <p><strong>Version: 1.0</strong></p>
 <p><strong>Status: <img alt="⚫" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26ab.svg" title=":black_circle:" /><img alt="⚫" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26ab.svg" title=":black_circle:" /><img alt="⚫" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26ab.svg" title=":black_circle:" /></strong></p>
-<p>WebKitBrowser plugin for Thunder framework.</p>
+<p>A WebKitBrowser plugin for Thunder framework.</p>
 <h3 id="table-of-contents">Table of Contents</h3>
 <ul>
 <li><a href="#head.Introduction">Introduction</a></li>
 <li><a href="#head.Description">Description</a></li>
 <li><a href="#head.Configuration">Configuration</a></li>
+<li><a href="#head.Interfaces">Interfaces</a></li>
 <li><a href="#head.Methods">Methods</a></li>
 <li><a href="#head.Properties">Properties</a></li>
 <li><a href="#head.Notifications">Notifications</a></li>
@@ -1992,6 +1993,16 @@
 </tr>
 </tbody>
 </table>
+<p><a name="head.Interfaces"></a></p>
+<h1 id="interfaces">Interfaces</h1>
+<p>This plugin implements the following interfaces:</p>
+<ul>
+<li>Exchange::IWebBrowser (<a href="https://github.com/rdkcentral/ThunderInterfaces/tree/master/interfaces/IBrowser.h">IBrowser.h</a>)</li>
+<li>Exchange::IBrowserResources (<a href="https://github.com/rdkcentral/ThunderInterfaces/tree/master/interfaces/IBrowser.h">IBrowser.h</a>)</li>
+<li>Exchange::IBrowserSecurity (<a href="https://github.com/rdkcentral/ThunderInterfaces/tree/master/interfaces/IBrowser.h">IBrowser.h</a>)</li>
+<li><a href="https://github.com/rdkcentral/ThunderInterfaces/tree/master/jsonrpc/WebKitBrowser.json">WebKitBrowser.json</a></li>
+<li><a href="https://github.com/rdkcentral/ThunderInterfaces/tree/master/jsonrpc/StateControl.json">StateControl.json</a></li>
+</ul>
 <p><a name="head.Methods"></a></p>
 <h1 id="methods">Methods</h1>
 <p>The following methods are provided by the WebKitBrowser plugin:</p>
@@ -2026,7 +2037,7 @@
 </tbody>
 </table>
 <p><a name="method.exchange_collectgarbage"></a></p>
-<h2 id="exchange_collectgarbage-method"><em>exchange_collectgarbage <sup>method</sup></em></h2>
+<h2 id="exchange_collectgarbage-method"><em>exchange_collectgarbage <a href="#head.Methods"><sup>method</sup></a></em></h2>
 <p>Initiate garbage collection.</p>
 <h3 id="parameters">Parameters</h3>
 <p>This method takes no parameters.</p>
@@ -2063,7 +2074,7 @@
 }
 </code></pre>
 <p><a name="method.delete"></a></p>
-<h2 id="delete-method"><em>delete <sup>method</sup></em></h2>
+<h2 id="delete-method"><em>delete <a href="#head.Methods"><sup>method</sup></a></em></h2>
 <p>Removes contents of a directory from the persistent storage.</p>
 <h3 id="description_1">Description</h3>
 <p>Use this method to recursively delete contents of a directory</p>
@@ -2260,7 +2271,7 @@
 </tbody>
 </table>
 <p><a name="property.exchange_url"></a></p>
-<h2 id="exchange_url-property"><em>exchange_url <sup>property</sup></em></h2>
+<h2 id="exchange_url-property"><em>exchange_url <a href="#head.Properties"><sup>property</sup></a></em></h2>
 <p>Provides access to the page loaded in the browser.</p>
 <h3 id="value">Value</h3>
 <table>
@@ -2310,7 +2321,7 @@
 }
 </code></pre>
 <p><a name="property.exchange_visibility"></a></p>
-<h2 id="exchange_visibility-property"><em>exchange_visibility <sup>property</sup></em></h2>
+<h2 id="exchange_visibility-property"><em>exchange_visibility <a href="#head.Properties"><sup>property</sup></a></em></h2>
 <p>Provides access to the browser window visibility state.</p>
 <h3 id="value_1">Value</h3>
 <table>
@@ -2360,7 +2371,7 @@
 }
 </code></pre>
 <p><a name="property.exchange_fps"></a></p>
-<h2 id="exchange_fps-property"><em>exchange_fps <sup>property</sup></em></h2>
+<h2 id="exchange_fps-property"><em>exchange_fps <a href="#head.Properties"><sup>property</sup></a></em></h2>
 <p>Provides access to the current framerate the browser is rendering at.</p>
 <blockquote>
 <p>This property is <strong>read-only</strong>.</p>
@@ -2398,7 +2409,7 @@
 }
 </code></pre>
 <p><a name="property.exchange_useragent"></a></p>
-<h2 id="exchange_useragent-property"><em>exchange_useragent <sup>property</sup></em></h2>
+<h2 id="exchange_useragent-property"><em>exchange_useragent <a href="#head.Properties"><sup>property</sup></a></em></h2>
 <p>Provides access to the userAgent string used by the browser.</p>
 <h3 id="value_3">Value</h3>
 <table>
@@ -2448,7 +2459,7 @@
 }
 </code></pre>
 <p><a name="property.exchange_localstorageenabled"></a></p>
-<h2 id="exchange_localstorageenabled-property"><em>exchange_localstorageenabled <sup>property</sup></em></h2>
+<h2 id="exchange_localstorageenabled-property"><em>exchange_localstorageenabled <a href="#head.Properties"><sup>property</sup></a></em></h2>
 <p>Provides access to the controls the local storage availability.</p>
 <h3 id="value_4">Value</h3>
 <table>
@@ -2498,7 +2509,7 @@
 }
 </code></pre>
 <p><a name="property.exchange_httpcookieacceptpolicy"></a></p>
-<h2 id="exchange_httpcookieacceptpolicy-property"><em>exchange_httpcookieacceptpolicy <sup>property</sup></em></h2>
+<h2 id="exchange_httpcookieacceptpolicy-property"><em>exchange_httpcookieacceptpolicy <a href="#head.Properties"><sup>property</sup></a></em></h2>
 <p>Provides access to the HTTP cookies accept policy.</p>
 <h3 id="value_5">Value</h3>
 <table>
@@ -2548,7 +2559,7 @@
 }
 </code></pre>
 <p><a name="property.exchange_bridgereply"></a></p>
-<h2 id="exchange_bridgereply-property"><em>exchange_bridgereply <sup>property</sup></em></h2>
+<h2 id="exchange_bridgereply-property"><em>exchange_bridgereply <a href="#head.Properties"><sup>property</sup></a></em></h2>
 <p>Provides access to the response for legacy $badger.</p>
 <blockquote>
 <p>This property is <strong>write-only</strong>.</p>
@@ -2587,7 +2598,7 @@
 }
 </code></pre>
 <p><a name="property.exchange_bridgeevent"></a></p>
-<h2 id="exchange_bridgeevent-property"><em>exchange_bridgeevent <sup>property</sup></em></h2>
+<h2 id="exchange_bridgeevent-property"><em>exchange_bridgeevent <a href="#head.Properties"><sup>property</sup></a></em></h2>
 <p>Provides access to the send legacy $badger event.</p>
 <blockquote>
 <p>This property is <strong>write-only</strong>.</p>
@@ -2626,7 +2637,7 @@
 }
 </code></pre>
 <p><a name="property.exchange_userscripts"></a></p>
-<h2 id="exchange_userscripts-property"><em>exchange_userscripts <sup>property</sup></em></h2>
+<h2 id="exchange_userscripts-property"><em>exchange_userscripts <a href="#head.Properties"><sup>property</sup></a></em></h2>
 <p>Provides access to the user scripts used by the browser.</p>
 <h3 id="value_8">Value</h3>
 <table>
@@ -2685,7 +2696,7 @@
 }
 </code></pre>
 <p><a name="property.exchange_userstylesheets"></a></p>
-<h2 id="exchange_userstylesheets-property"><em>exchange_userstylesheets <sup>property</sup></em></h2>
+<h2 id="exchange_userstylesheets-property"><em>exchange_userstylesheets <a href="#head.Properties"><sup>property</sup></a></em></h2>
 <p>Provides access to the user style sheets used by the browser.</p>
 <h3 id="value_9">Value</h3>
 <table>
@@ -2744,7 +2755,7 @@
 }
 </code></pre>
 <p><a name="property.exchange_securityprofile"></a></p>
-<h2 id="exchange_securityprofile-property"><em>exchange_securityprofile <sup>property</sup></em></h2>
+<h2 id="exchange_securityprofile-property"><em>exchange_securityprofile <a href="#head.Properties"><sup>property</sup></a></em></h2>
 <p>Provides access to the security profile for secure connections.</p>
 <h3 id="value_10">Value</h3>
 <table>
@@ -2794,7 +2805,7 @@
 }
 </code></pre>
 <p><a name="property.exchange_mixedcontentpolicy"></a></p>
-<h2 id="exchange_mixedcontentpolicy-property"><em>exchange_mixedcontentpolicy <sup>property</sup></em></h2>
+<h2 id="exchange_mixedcontentpolicy-property"><em>exchange_mixedcontentpolicy <a href="#head.Properties"><sup>property</sup></a></em></h2>
 <p>Provides access to the mixed content policy.</p>
 <h3 id="value_11">Value</h3>
 <table>
@@ -2844,7 +2855,7 @@
 }
 </code></pre>
 <p><a name="property.languages"></a></p>
-<h2 id="languages-property"><em>languages <sup>property</sup></em></h2>
+<h2 id="languages-property"><em>languages <a href="#head.Properties"><sup>property</sup></a></em></h2>
 <p>Provides access to the user preferred languages.</p>
 <h3 id="value_12">Value</h3>
 <table>
@@ -2903,7 +2914,7 @@
 }
 </code></pre>
 <p><a name="property.headers"></a></p>
-<h2 id="headers-property"><em>headers <sup>property</sup></em></h2>
+<h2 id="headers-property"><em>headers <a href="#head.Properties"><sup>property</sup></a></em></h2>
 <p>Provides access to the headers to send on all requests that the browser makes.</p>
 <h3 id="value_13">Value</h3>
 <table>
@@ -2978,7 +2989,7 @@
 }
 </code></pre>
 <p><a name="property.state"></a></p>
-<h2 id="state-property"><em>state <sup>property</sup></em></h2>
+<h2 id="state-property"><em>state <a href="#head.Properties"><sup>property</sup></a></em></h2>
 <p>Provides access to the running state of the service.</p>
 <p>Also see: <a href="#event.statechange">statechange</a></p>
 <h3 id="value_14">Value</h3>
@@ -3094,7 +3105,7 @@
 </tbody>
 </table>
 <p><a name="event.exchange_loadfinished"></a></p>
-<h2 id="exchange_loadfinished-event"><em>exchange_loadfinished <sup>event</sup></em></h2>
+<h2 id="exchange_loadfinished-event"><em>exchange_loadfinished <a href="#head.Notifications"><sup>event</sup></a></em></h2>
 <p>Initial HTML document has been completely loaded and parsed.</p>
 <h3 id="parameters_2">Parameters</h3>
 <table>
@@ -3134,7 +3145,7 @@
 }
 </code></pre>
 <p><a name="event.exchange_loadfailed"></a></p>
-<h2 id="exchange_loadfailed-event"><em>exchange_loadfailed <sup>event</sup></em></h2>
+<h2 id="exchange_loadfailed-event"><em>exchange_loadfailed <a href="#head.Notifications"><sup>event</sup></a></em></h2>
 <p>Browser failed to load page.</p>
 <h3 id="parameters_3">Parameters</h3>
 <table>
@@ -3168,7 +3179,7 @@
 }
 </code></pre>
 <p><a name="event.exchange_urlchange"></a></p>
-<h2 id="exchange_urlchange-event"><em>exchange_urlchange <sup>event</sup></em></h2>
+<h2 id="exchange_urlchange-event"><em>exchange_urlchange <a href="#head.Notifications"><sup>event</sup></a></em></h2>
 <p>Signals a URL change in the browser.</p>
 <h3 id="parameters_4">Parameters</h3>
 <table>
@@ -3208,7 +3219,7 @@
 }
 </code></pre>
 <p><a name="event.exchange_visibilitychange"></a></p>
-<h2 id="exchange_visibilitychange-event"><em>exchange_visibilitychange <sup>event</sup></em></h2>
+<h2 id="exchange_visibilitychange-event"><em>exchange_visibilitychange <a href="#head.Notifications"><sup>event</sup></a></em></h2>
 <p>Signals a visibility change of the browser.</p>
 <h3 id="parameters_5">Parameters</h3>
 <table>
@@ -3242,7 +3253,7 @@
 }
 </code></pre>
 <p><a name="event.exchange_pageclosure"></a></p>
-<h2 id="exchange_pageclosure-event"><em>exchange_pageclosure <sup>event</sup></em></h2>
+<h2 id="exchange_pageclosure-event"><em>exchange_pageclosure <a href="#head.Notifications"><sup>event</sup></a></em></h2>
 <p>Notifies that the web page requests to close its window.</p>
 <h3 id="parameters_6">Parameters</h3>
 <p>This event carries no parameters.</p>
@@ -3253,7 +3264,7 @@
 }
 </code></pre>
 <p><a name="event.bridgequery"></a></p>
-<h2 id="bridgequery-event"><em>bridgequery <sup>event</sup></em></h2>
+<h2 id="bridgequery-event"><em>bridgequery <a href="#head.Notifications"><sup>event</sup></a></em></h2>
 <p>A Base64 encoded JSON message from legacy $badger bridge.</p>
 <blockquote>
 <p>This API is <strong>obsolete</strong>. It is no longer recommended for use in new implementations.</p>
@@ -3283,7 +3294,7 @@
 }
 </code></pre>
 <p><a name="event.statechange"></a></p>
-<h2 id="statechange-event"><em>statechange <sup>event</sup></em></h2>
+<h2 id="statechange-event"><em>statechange <a href="#head.Notifications"><sup>event</sup></a></em></h2>
 <p>Signals a state change of the service.</p>
 <h3 id="parameters_8">Parameters</h3>
 <table>

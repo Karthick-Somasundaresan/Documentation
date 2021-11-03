@@ -1739,12 +1739,13 @@
 <h1 id="network-control-plugin">Network Control Plugin</h1>
 <p><strong>Version: 1.0</strong></p>
 <p><strong>Status: <img alt="⚫" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26ab.svg" title=":black_circle:" /><img alt="⚫" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26ab.svg" title=":black_circle:" /><img alt="⚫" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26ab.svg" title=":black_circle:" /></strong></p>
-<p>NetworkControl plugin for Thunder framework.</p>
+<p>A NetworkControl plugin for Thunder framework.</p>
 <h3 id="table-of-contents">Table of Contents</h3>
 <ul>
 <li><a href="#head.Introduction">Introduction</a></li>
 <li><a href="#head.Description">Description</a></li>
 <li><a href="#head.Configuration">Configuration</a></li>
+<li><a href="#head.Interfaces">Interfaces</a></li>
 <li><a href="#head.Methods">Methods</a></li>
 <li><a href="#head.Properties">Properties</a></li>
 <li><a href="#head.Notifications">Notifications</a></li>
@@ -1887,6 +1888,12 @@
 </tr>
 </tbody>
 </table>
+<p><a name="head.Interfaces"></a></p>
+<h1 id="interfaces">Interfaces</h1>
+<p>This plugin implements the following interfaces:</p>
+<ul>
+<li><a href="https://github.com/rdkcentral/ThunderInterfaces/tree/master/jsonrpc/NetworkControl.json">NetworkControl.json</a></li>
+</ul>
 <p><a name="head.Methods"></a></p>
 <h1 id="methods">Methods</h1>
 <p>The following methods are provided by the NetworkControl plugin:</p>
@@ -1918,7 +1925,7 @@
 </tbody>
 </table>
 <p><a name="method.reload"></a></p>
-<h2 id="reload-method"><em>reload <sup>method</sup></em></h2>
+<h2 id="reload-method"><em>reload <a href="#head.Methods"><sup>method</sup></a></em></h2>
 <p>Reloads a static or non-static network interface adapter.</p>
 <h3 id="parameters">Parameters</h3>
 <table>
@@ -1995,7 +2002,7 @@
 }
 </code></pre>
 <p><a name="method.request"></a></p>
-<h2 id="request-method"><em>request <sup>method</sup></em></h2>
+<h2 id="request-method"><em>request <a href="#head.Methods"><sup>method</sup></a></em></h2>
 <p>Reloads a non-static network interface adapter.</p>
 <p>Also see: <a href="#event.connectionchange">connectionchange</a></p>
 <h3 id="parameters_1">Parameters</h3>
@@ -2073,7 +2080,7 @@
 }
 </code></pre>
 <p><a name="method.assign"></a></p>
-<h2 id="assign-method"><em>assign <sup>method</sup></em></h2>
+<h2 id="assign-method"><em>assign <a href="#head.Methods"><sup>method</sup></a></em></h2>
 <p>Reloads a static network interface adapter.</p>
 <h3 id="parameters_2">Parameters</h3>
 <table>
@@ -2150,7 +2157,7 @@
 }
 </code></pre>
 <p><a name="method.flush"></a></p>
-<h2 id="flush-method"><em>flush <sup>method</sup></em></h2>
+<h2 id="flush-method"><em>flush <a href="#head.Methods"><sup>method</sup></a></em></h2>
 <p>Flushes a network interface adapter.</p>
 <h3 id="parameters_3">Parameters</h3>
 <table>
@@ -2253,7 +2260,7 @@
 </tbody>
 </table>
 <p><a name="property.network"></a></p>
-<h2 id="network-property"><em>network <sup>property</sup></em></h2>
+<h2 id="network-property"><em>network <a href="#head.Properties"><sup>property</sup></a></em></h2>
 <p>Provides access to the network information.</p>
 <h3 id="value">Value</h3>
 <table>
@@ -2392,7 +2399,7 @@
 }
 </code></pre>
 <p><a name="property.dns"></a></p>
-<h2 id="dns-property"><em>dns <sup>property</sup></em></h2>
+<h2 id="dns-property"><em>dns <a href="#head.Properties"><sup>property</sup></a></em></h2>
 <p>Provides access to the DNS addresses.</p>
 <h3 id="value_1">Value</h3>
 <table>
@@ -2451,7 +2458,7 @@
 }
 </code></pre>
 <p><a name="property.up"></a></p>
-<h2 id="up-property"><em>up <sup>property</sup></em></h2>
+<h2 id="up-property"><em>up <a href="#head.Properties"><sup>property</sup></a></em></h2>
 <p>Provides access to the interface up status.</p>
 <h3 id="value_2">Value</h3>
 <table>
@@ -2557,7 +2564,7 @@
 </tbody>
 </table>
 <p><a name="event.connectionchange"></a></p>
-<h2 id="connectionchange-event"><em>connectionchange <sup>event</sup></em></h2>
+<h2 id="connectionchange-event"><em>connectionchange <a href="#head.Notifications"><sup>event</sup></a></em></h2>
 <p>Notifies about connection status (created, updated, removed, connected, ipassigned and connectionfailed).</p>
 <h3 id="parameters_4">Parameters</h3>
 <table>

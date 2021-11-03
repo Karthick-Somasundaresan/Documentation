@@ -1739,7 +1739,8 @@
 <h1 id="messenger-api">Messenger API</h1>
 <p><strong>Version: 1.0</strong></p>
 <p><strong>Status: <img alt="⚫" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26ab.svg" title=":black_circle:" /><img alt="⚪" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26aa.svg" title=":white_circle:" /><img alt="⚪" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26aa.svg" title=":white_circle:" /></strong></p>
-<p>Messenger interface for Thunder framework.</p>
+<p>A Messenger interface for Thunder framework.</p>
+<p>(Defined by <a href="https://github.com/rdkcentral/ThunderInterfaces/tree/master/jsonrpc/Messenger.json">Messenger.json</a>)</p>
 <h3 id="table-of-contents">Table of Contents</h3>
 <ul>
 <li><a href="#head.Introduction">Introduction</a></li>
@@ -1857,7 +1858,7 @@
 </tbody>
 </table>
 <p><a name="method.join"></a></p>
-<h2 id="join-method"><em>join <sup>method</sup></em></h2>
+<h2 id="join-method"><em>join <a href="#head.Methods"><sup>method</sup></a></em></h2>
 <p>Joins a messaging room.</p>
 <h3 id="description_1">Description</h3>
 <p>Use this method to join a room. If the specified room does not exist, then it will be created.</p>
@@ -1979,7 +1980,7 @@
 }
 </code></pre>
 <p><a name="method.leave"></a></p>
-<h2 id="leave-method"><em>leave <sup>method</sup></em></h2>
+<h2 id="leave-method"><em>leave <a href="#head.Methods"><sup>method</sup></a></em></h2>
 <p>Leaves a messaging room.</p>
 <h3 id="description_2">Description</h3>
 <p>Use this method to leave a room. The room ID becomes invalid after this call. If there are no more users, the room will be destroyed and related resources freed.</p>
@@ -2059,7 +2060,7 @@
 }
 </code></pre>
 <p><a name="method.send"></a></p>
-<h2 id="send-method"><em>send <sup>method</sup></em></h2>
+<h2 id="send-method"><em>send <a href="#head.Methods"><sup>method</sup></a></em></h2>
 <p>Sends a message to a room.</p>
 <h3 id="description_3">Description</h3>
 <p>Use this method to send a message to a room.</p>
@@ -2172,7 +2173,7 @@
 </tbody>
 </table>
 <p><a name="event.roomupdate"></a></p>
-<h2 id="roomupdate-event"><em>roomupdate <sup>event</sup></em></h2>
+<h2 id="roomupdate-event"><em>roomupdate <a href="#head.Notifications"><sup>event</sup></a></em></h2>
 <p>Notifies about room status updates.</p>
 <h3 id="description_4">Description</h3>
 <p>Register to this event to be notified about room status updates. Immediately after registering to this notification the listener will sequentially receive updates of all rooms that have been created so far.</p>
@@ -2220,7 +2221,7 @@
 }
 </code></pre>
 <p><a name="event.userupdate"></a></p>
-<h2 id="userupdate-event"><em>userupdate <sup>event</sup></em></h2>
+<h2 id="userupdate-event"><em>userupdate <a href="#head.Notifications"><sup>event</sup></a></em></h2>
 <p>Notifies about user status updates.</p>
 <h3 id="description_5">Description</h3>
 <p>Register to this event to be notified about room status updates. Immediately after registering to this notification the listener will sequentially receive updates of all users that have joined the room so far.</p>
@@ -2265,7 +2266,7 @@
 }
 </code></pre>
 <p><a name="event.message"></a></p>
-<h2 id="message-event"><em>message <sup>event</sup></em></h2>
+<h2 id="message-event"><em>message <a href="#head.Notifications"><sup>event</sup></a></em></h2>
 <p>Notifies about new messages in a room.</p>
 <h3 id="description_6">Description</h3>
 <p>Register to this event to be notified about new messages in a room.</p>

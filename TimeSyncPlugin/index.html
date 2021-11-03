@@ -1739,12 +1739,13 @@
 <h1 id="time-sync-plugin">Time Sync Plugin</h1>
 <p><strong>Version: 1.0</strong></p>
 <p><strong>Status: <img alt="⚫" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26ab.svg" title=":black_circle:" /><img alt="⚫" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26ab.svg" title=":black_circle:" /><img alt="⚫" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26ab.svg" title=":black_circle:" /></strong></p>
-<p>TimeSync plugin for Thunder framework.</p>
+<p>A TimeSync plugin for Thunder framework.</p>
 <h3 id="table-of-contents">Table of Contents</h3>
 <ul>
 <li><a href="#head.Introduction">Introduction</a></li>
 <li><a href="#head.Description">Description</a></li>
 <li><a href="#head.Configuration">Configuration</a></li>
+<li><a href="#head.Interfaces">Interfaces</a></li>
 <li><a href="#head.Methods">Methods</a></li>
 <li><a href="#head.Properties">Properties</a></li>
 <li><a href="#head.Notifications">Notifications</a></li>
@@ -1897,6 +1898,12 @@
 </tr>
 </tbody>
 </table>
+<p><a name="head.Interfaces"></a></p>
+<h1 id="interfaces">Interfaces</h1>
+<p>This plugin implements the following interfaces:</p>
+<ul>
+<li><a href="https://github.com/rdkcentral/ThunderInterfaces/tree/master/jsonrpc/TimeSync.json">TimeSync.json</a></li>
+</ul>
 <p><a name="head.Methods"></a></p>
 <h1 id="methods">Methods</h1>
 <p>The following methods are provided by the TimeSync plugin:</p>
@@ -1916,7 +1923,7 @@
 </tbody>
 </table>
 <p><a name="method.synchronize"></a></p>
-<h2 id="synchronize-method"><em>synchronize <sup>method</sup></em></h2>
+<h2 id="synchronize-method"><em>synchronize <a href="#head.Methods"><sup>method</sup></a></em></h2>
 <p>Synchronizes time.</p>
 <h3 id="description_1">Description</h3>
 <p>Use this method to synchronize the system time with the currently configured time source. If automatic time synchronization is initially disabled or stopped, it will be restarted.</p>
@@ -1999,7 +2006,7 @@
 </tbody>
 </table>
 <p><a name="property.synctime"></a></p>
-<h2 id="synctime-property"><em>synctime <sup>property</sup></em></h2>
+<h2 id="synctime-property"><em>synctime <a href="#head.Properties"><sup>property</sup></a></em></h2>
 <p>Provides access to the most recent synchronized time.</p>
 <blockquote>
 <p>This property is <strong>read-only</strong>.</p>
@@ -2050,7 +2057,7 @@
 }
 </code></pre>
 <p><a name="property.time"></a></p>
-<h2 id="time-property"><em>time <sup>property</sup></em></h2>
+<h2 id="time-property"><em>time <a href="#head.Properties"><sup>property</sup></a></em></h2>
 <p>Provides access to the current system time.</p>
 <h3 id="description_2">Description</h3>
 <p>Upon setting this property automatic time synchronization will be stopped. If not already active, the framework's <em>time</em> subsystem will become activated. If the property is set empty then the <em>time</em> subsystem will still become activated but without setting the time (thereby notifying the framework that the time has been set externally).</p>
@@ -2138,7 +2145,7 @@
 </tbody>
 </table>
 <p><a name="event.timechange"></a></p>
-<h2 id="timechange-event"><em>timechange <sup>event</sup></em></h2>
+<h2 id="timechange-event"><em>timechange <a href="#head.Notifications"><sup>event</sup></a></em></h2>
 <p>Signals a time change.</p>
 <h3 id="parameters_1">Parameters</h3>
 <p>This event carries no parameters.</p>

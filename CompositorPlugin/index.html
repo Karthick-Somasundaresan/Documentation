@@ -1739,12 +1739,13 @@
 <h1 id="compositor-plugin">Compositor Plugin</h1>
 <p><strong>Version: 1.0</strong></p>
 <p><strong>Status: <img alt="⚫" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26ab.svg" title=":black_circle:" /><img alt="⚫" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26ab.svg" title=":black_circle:" /><img alt="⚫" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26ab.svg" title=":black_circle:" /></strong></p>
-<p>Compositor plugin for Thunder framework.</p>
+<p>A Compositor plugin for Thunder framework.</p>
 <h3 id="table-of-contents">Table of Contents</h3>
 <ul>
 <li><a href="#head.Introduction">Introduction</a></li>
 <li><a href="#head.Description">Description</a></li>
 <li><a href="#head.Configuration">Configuration</a></li>
+<li><a href="#head.Interfaces">Interfaces</a></li>
 <li><a href="#head.Methods">Methods</a></li>
 <li><a href="#head.Properties">Properties</a></li>
 </ul>
@@ -1926,6 +1927,12 @@
 </tr>
 </tbody>
 </table>
+<p><a name="head.Interfaces"></a></p>
+<h1 id="interfaces">Interfaces</h1>
+<p>This plugin implements the following interfaces:</p>
+<ul>
+<li><a href="https://github.com/rdkcentral/ThunderInterfaces/tree/master/jsonrpc/Compositor.json">Compositor.json</a></li>
+</ul>
 <p><a name="head.Methods"></a></p>
 <h1 id="methods">Methods</h1>
 <p>The following methods are provided by the Compositor plugin:</p>
@@ -1953,7 +1960,7 @@
 </tbody>
 </table>
 <p><a name="method.putontop"></a></p>
-<h2 id="putontop-method"><em>putontop <sup>method</sup></em></h2>
+<h2 id="putontop-method"><em>putontop <a href="#head.Methods"><sup>method</sup></a></em></h2>
 <p>Puts client surface on top in z-order.</p>
 <h3 id="description_1">Description</h3>
 <p>Use this method to get a client's surface to the top position.</p>
@@ -2032,7 +2039,7 @@
 }
 </code></pre>
 <p><a name="method.putbelow"></a></p>
-<h2 id="putbelow-method"><em>putbelow <sup>method</sup></em></h2>
+<h2 id="putbelow-method"><em>putbelow <a href="#head.Methods"><sup>method</sup></a></em></h2>
 <p>Puts client surface below another surface.</p>
 <h3 id="description_2">Description</h3>
 <p>Use this method to reorder client surfaces in the z-order list.</p>
@@ -2117,7 +2124,7 @@
 }
 </code></pre>
 <p><a name="method.select"></a></p>
-<h2 id="select-method"><em>select <sup>method</sup></em></h2>
+<h2 id="select-method"><em>select <a href="#head.Methods"><sup>method</sup></a></em></h2>
 <p>Directs the input to the given client, disabling all the others.</p>
 <h3 id="description_3">Description</h3>
 <p>Use this method to direct all inputs to this client. The client that is receiving the inputs prior to this call will nolonger receive it anymore after this call.</p>
@@ -2234,7 +2241,7 @@
 </tbody>
 </table>
 <p><a name="property.resolution"></a></p>
-<h2 id="resolution-property"><em>resolution <sup>property</sup></em></h2>
+<h2 id="resolution-property"><em>resolution <a href="#head.Properties"><sup>property</sup></a></em></h2>
 <p>Provides access to the screen resolution.</p>
 <h3 id="description_4">Description</h3>
 <p>Use this property to set or retrieve the current resolution of the screen.</p>
@@ -2313,7 +2320,7 @@
 }
 </code></pre>
 <p><a name="property.zorder"></a></p>
-<h2 id="zorder-property"><em>zorder <sup>property</sup></em></h2>
+<h2 id="zorder-property"><em>zorder <a href="#head.Properties"><sup>property</sup></a></em></h2>
 <p>Provides access to the list of compositor clients sorted by z-order.</p>
 <blockquote>
 <p>This property is <strong>read-only</strong>.</p>
@@ -2377,7 +2384,7 @@
 }
 </code></pre>
 <p><a name="property.brightness"></a></p>
-<h2 id="brightness-property"><em>brightness <sup>property</sup></em></h2>
+<h2 id="brightness-property"><em>brightness <a href="#head.Properties"><sup>property</sup></a></em></h2>
 <p>Provides access to the brightness of SDR graphics in HDR display.</p>
 <h3 id="description_6">Description</h3>
 <p>Use this property to set or retrieve the brightness of the SDR graphics.</p>
@@ -2456,7 +2463,7 @@
 }
 </code></pre>
 <p><a name="property.geometry"></a></p>
-<h2 id="geometry-property"><em>geometry <sup>property</sup></em></h2>
+<h2 id="geometry-property"><em>geometry <a href="#head.Properties"><sup>property</sup></a></em></h2>
 <p>Provides access to the client surface geometry.</p>
 <h3 id="description_7">Description</h3>
 <p>Use this property to update or retrieve the geometry of a client's surface.</p>
@@ -2558,7 +2565,7 @@
 }
 </code></pre>
 <p><a name="property.visiblity"></a></p>
-<h2 id="visiblity-property"><em>visiblity <sup>property</sup></em></h2>
+<h2 id="visiblity-property"><em>visiblity <a href="#head.Properties"><sup>property</sup></a></em></h2>
 <p>Provides access to the client surface visibility.</p>
 <blockquote>
 <p>This property is <strong>write-only</strong>.</p>
@@ -2619,7 +2626,7 @@
 }
 </code></pre>
 <p><a name="property.opacity"></a></p>
-<h2 id="opacity-property"><em>opacity <sup>property</sup></em></h2>
+<h2 id="opacity-property"><em>opacity <a href="#head.Properties"><sup>property</sup></a></em></h2>
 <p>Provides access to the client surface opacity.</p>
 <blockquote>
 <p>This property is <strong>write-only</strong>.</p>

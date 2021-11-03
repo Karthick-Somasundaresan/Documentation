@@ -1739,7 +1739,8 @@
 <h1 id="dial-server-api">DIAL Server API</h1>
 <p><strong>Version: 1.0</strong></p>
 <p><strong>Status: <img alt="⚫" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26ab.svg" title=":black_circle:" /><img alt="⚪" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26aa.svg" title=":white_circle:" /><img alt="⚪" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26aa.svg" title=":white_circle:" /></strong></p>
-<p>DIALServer interface for Thunder framework.</p>
+<p>A DIALServer interface for Thunder framework.</p>
+<p>(Defined by <a href="https://github.com/rdkcentral/ThunderInterfaces/tree/master/jsonrpc/DIALServer.json">DIALServer.json</a>)</p>
 <h3 id="table-of-contents">Table of Contents</h3>
 <ul>
 <li><a href="#head.Introduction">Introduction</a></li>
@@ -1849,7 +1850,7 @@
 </tbody>
 </table>
 <p><a name="property.state"></a></p>
-<h2 id="state-property"><em>state <sup>property</sup></em></h2>
+<h2 id="state-property"><em>state <a href="#head.Properties"><sup>property</sup></a></em></h2>
 <p>Provides access to the current application running state.</p>
 <h3 id="description_1">Description</h3>
 <p>This property can be used to update the running status of an un-managed application (i.e. running in <em>passive mode</em>). For DIALServer-managed applications this property shall be considered <em>read-only</em>.</p>
@@ -1961,7 +1962,7 @@
 </tbody>
 </table>
 <p><a name="event.start"></a></p>
-<h2 id="start-event"><em>start <sup>event</sup></em></h2>
+<h2 id="start-event"><em>start <a href="#head.Notifications"><sup>event</sup></a></em></h2>
 <p>Signals that application launch (or show if previously hidden) was requested over DIAL.</p>
 <h3 id="description_2">Description</h3>
 <p>This event is sent out only for un-managed applications (i.e. in <em>passive mode</em>).</p>
@@ -2009,7 +2010,7 @@
 }
 </code></pre>
 <p><a name="event.stop"></a></p>
-<h2 id="stop-event"><em>stop <sup>event</sup></em></h2>
+<h2 id="stop-event"><em>stop <a href="#head.Notifications"><sup>event</sup></a></em></h2>
 <p>Signals that application stop was requested over DIAL.</p>
 <h3 id="description_3">Description</h3>
 <p>This event is sent out only for un-managed applications (i.e. in <em>passive mode</em>).</p>
@@ -2051,7 +2052,7 @@
 }
 </code></pre>
 <p><a name="event.hide"></a></p>
-<h2 id="hide-event"><em>hide <sup>event</sup></em></h2>
+<h2 id="hide-event"><em>hide <a href="#head.Notifications"><sup>event</sup></a></em></h2>
 <p>Signals that application hide was requested over DIAL.</p>
 <h3 id="description_4">Description</h3>
 <p>This event is sent out only for un-managed applications (i.e. in <em>passive mode</em>).</p>
@@ -2087,7 +2088,7 @@
 }
 </code></pre>
 <p><a name="event.show"></a></p>
-<h2 id="show-event"><em>show <sup>event</sup></em></h2>
+<h2 id="show-event"><em>show <a href="#head.Notifications"><sup>event</sup></a></em></h2>
 <p>Signals that application show was requested over DIAL.</p>
 <blockquote>
 <p>This API is <strong>deprecated</strong> and may be removed in the future. It is no longer recommended for use in new implementations.</p>
@@ -2126,7 +2127,7 @@
 }
 </code></pre>
 <p><a name="event.change"></a></p>
-<h2 id="change-event"><em>change <sup>event</sup></em></h2>
+<h2 id="change-event"><em>change <a href="#head.Notifications"><sup>event</sup></a></em></h2>
 <p>Signals that application URL change was requested over DIAL.</p>
 <blockquote>
 <p>This API is <strong>deprecated</strong> and may be removed in the future. It is no longer recommended for use in new implementations.</p>

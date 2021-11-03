@@ -1739,12 +1739,13 @@
 <h1 id="streamer-plugin">Streamer Plugin</h1>
 <p><strong>Version: 1.0</strong></p>
 <p><strong>Status: <img alt="⚫" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26ab.svg" title=":black_circle:" /><img alt="⚪" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26aa.svg" title=":white_circle:" /><img alt="⚪" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26aa.svg" title=":white_circle:" /></strong></p>
-<p>Streamer plugin for Thunder framework.</p>
+<p>A Streamer plugin for Thunder framework.</p>
 <h3 id="table-of-contents">Table of Contents</h3>
 <ul>
 <li><a href="#head.Introduction">Introduction</a></li>
 <li><a href="#head.Description">Description</a></li>
 <li><a href="#head.Configuration">Configuration</a></li>
+<li><a href="#head.Interfaces">Interfaces</a></li>
 <li><a href="#head.Methods">Methods</a></li>
 <li><a href="#head.Properties">Properties</a></li>
 <li><a href="#head.Notifications">Notifications</a></li>
@@ -1867,6 +1868,12 @@
 </tr>
 </tbody>
 </table>
+<p><a name="head.Interfaces"></a></p>
+<h1 id="interfaces">Interfaces</h1>
+<p>This plugin implements the following interfaces:</p>
+<ul>
+<li><a href="https://github.com/rdkcentral/ThunderInterfaces/tree/master/jsonrpc/Streamer.json">Streamer.json</a></li>
+</ul>
 <p><a name="head.Methods"></a></p>
 <h1 id="methods">Methods</h1>
 <p>The following methods are provided by the Streamer plugin:</p>
@@ -1902,7 +1909,7 @@
 </tbody>
 </table>
 <p><a name="method.create"></a></p>
-<h2 id="create-method"><em>create <sup>method</sup></em></h2>
+<h2 id="create-method"><em>create <a href="#head.Methods"><sup>method</sup></a></em></h2>
 <p>Creates a stream instance.</p>
 <h3 id="parameters">Parameters</h3>
 <table>
@@ -1984,7 +1991,7 @@
 }
 </code></pre>
 <p><a name="method.destroy"></a></p>
-<h2 id="destroy-method"><em>destroy <sup>method</sup></em></h2>
+<h2 id="destroy-method"><em>destroy <a href="#head.Methods"><sup>method</sup></a></em></h2>
 <p>Destroys a stream instance.</p>
 <h3 id="parameters_1">Parameters</h3>
 <table>
@@ -2061,7 +2068,7 @@
 }
 </code></pre>
 <p><a name="method.load"></a></p>
-<h2 id="load-method"><em>load <sup>method</sup></em></h2>
+<h2 id="load-method"><em>load <a href="#head.Methods"><sup>method</sup></a></em></h2>
 <p>Loads a source into a stream.</p>
 <p>Also see: <a href="#event.statechange">statechange</a></p>
 <h3 id="parameters_2">Parameters</h3>
@@ -2160,7 +2167,7 @@
 }
 </code></pre>
 <p><a name="method.attach"></a></p>
-<h2 id="attach-method"><em>attach <sup>method</sup></em></h2>
+<h2 id="attach-method"><em>attach <a href="#head.Methods"><sup>method</sup></a></em></h2>
 <p>Attaches a decoder to the streamer.</p>
 <h3 id="parameters_3">Parameters</h3>
 <table>
@@ -2252,7 +2259,7 @@
 }
 </code></pre>
 <p><a name="method.detach"></a></p>
-<h2 id="detach-method"><em>detach <sup>method</sup></em></h2>
+<h2 id="detach-method"><em>detach <a href="#head.Methods"><sup>method</sup></a></em></h2>
 <p>Detaches a decoder from the streamer.</p>
 <h3 id="parameters_4">Parameters</h3>
 <table>
@@ -2397,7 +2404,7 @@
 </tbody>
 </table>
 <p><a name="property.speed"></a></p>
-<h2 id="speed-property"><em>speed <sup>property</sup></em></h2>
+<h2 id="speed-property"><em>speed <a href="#head.Properties"><sup>property</sup></a></em></h2>
 <p>Provides access to the playback speed.</p>
 <h3 id="description_1">Description</h3>
 <p>Speed (in percentage)</p>
@@ -2475,7 +2482,7 @@
 }
 </code></pre>
 <p><a name="property.position"></a></p>
-<h2 id="position-property"><em>position <sup>property</sup></em></h2>
+<h2 id="position-property"><em>position <a href="#head.Properties"><sup>property</sup></a></em></h2>
 <p>Provides access to the stream position.</p>
 <h3 id="value_1">Value</h3>
 <table>
@@ -2550,7 +2557,7 @@
 }
 </code></pre>
 <p><a name="property.window"></a></p>
-<h2 id="window-property"><em>window <sup>property</sup></em></h2>
+<h2 id="window-property"><em>window <a href="#head.Properties"><sup>property</sup></a></em></h2>
 <p>Provides access to the stream playback window.</p>
 <h3 id="value_2">Value</h3>
 <table>
@@ -2655,7 +2662,7 @@
 }
 </code></pre>
 <p><a name="property.speeds"></a></p>
-<h2 id="speeds-property"><em>speeds <sup>property</sup></em></h2>
+<h2 id="speeds-property"><em>speeds <a href="#head.Properties"><sup>property</sup></a></em></h2>
 <p>Provides access to the speeds supported by the stream player.</p>
 <blockquote>
 <p>This property is <strong>read-only</strong>.</p>
@@ -2731,7 +2738,7 @@
 }
 </code></pre>
 <p><a name="property.streams"></a></p>
-<h2 id="streams-property"><em>streams <sup>property</sup></em></h2>
+<h2 id="streams-property"><em>streams <a href="#head.Properties"><sup>property</sup></a></em></h2>
 <p>Provides access to the all created stream instance IDs.</p>
 <blockquote>
 <p>This property is <strong>read-only</strong>.</p>
@@ -2779,7 +2786,7 @@
 }
 </code></pre>
 <p><a name="property.type"></a></p>
-<h2 id="type-property"><em>type <sup>property</sup></em></h2>
+<h2 id="type-property"><em>type <a href="#head.Properties"><sup>property</sup></a></em></h2>
 <p>Provides access to the type of a stream.</p>
 <blockquote>
 <p>This property is <strong>read-only</strong>.</p>
@@ -2837,7 +2844,7 @@
 }
 </code></pre>
 <p><a name="property.drm"></a></p>
-<h2 id="drm-property"><em>drm <sup>property</sup></em></h2>
+<h2 id="drm-property"><em>drm <a href="#head.Properties"><sup>property</sup></a></em></h2>
 <p>Provides access to the DRM type associated with a stream.</p>
 <blockquote>
 <p>This property is <strong>read-only</strong>.</p>
@@ -2896,7 +2903,7 @@
 }
 </code></pre>
 <p><a name="property.state"></a></p>
-<h2 id="state-property"><em>state <sup>property</sup></em></h2>
+<h2 id="state-property"><em>state <a href="#head.Properties"><sup>property</sup></a></em></h2>
 <p>Provides access to the current state of a stream.</p>
 <blockquote>
 <p>This property is <strong>read-only</strong>.</p>
@@ -2955,7 +2962,7 @@
 }
 </code></pre>
 <p><a name="property.metadata"></a></p>
-<h2 id="metadata-property"><em>metadata <sup>property</sup></em></h2>
+<h2 id="metadata-property"><em>metadata <a href="#head.Properties"><sup>property</sup></a></em></h2>
 <p>Provides access to the metadata associated with the stream.</p>
 <blockquote>
 <p>This property is <strong>read-only</strong>.</p>
@@ -3013,7 +3020,7 @@
 }
 </code></pre>
 <p><a name="property.error"></a></p>
-<h2 id="error-property"><em>error <sup>property</sup></em></h2>
+<h2 id="error-property"><em>error <a href="#head.Properties"><sup>property</sup></a></em></h2>
 <p>Provides access to the most recent error code.</p>
 <blockquote>
 <p>This property is <strong>read-only</strong>.</p>
@@ -3071,7 +3078,7 @@
 }
 </code></pre>
 <p><a name="property.elements"></a></p>
-<h2 id="elements-property"><em>elements <sup>property</sup></em></h2>
+<h2 id="elements-property"><em>elements <a href="#head.Properties"><sup>property</sup></a></em></h2>
 <p>Provides access to the stream elements.</p>
 <blockquote>
 <p>This property is <strong>read-only</strong>.</p>
@@ -3183,7 +3190,7 @@
 </tbody>
 </table>
 <p><a name="event.statechange"></a></p>
-<h2 id="statechange-event"><em>statechange <sup>event</sup></em></h2>
+<h2 id="statechange-event"><em>statechange <a href="#head.Notifications"><sup>event</sup></a></em></h2>
 <p>Notifies of stream state change.</p>
 <h3 id="parameters_5">Parameters</h3>
 <table>
@@ -3220,7 +3227,7 @@
 }
 </code></pre>
 <p><a name="event.timeupdate"></a></p>
-<h2 id="timeupdate-event"><em>timeupdate <sup>event</sup></em></h2>
+<h2 id="timeupdate-event"><em>timeupdate <a href="#head.Notifications"><sup>event</sup></a></em></h2>
 <p>Notifies of stream position change. This event is fired every second to indicate the current stream position. It does not fire if the stream is paused (i.e. speed is set to 0).</p>
 <h3 id="parameters_6">Parameters</h3>
 <table>
@@ -3257,7 +3264,7 @@
 }
 </code></pre>
 <p><a name="event.stream"></a></p>
-<h2 id="stream-event"><em>stream <sup>event</sup></em></h2>
+<h2 id="stream-event"><em>stream <a href="#head.Notifications"><sup>event</sup></a></em></h2>
 <p>Notifies of a custom stream incident.</p>
 <h3 id="parameters_7">Parameters</h3>
 <table>
@@ -3294,7 +3301,7 @@
 }
 </code></pre>
 <p><a name="event.player"></a></p>
-<h2 id="player-event"><em>player <sup>event</sup></em></h2>
+<h2 id="player-event"><em>player <a href="#head.Notifications"><sup>event</sup></a></em></h2>
 <p>Notifies of a custom player incident.</p>
 <h3 id="parameters_8">Parameters</h3>
 <table>
@@ -3331,7 +3338,7 @@
 }
 </code></pre>
 <p><a name="event.drm"></a></p>
-<h2 id="drm-event"><em>drm <sup>event</sup></em></h2>
+<h2 id="drm-event"><em>drm <a href="#head.Notifications"><sup>event</sup></a></em></h2>
 <p>Notifies of a custom DRM-related incident.</p>
 <h3 id="parameters_9">Parameters</h3>
 <table>
