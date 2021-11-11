@@ -14,7 +14,7 @@
     
     
       
-        <title>Location Sync Plugin - Documentation</title>
+        <title>Bluetooth Audio Sink Plugin - Documentation</title>
       
     
     
@@ -61,7 +61,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#location-sync-plugin" class="md-skip">
+        <a href="#bluetooth-audio-sink-plugin" class="md-skip">
           Skip to content
         </a>
       
@@ -93,7 +93,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Location Sync Plugin
+              Bluetooth Audio Sink Plugin
             
           </span>
         </div>
@@ -1361,11 +1361,53 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../BluetoothAudioSinkPlugin/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Bluetooth Audio Sink Plugin
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Bluetooth Audio Sink Plugin
       </a>
+      
+        
+
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    Table of Contents
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1571,53 +1613,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Location Sync Plugin
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../LocationSyncPlugin/" class="md-nav__link">
         Location Sync Plugin
       </a>
-      
-        
-
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#table-of-contents" class="md-nav__link">
-    Table of Contents
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1747,11 +1747,11 @@
                 
                 
                 <!-- Generated automatically, DO NOT EDIT! -->
-<p><a name="head.Location_Sync_Plugin"></a></p>
-<h1 id="location-sync-plugin">Location Sync Plugin</h1>
+<p><a name="head.Bluetooth_Audio_Sink_Plugin"></a></p>
+<h1 id="bluetooth-audio-sink-plugin">Bluetooth Audio Sink Plugin</h1>
 <p><strong>Version: 1.0</strong></p>
-<p><strong>Status: <img alt="⚫" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26ab.svg" title=":black_circle:" /><img alt="⚫" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26ab.svg" title=":black_circle:" /><img alt="⚫" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26ab.svg" title=":black_circle:" /></strong></p>
-<p>A LocationSync plugin for Thunder framework.</p>
+<p><strong>Status: <img alt="⚫" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26ab.svg" title=":black_circle:" /><img alt="⚪" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26aa.svg" title=":white_circle:" /><img alt="⚪" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26aa.svg" title=":white_circle:" /></strong></p>
+<p>A BluetoothAudioSink plugin for Thunder framework.</p>
 <h3 id="table-of-contents">Table of Contents</h3>
 <ul>
 <li><a href="#head.Introduction">Introduction</a></li>
@@ -1766,7 +1766,7 @@
 <h1 id="introduction">Introduction</h1>
 <p><a name="head.Scope"></a></p>
 <h2 id="scope">Scope</h2>
-<p>This document describes purpose and functionality of the LocationSync plugin. It includes detailed specification about its configuration, methods and properties provided, as well as notifications sent.</p>
+<p>This document describes purpose and functionality of the BluetoothAudioSink plugin. It includes detailed specification about its configuration, methods and properties provided, as well as notifications sent.</p>
 <p><a name="head.Case_Sensitivity"></a></p>
 <h2 id="case-sensitivity">Case Sensitivity</h2>
 <p>All identifiers of the interfaces described in this document are case-sensitive. Thus, unless stated otherwise, all keywords, entities, properties, relations and actions should be treated as such.</p>
@@ -1786,6 +1786,10 @@
 <td align="left">Application Programming Interface</td>
 </tr>
 <tr>
+<td align="left"><a name="acronym.BR/EDR">BR/EDR</a></td>
+<td align="left">Basic Rate/Enhanced Data Rate</td>
+</tr>
+<tr>
 <td align="left"><a name="acronym.HTTP">HTTP</a></td>
 <td align="left">Hypertext Transfer Protocol</td>
 </tr>
@@ -1796,6 +1800,14 @@
 <tr>
 <td align="left"><a name="acronym.JSON-RPC">JSON-RPC</a></td>
 <td align="left">A remote procedure call protocol encoded in JSON</td>
+</tr>
+<tr>
+<td align="left"><a name="acronym.LC-SBC">LC-SBC</a></td>
+<td align="left">Low-Complexity SubBand Coding</td>
+</tr>
+<tr>
+<td align="left"><a name="acronym.SDP">SDP</a></td>
+<td align="left">Service Discovery Protocol</td>
 </tr>
 </tbody>
 </table>
@@ -1808,6 +1820,10 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+<td align="left"><a name="term.bitpool">bitpool</a></td>
+<td align="left">A parameter to the LC-SBC codec that changes the encoding bitrate; the higher it is the higher the bitrate and thus the audio quality</td>
+</tr>
 <tr>
 <td align="left"><a name="term.callsign">callsign</a></td>
 <td align="left">The name given to an instance of a plugin. One plugin can be instantiated multiple times, but each instance the instance name, callsign, must be unique.</td>
@@ -1844,7 +1860,7 @@
 </table>
 <p><a name="head.Description"></a></p>
 <h1 id="description">Description</h1>
-<p>The LocationSync plugin provides geo-location functionality.</p>
+<p>The Bluetooth Audio Sink plugin enables audio streaming to Bluetooth audio sink devices. The plugin is sink a from the host device stack perspective; in Bluetooth topology the host device becomes in fact an audio source. The plugin requires a Bluetooth controller service that will provide Bluetooth BR/EDR scanning, pairing and connection functionality; typically this is fulfiled by the <em>BluetoothControl</em> plugin.</p>
 <p>The plugin is designed to be loaded and executed within the Thunder framework. For more information about the framework refer to [<a href="#ref.Thunder">Thunder</a>].</p>
 <p><a name="head.Configuration"></a></p>
 <h1 id="configuration">Configuration</h1>
@@ -1861,17 +1877,17 @@
 <tr>
 <td align="left">callsign</td>
 <td align="left">string</td>
-<td align="left">Plugin instance name (default: <em>LocationSync</em>)</td>
+<td align="left">Plugin instance name (default: <em>BluetoothAudioSink</em>)</td>
 </tr>
 <tr>
 <td align="left">classname</td>
 <td align="left">string</td>
-<td align="left">Class name: <em>LocationSync</em></td>
+<td align="left">Class name: <em>BluetoothAudioSink</em></td>
 </tr>
 <tr>
 <td align="left">locator</td>
 <td align="left">string</td>
-<td align="left">Library name: <em>libWPELocationSync.so</em></td>
+<td align="left">Library name: <em>libWPEFrameworkBluetoothAudioSink.so</em></td>
 </tr>
 <tr>
 <td align="left">autostart</td>
@@ -1881,22 +1897,62 @@
 <tr>
 <td align="left">configuration</td>
 <td align="left">object</td>
-<td align="left"><sup><em>(optional)</em></sup></td>
+<td align="left"></td>
 </tr>
 <tr>
-<td align="left">configuration?.interval</td>
-<td align="left">number</td>
-<td align="left"><sup><em>(optional)</em></sup> Maximum time duration between each request to the Location Server (default: 10)</td>
-</tr>
-<tr>
-<td align="left">configuration?.retries</td>
-<td align="left">number</td>
-<td align="left"><sup><em>(optional)</em></sup> Maximum number of request reties to the Location Server (default:20)</td>
-</tr>
-<tr>
-<td align="left">configuration?.source</td>
+<td align="left">configuration.controller</td>
 <td align="left">string</td>
-<td align="left"><sup><em>(optional)</em></sup> URI of the Location Server (default:"http://jsonip.metrological.com/?maf=true")</td>
+<td align="left">Callsign of the Bluetooth controller service (typically <em>BluetoothControl</em>)</td>
+</tr>
+<tr>
+<td align="left">configuration.sdpservice</td>
+<td align="left">object</td>
+<td align="left">Configuration of the related SDP service</td>
+</tr>
+<tr>
+<td align="left">configuration.sdpservice.enable</td>
+<td align="left">bool</td>
+<td align="left">Determines if the SDP server shall advertise an audio source service</td>
+</tr>
+<tr>
+<td align="left">configuration.sdpservice?.name</td>
+<td align="left">string</td>
+<td align="left"><sup><em>(optional)</em></sup> Friendly name of the service</td>
+</tr>
+<tr>
+<td align="left">configuration.sdpservice?.description</td>
+<td align="left">string</td>
+<td align="left"><sup><em>(optional)</em></sup> Description of the service</td>
+</tr>
+<tr>
+<td align="left">configuration.sdpservice?.provider</td>
+<td align="left">string</td>
+<td align="left"><sup><em>(optional)</em></sup> Name of the service provider/vendor</td>
+</tr>
+<tr>
+<td align="left">configuration.codecs</td>
+<td align="left">object</td>
+<td align="left">Codec settings</td>
+</tr>
+<tr>
+<td align="left">configuration.codecs.LC-SBC</td>
+<td align="left">object</td>
+<td align="left">Settings for the LC-SBC codec</td>
+</tr>
+<tr>
+<td align="left">configuration.codecs.LC-SBC?.preset</td>
+<td align="left">string</td>
+<td align="left"><sup><em>(optional)</em></sup> Predefined audio quality setting (must be one of the following: <em>Compatible</em>, <em>LQ</em>, <em>MQ</em>, <em>HQ</em>, <em>XQ</em>)</td>
+</tr>
+<tr>
+<td align="left">configuration.codecs.LC-SBC?.bitpool</td>
+<td align="left">number</td>
+<td align="left"><sup><em>(optional)</em></sup> Custom audio quality based on bitpool value (used when <em>preset</em> is not specified)</td>
+</tr>
+<tr>
+<td align="left">configuration.codecs.LC-SBC?.channelmode</td>
+<td align="left">string</td>
+<td align="left"><sup><em>(optional)</em></sup> Channel mode for custom audio quality (used when <em>preset</em> is not specified) (must be one of the following: <em>Mono</em>, <em>Stereo</em>, <em>JointStereo</em>, <em>DualChannel</em>)</td>
 </tr>
 </tbody>
 </table>
@@ -1904,12 +1960,12 @@
 <h1 id="interfaces">Interfaces</h1>
 <p>This plugin implements the following interfaces:</p>
 <ul>
-<li><a href="https://github.com/rdkcentral/ThunderInterfaces/tree/master/jsonrpc/LocationSync.json">LocationSync.json</a></li>
+<li>Exchange::IBluetoothAudioSink (<a href="https://github.com/rdkcentral/ThunderInterfaces/tree/master/interfaces/IBluetoothAudio.h">IBluetoothAudio.h</a>)</li>
 </ul>
 <p><a name="head.Methods"></a></p>
 <h1 id="methods">Methods</h1>
-<p>The following methods are provided by the LocationSync plugin:</p>
-<p>LocationSync interface methods:</p>
+<p>The following methods are provided by the BluetoothAudioSink plugin:</p>
+<p>BluetoothAudioSink interface methods:</p>
 <table>
 <thead>
 <tr>
@@ -1919,16 +1975,35 @@
 </thead>
 <tbody>
 <tr>
-<td align="left"><a href="#method.sync">sync</a></td>
-<td align="left">Synchronizes the location</td>
+<td align="left"><a href="#method.exchange_assign">exchange assign</a></td>
+<td align="left">Assigns a Bluetooth device for audio playback</td>
+</tr>
+<tr>
+<td align="left"><a href="#method.exchange_revoke">exchange revoke</a></td>
+<td align="left">Revokes a Bluetooth device from audio playback</td>
 </tr>
 </tbody>
 </table>
-<p><a name="method.sync"></a></p>
-<h2 id="sync-method"><em>sync <a href="#head.Methods"><sup>method</sup></a></em></h2>
-<p>Synchronizes the location.</p>
+<p><a name="method.exchange_assign"></a></p>
+<h2 id="exchange_assign-method"><em>exchange_assign <a href="#head.Methods"><sup>method</sup></a></em></h2>
+<p>Assigns a Bluetooth device for audio playback.</p>
 <h3 id="parameters">Parameters</h3>
-<p>This method takes no parameters.</p>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">address</td>
+<td align="left">string</td>
+<td align="left">Address of the bluetooth device to assign</td>
+</tr>
+</tbody>
+</table>
 <h3 id="result">Result</h3>
 <table>
 <thead>
@@ -1957,24 +2032,9 @@
 </thead>
 <tbody>
 <tr>
-<td align="left">1</td>
-<td align="left"><code>ERROR_GENERAL</code></td>
-<td align="left">Failed to synchdonize the location</td>
-</tr>
-<tr>
-<td align="left">2</td>
-<td align="left"><code>ERROR_UNAVAILABLE</code></td>
-<td align="left">Unavailable locator</td>
-</tr>
-<tr>
-<td align="left">15</td>
-<td align="left"><code>ERROR_INCORRECT_URL</code></td>
-<td align="left">Incorrect URL</td>
-</tr>
-<tr>
-<td align="left">12</td>
-<td align="left"><code>ERROR_INPROGRESS</code></td>
-<td align="left">Probing in progress</td>
+<td align="left"></td>
+<td align="left"><code>ERROR_ALREADY_CONNECTED</code></td>
+<td align="left">A device is already assigned</td>
 </tr>
 </tbody>
 </table>
@@ -1983,7 +2043,8 @@
 <pre><code class="language-json">{
     &quot;jsonrpc&quot;: &quot;2.0&quot;,
     &quot;id&quot;: 42,
-    &quot;method&quot;: &quot;LocationSync.1.sync&quot;
+    &quot;method&quot;: &quot;BluetoothAudioSink.1.exchange_assign&quot;,
+    &quot;params&quot;: &quot;...&quot;
 }
 </code></pre>
 <h4 id="response">Response</h4>
@@ -1993,10 +2054,64 @@
     &quot;result&quot;: null
 }
 </code></pre>
+<p><a name="method.exchange_revoke"></a></p>
+<h2 id="exchange_revoke-method"><em>exchange_revoke <a href="#head.Methods"><sup>method</sup></a></em></h2>
+<p>Revokes a Bluetooth device from audio playback.</p>
+<h3 id="parameters_1">Parameters</h3>
+<p>This method takes no parameters.</p>
+<h3 id="result_1">Result</h3>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">result</td>
+<td align="left">null</td>
+<td align="left">Always null</td>
+</tr>
+</tbody>
+</table>
+<h3 id="errors_1">Errors</h3>
+<table>
+<thead>
+<tr>
+<th align="left">Code</th>
+<th align="left">Message</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"></td>
+<td align="left"><code>ERROR_ALREADY_RELEASED</code></td>
+<td align="left">No device is currently assigned</td>
+</tr>
+</tbody>
+</table>
+<h3 id="example_1">Example</h3>
+<h4 id="request_1">Request</h4>
+<pre><code class="language-json">{
+    &quot;jsonrpc&quot;: &quot;2.0&quot;,
+    &quot;id&quot;: 42,
+    &quot;method&quot;: &quot;BluetoothAudioSink.1.exchange_revoke&quot;
+}
+</code></pre>
+<h4 id="response_1">Response</h4>
+<pre><code class="language-json">{
+    &quot;jsonrpc&quot;: &quot;2.0&quot;,
+    &quot;id&quot;: 42,
+    &quot;result&quot;: null
+}
+</code></pre>
 <p><a name="head.Properties"></a></p>
 <h1 id="properties">Properties</h1>
-<p>The following properties are provided by the LocationSync plugin:</p>
-<p>LocationSync interface properties:</p>
+<p>The following properties are provided by the BluetoothAudioSink plugin:</p>
+<p>BluetoothAudioSink interface properties:</p>
 <table>
 <thead>
 <tr>
@@ -2006,14 +2121,38 @@
 </thead>
 <tbody>
 <tr>
-<td align="left"><a href="#property.location">location</a> <sup>RO</sup></td>
-<td align="left">Location information</td>
+<td align="left"><a href="#property.exchange_state">exchange state</a> <sup>RO</sup></td>
+<td align="left">Current audio sink state</td>
+</tr>
+<tr>
+<td align="left"><a href="#property.exchange_type">exchange type</a> <sup>RO</sup></td>
+<td align="left">Audio sink type</td>
+</tr>
+<tr>
+<td align="left"><a href="#property.exchange_supportedcodecs">exchange supportedcodecs</a> <sup>RO</sup></td>
+<td align="left">Audio codecs supported by the sink</td>
+</tr>
+<tr>
+<td align="left"><a href="#property.exchange_supporteddrms">exchange supporteddrms</a> <sup>RO</sup></td>
+<td align="left">DRM schemes supported by the sink</td>
+</tr>
+<tr>
+<td align="left"><a href="#property.exchange_codec">exchange codec</a> <sup>RO</sup></td>
+<td align="left">Properites of the currently used codec</td>
+</tr>
+<tr>
+<td align="left"><a href="#property.exchange_drm">exchange drm</a> <sup>RO</sup></td>
+<td align="left">Properties of the currently used DRM scheme</td>
+</tr>
+<tr>
+<td align="left"><a href="#property.exchange_stream">exchange stream</a> <sup>RO</sup></td>
+<td align="left">Properties of the current output stream</td>
 </tr>
 </tbody>
 </table>
-<p><a name="property.location"></a></p>
-<h2 id="location-property"><em>location <a href="#head.Properties"><sup>property</sup></a></em></h2>
-<p>Provides access to the location information.</p>
+<p><a name="property.exchange_state"></a></p>
+<h2 id="exchange_state-property"><em>exchange_state <a href="#head.Properties"><sup>property</sup></a></em></h2>
+<p>Provides access to the current audio sink state.</p>
 <blockquote>
 <p>This property is <strong>read-only</strong>.</p>
 </blockquote>
@@ -2028,63 +2167,433 @@
 </thead>
 <tbody>
 <tr>
-<td align="left">(property)</td>
-<td align="left">object</td>
-<td align="left">Location information</td>
-</tr>
-<tr>
-<td align="left">(property).city</td>
+<td align="left">sinkstate</td>
 <td align="left">string</td>
-<td align="left">City name</td>
-</tr>
-<tr>
-<td align="left">(property).country</td>
-<td align="left">string</td>
-<td align="left">Country name</td>
-</tr>
-<tr>
-<td align="left">(property).region</td>
-<td align="left">string</td>
-<td align="left">Region name</td>
-</tr>
-<tr>
-<td align="left">(property).timezone</td>
-<td align="left">string</td>
-<td align="left">Time zone information</td>
-</tr>
-<tr>
-<td align="left">(property).publicip</td>
-<td align="left">string</td>
-<td align="left">Public IP</td>
+<td align="left">Current audio sink state (must be one of the following: <em>Unassigned</em>, <em>Disconnected</em>, <em>ConnectedBadDevice</em>, <em>ConnectedRestricted</em>, <em>Connected</em>, <em>Ready</em>, <em>Streaming</em>)</td>
 </tr>
 </tbody>
 </table>
-<h3 id="example_1">Example</h3>
+<h3 id="example_2">Example</h3>
 <h4 id="get-request">Get Request</h4>
 <pre><code class="language-json">{
     &quot;jsonrpc&quot;: &quot;2.0&quot;,
     &quot;id&quot;: 42,
-    &quot;method&quot;: &quot;LocationSync.1.location&quot;
+    &quot;method&quot;: &quot;BluetoothAudioSink.1.exchange_state&quot;
 }
 </code></pre>
 <h4 id="get-response">Get Response</h4>
 <pre><code class="language-json">{
     &quot;jsonrpc&quot;: &quot;2.0&quot;,
     &quot;id&quot;: 42,
+    &quot;result&quot;: &quot;Unassigned&quot;
+}
+</code></pre>
+<p><a name="property.exchange_type"></a></p>
+<h2 id="exchange_type-property"><em>exchange_type <a href="#head.Properties"><sup>property</sup></a></em></h2>
+<p>Provides access to the audio sink type.</p>
+<blockquote>
+<p>This property is <strong>read-only</strong>.</p>
+</blockquote>
+<h3 id="value_1">Value</h3>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">type</td>
+<td align="left">string</td>
+<td align="left">Audio sink type (must be one of the following: <em>Unknown</em>, <em>Headphone</em>, <em>Speaker</em>, <em>Recorder</em>, <em>Amplifier</em>)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="errors_2">Errors</h3>
+<table>
+<thead>
+<tr>
+<th align="left">Code</th>
+<th align="left">Message</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"></td>
+<td align="left"><code>ERROR_ILLEGAL_STATE</code></td>
+<td align="left">The sink device is not connected</td>
+</tr>
+</tbody>
+</table>
+<h3 id="example_3">Example</h3>
+<h4 id="get-request_1">Get Request</h4>
+<pre><code class="language-json">{
+    &quot;jsonrpc&quot;: &quot;2.0&quot;,
+    &quot;id&quot;: 42,
+    &quot;method&quot;: &quot;BluetoothAudioSink.1.exchange_type&quot;
+}
+</code></pre>
+<h4 id="get-response_1">Get Response</h4>
+<pre><code class="language-json">{
+    &quot;jsonrpc&quot;: &quot;2.0&quot;,
+    &quot;id&quot;: 42,
+    &quot;result&quot;: &quot;Unknown&quot;
+}
+</code></pre>
+<p><a name="property.exchange_supportedcodecs"></a></p>
+<h2 id="exchange_supportedcodecs-property"><em>exchange_supportedcodecs <a href="#head.Properties"><sup>property</sup></a></em></h2>
+<p>Provides access to the audio codecs supported by the sink.</p>
+<blockquote>
+<p>This property is <strong>read-only</strong>.</p>
+</blockquote>
+<h3 id="value_2">Value</h3>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">codecs</td>
+<td align="left">array</td>
+<td align="left">Audio codecs supported by the sink</td>
+</tr>
+<tr>
+<td align="left">codecs[#]</td>
+<td align="left">string</td>
+<td align="left">(must be one of the following: <em>LC-SBC</em>)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="errors_3">Errors</h3>
+<table>
+<thead>
+<tr>
+<th align="left">Code</th>
+<th align="left">Message</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"></td>
+<td align="left"><code>ERROR_ILLEGAL_STATE</code></td>
+<td align="left">The sink device is not connected</td>
+</tr>
+</tbody>
+</table>
+<h3 id="example_4">Example</h3>
+<h4 id="get-request_2">Get Request</h4>
+<pre><code class="language-json">{
+    &quot;jsonrpc&quot;: &quot;2.0&quot;,
+    &quot;id&quot;: 42,
+    &quot;method&quot;: &quot;BluetoothAudioSink.1.exchange_supportedcodecs&quot;
+}
+</code></pre>
+<h4 id="get-response_2">Get Response</h4>
+<pre><code class="language-json">{
+    &quot;jsonrpc&quot;: &quot;2.0&quot;,
+    &quot;id&quot;: 42,
+    &quot;result&quot;: [
+        &quot;LC-SBC&quot;
+    ]
+}
+</code></pre>
+<p><a name="property.exchange_supporteddrms"></a></p>
+<h2 id="exchange_supporteddrms-property"><em>exchange_supporteddrms <a href="#head.Properties"><sup>property</sup></a></em></h2>
+<p>Provides access to the DRM schemes supported by the sink.</p>
+<blockquote>
+<p>This property is <strong>read-only</strong>.</p>
+</blockquote>
+<h3 id="value_3">Value</h3>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">drms</td>
+<td align="left">array</td>
+<td align="left">DRM schemes supported by the sink</td>
+</tr>
+<tr>
+<td align="left">drms[#]</td>
+<td align="left">string</td>
+<td align="left">(must be one of the following: <em>None</em>, <em>DTCP</em>, <em>SCMS-T</em>)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="errors_4">Errors</h3>
+<table>
+<thead>
+<tr>
+<th align="left">Code</th>
+<th align="left">Message</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"></td>
+<td align="left"><code>ERROR_ILLEGAL_STATE</code></td>
+<td align="left">The sink device is not connected</td>
+</tr>
+</tbody>
+</table>
+<h3 id="example_5">Example</h3>
+<h4 id="get-request_3">Get Request</h4>
+<pre><code class="language-json">{
+    &quot;jsonrpc&quot;: &quot;2.0&quot;,
+    &quot;id&quot;: 42,
+    &quot;method&quot;: &quot;BluetoothAudioSink.1.exchange_supporteddrms&quot;
+}
+</code></pre>
+<h4 id="get-response_3">Get Response</h4>
+<pre><code class="language-json">{
+    &quot;jsonrpc&quot;: &quot;2.0&quot;,
+    &quot;id&quot;: 42,
+    &quot;result&quot;: [
+        &quot;None&quot;
+    ]
+}
+</code></pre>
+<p><a name="property.exchange_codec"></a></p>
+<h2 id="exchange_codec-property"><em>exchange_codec <a href="#head.Properties"><sup>property</sup></a></em></h2>
+<p>Provides access to the properites of the currently used codec.</p>
+<blockquote>
+<p>This property is <strong>read-only</strong>.</p>
+</blockquote>
+<h3 id="value_4">Value</h3>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">properties</td>
+<td align="left">object</td>
+<td align="left">Properites of the currently used codec</td>
+</tr>
+<tr>
+<td align="left">properties.codec</td>
+<td align="left">string</td>
+<td align="left">Audio codec used (must be one of the following: <em>LC-SBC</em>)</td>
+</tr>
+<tr>
+<td align="left">properties.settings</td>
+<td align="left">string</td>
+<td align="left">Codec-specific audio quality preset, compression profile, etc</td>
+</tr>
+</tbody>
+</table>
+<h3 id="errors_5">Errors</h3>
+<table>
+<thead>
+<tr>
+<th align="left">Code</th>
+<th align="left">Message</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"></td>
+<td align="left"><code>ERROR_ILLEGAL_STATE</code></td>
+<td align="left">Currently not streaming</td>
+</tr>
+</tbody>
+</table>
+<h3 id="example_6">Example</h3>
+<h4 id="get-request_4">Get Request</h4>
+<pre><code class="language-json">{
+    &quot;jsonrpc&quot;: &quot;2.0&quot;,
+    &quot;id&quot;: 42,
+    &quot;method&quot;: &quot;BluetoothAudioSink.1.exchange_codec&quot;
+}
+</code></pre>
+<h4 id="get-response_4">Get Response</h4>
+<pre><code class="language-json">{
+    &quot;jsonrpc&quot;: &quot;2.0&quot;,
+    &quot;id&quot;: 42,
     &quot;result&quot;: {
-        &quot;city&quot;: &quot;Wroclaw&quot;,
-        &quot;country&quot;: &quot;Poland&quot;,
-        &quot;region&quot;: &quot;Wroclaw&quot;,
-        &quot;timezone&quot;: &quot;CET-1CEST,M3.5.0,M10.5.0/3&quot;,
-        &quot;publicip&quot;: &quot;78.11.117.118&quot;
+        &quot;codec&quot;: &quot;LC-SBC&quot;,
+        &quot;settings&quot;: &quot;...&quot;
+    }
+}
+</code></pre>
+<p><a name="property.exchange_drm"></a></p>
+<h2 id="exchange_drm-property"><em>exchange_drm <a href="#head.Properties"><sup>property</sup></a></em></h2>
+<p>Provides access to the properties of the currently used DRM scheme.</p>
+<blockquote>
+<p>This property is <strong>read-only</strong>.</p>
+</blockquote>
+<h3 id="value_5">Value</h3>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">properties</td>
+<td align="left">object</td>
+<td align="left">Properties of the currently used DRM scheme</td>
+</tr>
+<tr>
+<td align="left">properties.drm</td>
+<td align="left">string</td>
+<td align="left">Content protection scheme used (must be one of the following: <em>None</em>, <em>DTCP</em>, <em>SCMS-T</em>)</td>
+</tr>
+<tr>
+<td align="left">properties.settings</td>
+<td align="left">string</td>
+<td align="left">DRM-specific content protection level, encoding rules, etc</td>
+</tr>
+</tbody>
+</table>
+<h3 id="errors_6">Errors</h3>
+<table>
+<thead>
+<tr>
+<th align="left">Code</th>
+<th align="left">Message</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"></td>
+<td align="left"><code>ERROR_ILLEGAL_STATE</code></td>
+<td align="left">Currently not streaming</td>
+</tr>
+</tbody>
+</table>
+<h3 id="example_7">Example</h3>
+<h4 id="get-request_5">Get Request</h4>
+<pre><code class="language-json">{
+    &quot;jsonrpc&quot;: &quot;2.0&quot;,
+    &quot;id&quot;: 42,
+    &quot;method&quot;: &quot;BluetoothAudioSink.1.exchange_drm&quot;
+}
+</code></pre>
+<h4 id="get-response_5">Get Response</h4>
+<pre><code class="language-json">{
+    &quot;jsonrpc&quot;: &quot;2.0&quot;,
+    &quot;id&quot;: 42,
+    &quot;result&quot;: {
+        &quot;drm&quot;: &quot;None&quot;,
+        &quot;settings&quot;: &quot;...&quot;
+    }
+}
+</code></pre>
+<p><a name="property.exchange_stream"></a></p>
+<h2 id="exchange_stream-property"><em>exchange_stream <a href="#head.Properties"><sup>property</sup></a></em></h2>
+<p>Provides access to the properties of the current output stream.</p>
+<blockquote>
+<p>This property is <strong>read-only</strong>.</p>
+</blockquote>
+<h3 id="value_6">Value</h3>
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">properties</td>
+<td align="left">object</td>
+<td align="left">Properties of the current output stream</td>
+</tr>
+<tr>
+<td align="left">properties.samplerate</td>
+<td align="left">integer</td>
+<td align="left">Sample rate in Hz</td>
+</tr>
+<tr>
+<td align="left">properties.bitrate</td>
+<td align="left">integer</td>
+<td align="left">Target bitrate in bits per second (eg. 320000)</td>
+</tr>
+<tr>
+<td align="left">properties.channels</td>
+<td align="left">integer</td>
+<td align="left">Number of audio channels</td>
+</tr>
+<tr>
+<td align="left">properties.resolution</td>
+<td align="left">integer</td>
+<td align="left">Sampling resolution in bits per sample</td>
+</tr>
+<tr>
+<td align="left">properties.isresampling</td>
+<td align="left">boolean</td>
+<td align="left">Indicates if the sink is resampling the input stream</td>
+</tr>
+</tbody>
+</table>
+<h3 id="errors_7">Errors</h3>
+<table>
+<thead>
+<tr>
+<th align="left">Code</th>
+<th align="left">Message</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"></td>
+<td align="left"><code>ERROR_ILLEGAL_STATE</code></td>
+<td align="left">Currently not streaming</td>
+</tr>
+</tbody>
+</table>
+<h3 id="example_8">Example</h3>
+<h4 id="get-request_6">Get Request</h4>
+<pre><code class="language-json">{
+    &quot;jsonrpc&quot;: &quot;2.0&quot;,
+    &quot;id&quot;: 42,
+    &quot;method&quot;: &quot;BluetoothAudioSink.1.exchange_stream&quot;
+}
+</code></pre>
+<h4 id="get-response_6">Get Response</h4>
+<pre><code class="language-json">{
+    &quot;jsonrpc&quot;: &quot;2.0&quot;,
+    &quot;id&quot;: 42,
+    &quot;result&quot;: {
+        &quot;samplerate&quot;: 44100,
+        &quot;bitrate&quot;: 0,
+        &quot;channels&quot;: 2,
+        &quot;resolution&quot;: 16,
+        &quot;isresampling&quot;: false
     }
 }
 </code></pre>
 <p><a name="head.Notifications"></a></p>
 <h1 id="notifications">Notifications</h1>
 <p>Notifications are autonomous events, triggered by the internals of the implementation, and broadcasted via JSON-RPC to all registered observers. Refer to [<a href="#ref.Thunder">Thunder</a>] for information on how to register for a notification.</p>
-<p>The following events are provided by the LocationSync plugin:</p>
-<p>LocationSync interface events:</p>
+<p>The following events are provided by the BluetoothAudioSink plugin:</p>
+<p>BluetoothAudioSink interface events:</p>
 <table>
 <thead>
 <tr>
@@ -2094,20 +2603,20 @@
 </thead>
 <tbody>
 <tr>
-<td align="left"><a href="#event.locationchange">locationchange</a></td>
-<td align="left">Signals a location change</td>
+<td align="left"><a href="#event.exchange_updated">exchange updated</a></td>
+<td align="left">Signals audio sink state change or stream properties update</td>
 </tr>
 </tbody>
 </table>
-<p><a name="event.locationchange"></a></p>
-<h2 id="locationchange-event"><em>locationchange <a href="#head.Notifications"><sup>event</sup></a></em></h2>
-<p>Signals a location change.</p>
-<h3 id="parameters_1">Parameters</h3>
+<p><a name="event.exchange_updated"></a></p>
+<h2 id="exchange_updated-event"><em>exchange_updated <a href="#head.Notifications"><sup>event</sup></a></em></h2>
+<p>Signals audio sink state change or stream properties update.</p>
+<h3 id="parameters_2">Parameters</h3>
 <p>This event carries no parameters.</p>
-<h3 id="example_2">Example</h3>
+<h3 id="example_9">Example</h3>
 <pre><code class="language-json">{
     &quot;jsonrpc&quot;: &quot;2.0&quot;,
-    &quot;method&quot;: &quot;client.events.1.locationchange&quot;
+    &quot;method&quot;: &quot;client.events.1.exchange_updated&quot;
 }
 </code></pre>
                 
@@ -2129,7 +2638,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../TraceControlPlugin/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Trace Control Plugin" rel="prev">
+        <a href="../SystemCommandsPlugin/" class="md-footer__link md-footer__link--prev" aria-label="Previous: System Commands Plugin" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -2138,20 +2647,20 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Trace Control Plugin
+              System Commands Plugin
             </div>
           </div>
         </a>
       
       
         
-        <a href="../DeviceInfoPlugin/" class="md-footer__link md-footer__link--next" aria-label="Next: Device Info Plugin" rel="next">
+        <a href="../DictionaryPlugin/" class="md-footer__link md-footer__link--next" aria-label="Next: Dictionary Plugin" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Device Info Plugin
+              Dictionary Plugin
             </div>
           </div>
           <div class="md-footer__button md-icon">
