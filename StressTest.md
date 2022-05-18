@@ -20,8 +20,6 @@
   |tests | Place to add new tests |
   | doc | Contains documentation related to the Stress/Load test|
 
-## Adding a new test
-  For adding a new test, one has to write an implementation for the StressTestInterface class present in the StressTestCommon.h. That implementation will have the CUT as a member and corresponding APIs should be called to add and reduce load.
  
 ## Useful Macros
   Once we create the implementation for StressTestInterface, we can use that implementation to create Load test using the below macros.
@@ -31,4 +29,8 @@
   |**LOAD_TEST_WITH_CUSTOM_THREADS**(<No. of Threads>, <Class_Name>, [n number of args to initialize class])| Instead of default 3 threads to create traffic the specified number of threads will be spawned to simulate the traffic |**LOAD_TEST_WITH_CUSTOM_THREADS**(4, ProxyPoolStressTest); *//ProxyPoolStressTest in an impl of StressTestInterface*|
   |**STRESS_TEST**(<Class_name>, [n number of args to initialize class] )| Used to create a stress test with default number of threads(count 2)|**STRESS_TEST**(ProxyPoolStressTest); *//ProxyPoolStressTest in an impl of StressTestInterface*|
   |**STRESS_TEST_WITH_CUSTOM_THREADS**(<No. of Threads>, <Class_Name>, [n number of args to initialize class])| Instead of default 2 threads to create traffic the specified number of threads will be spawned to create the load and unload the class |**STRESS_TEST_WITH_CUSTOM_THREADS**(4, ProxyPoolStressTest); *//ProxyPoolStressTest in an impl of StressTestInterface*|
+  |**BEGIN_GROUP(group_name)**| **Under Construction!!!** Used to group all the test cases between this tag and the **END_GROUP** tag to create a category|**BEGIN_GROUP**(MyGroup) ... **END_GROUP** |
   
+
+## Adding a new test
+  For adding a new test, one has to write an implementation for the StressTestInterface class present in the StressTestCommon.h. That implementation will have the CUT as a member and corresponding APIs should be called to add and reduce load. At the end of the file use the above said macros to create Stress or Load tests.
